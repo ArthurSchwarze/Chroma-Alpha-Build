@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3808294297832679545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071335, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388127953541071352, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: a1ec2aded11bd1240bea0a6c1cd103c1, type: 2}
+    - target: {fileID: 1388127953541071355, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+      propertyPath: m_Name
+      value: Splatter 4 Decal Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7189712688356433184, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}

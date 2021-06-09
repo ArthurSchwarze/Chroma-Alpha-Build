@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &503203935784853184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3182931289649275808, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 135fb6b0632e9564fb5c25c5ecabc144, type: 2}
+    - target: {fileID: 3182931289989364296, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 135fb6b0632e9564fb5c25c5ecabc144, type: 2}
+    - target: {fileID: 3182931290167093730, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: sprinkleVFX
+      value: 
+      objectReference: {fileID: 6368174768218469534, guid: 4b6a316dc9489044d9c43e2b14ccb524, type: 3}
+    - target: {fileID: 3182931290167093730, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: splatterDecal
+      value: 
+      objectReference: {fileID: 2853690588256889218, guid: bda1ae1e6a5379549a6ee896d7a6f6a2, type: 3}
+    - target: {fileID: 3182931290167093730, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: collisionSplashVFX
+      value: 
+      objectReference: {fileID: 7953989302902651873, guid: a77fa24cd29de244997b6e7a39adfbdf, type: 3}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.691
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.464
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093741, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182931290167093742, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_Name
+      value: Blob 4 Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5383285181050713522, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 135fb6b0632e9564fb5c25c5ecabc144, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}

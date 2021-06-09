@@ -1,0 +1,139 @@
+using UnityEngine;
+using System.Collections;
+
+public class PickAndDrop : MonoBehaviour
+{
+	GameObject mainCamera;
+	GameObject carriedObject;
+
+	[SerializeField] bool carrying;
+
+	public float distance;
+	public float smooth;
+
+	private GameObject character;
+
+	public bool stopXMovement;
+	public int stopYMovement;
+	public bool stopZMovement;
+
+	public Vector3 actualMovement;
+
+	// Use this for initialization
+	void Start()
+	{
+		mainCamera = GameObject.FindWithTag("MainCamera");
+		character = GameObject.Find("FirstPersonPlayer");
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		if (carrying)
+		{
+			carry(carriedObject);
+			checkDrop();
+			//rotateObject();
+		}
+		else
+		{
+			pickup();
+		}
+	}
+
+	void rotateObject()
+	{
+		carriedObject.transform.Rotate(5, 10, 15);
+	}
+
+	void carry(GameObject o)
+	{
+		Vector3 destination = Vector3.Lerp(o.transform.position, mainCamera.transform.position + mainCamera.transform.forward * distance, Time.deltaTime * smooth);
+
+		Vector3 newMove = destination - o.transform.position;
+		actualMovement = newMove;
+
+		if (stopXMovement) 
+		{
+			newMove = new Vector3(GetComponent<PlayerMovement>().StopX * Time.deltaTime, newMove.y, newMove.z);
+		}
+
+		if (stopZMovement)
+		{
+			newMove = new Vector3(newMove.x, newMove.y, GetComponent<PlayerMovement>().StopZ * Time.deltaTime);
+		}
+
+		if (stopYMovement == 0) 
+		{ 
+			newMove = new Vector3(newMove.x, mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime, newMove.z);
+			//mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime
+		}
+		o.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+		o.transform.position += newMove;
+		//o.transform.position = MoveBlock;
+
+		
+		
+
+		o.transform.rotation = Quaternion.identity;
+	}
+
+	void pickup()
+	{
+		if (Input.GetKeyDown(KeyCode.E))
+		{
+			int x = Screen.width / 2;
+			int y = Screen.height / 2;
+
+			Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
+			RaycastHit hit;
+			if (Physics.Raycast(ray, out hit))
+			{
+				Pickupable p = hit.collider.GetComponent<Pickupable>();
+				if (p != null)
+				{
+					carriedObject = p.gameObject;
+					carriedObject.GetComponent<GravityGameObject>().temporaryBreak = true;
+					carrying = true;
+					//Physics.IgnoreCollision(character.GetComponent<Collider>(), carriedObject.GetComponent<Collider>(), false);
+
+					Rigidbody r = carriedObject.gameObject.GetComponent<Rigidbody>();
+					r.velocity = Vector3.zero;
+					r.angularVelocity = Vector3.zero;
+
+					//p.GetComponent<Rigidbody>().isKinematic = true;
+					//p.gameObject.GetComponent<Rigidbody>().useGravity = false;
+				}
+			}
+		}
+	}
+
+	void checkDrop()
+	{
+		if (Input.GetKeyDown(KeyCode.E))
+		{
+			dropObject();
+		}
+	}
+
+	void dropObject()
+	{
+		carrying = false;
+		//carriedObject.GetComponent<Rigidbody>().isKinematic = false;
+		Rigidbody r = carriedObject.gameObject.GetComponent<Rigidbody>();
+		carriedObject.GetComponent<GravityGameObject>().temporaryBreak = false;
+		carriedObject.GetComponent<GravityGameObject>().ColorChangeGravity();
+
+		GetComponent<PlayerMovement>().StopX = 0;
+		GetComponent<PlayerMovement>().StopZ = 0;
+		mainCamera.GetComponent<MouseLook>().LimitRotationY = 0;
+
+		//Physics.IgnoreCollision(character.GetComponent<Collider>(), carriedObject.GetComponent<Collider>(), false);
+
+		//r.useGravity = true;
+		carriedObject = null;
+		r.velocity = Vector3.zero;
+		r.angularVelocity = Vector3.zero;
+	}
+}
