@@ -9,7 +9,7 @@ public class GravityGameObject : MonoBehaviour
     public bool useGravity;
     public bool temporaryBreak = false;
 
-    bool isGrounded = false;
+    public bool isGrounded = true;
 
     public float gravityModifier = 1;
 
@@ -37,7 +37,7 @@ public class GravityGameObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!temporaryBreak && ( !isGrounded || rb.velocity != Vector3.zero))
+        if (!temporaryBreak && ( !isGrounded)) //|| rb.velocity != Vector3.zero
         {
             rb.AddForce(Vector3.down * 9.81f * gravityModifier * Time.deltaTime, ForceMode.VelocityChange);
             //GetComponent<Rigidbody>().useGravity = true;
@@ -54,7 +54,7 @@ public class GravityGameObject : MonoBehaviour
             mainCamera.GetComponent<MouseLook>().LimitRotationY = 0;
         }
 
-        if (countAllCollisions == 0 && !temporaryBreak) 
+        if ((countAllCollisions == 0 || countAllCollisions == 1) && !temporaryBreak) 
         {
             GetComponent<Rigidbody>().freezeRotation = true;
         }
@@ -70,7 +70,7 @@ public class GravityGameObject : MonoBehaviour
         {
             countAllCollisions += 1;
 
-            if (collision.gameObject.layer == 7 && !isGrounded)
+            if (collision.gameObject.layer == 3)
             {
                 isGrounded = true;
             }
@@ -118,7 +118,7 @@ public class GravityGameObject : MonoBehaviour
         {
             countAllCollisions -= 1;
 
-            if (collision.gameObject.layer == 7 && isGrounded)
+            if (collision.gameObject.layer == 3 && isGrounded)
             {
                 isGrounded = false;
             }
