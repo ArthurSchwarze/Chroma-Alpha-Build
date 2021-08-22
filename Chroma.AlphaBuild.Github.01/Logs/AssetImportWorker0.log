@@ -1,0 +1,739 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1165; Version 2009; 64bit' Language: 'de' Physical Memory: 32599 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56710
+Successfully changed project path to: C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
+C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 56.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5167
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001661 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 57.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.881 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001272 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 61.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.161 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3766 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.8 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4201.
+Total: 4.277300 ms (FindLiveObjects: 0.687100 ms CreateObjectMapping: 0.347200 ms MarkObjects: 2.974100 ms  DeleteObjects: 0.266800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Materials/Gun & Projectiles/SplatterMainDecal.mat
+  artifactKey: Guid(b3ed970f4c703224a94780d63ed7e9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/SplatterMainDecal.mat using Guid(b3ed970f4c703224a94780d63ed7e9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+ -> (artifact id: '9cf970cc364171094509c8aeb1c2e51d') in 1.778414 seconds
+  Import took 1.785903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Materials/Gun & Projectiles/Blob2Variant.mat
+  artifactKey: Guid(a269d47a587eecf47be1ae76b76f7785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Blob2Variant.mat using Guid(a269d47a587eecf47be1ae76b76f7785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd1c3eece4a44fcb6e98b5165413a76') in 0.038671 seconds
+  Import took 0.044118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/Materials/Gun & Projectiles/GunSplatter.mat
+  artifactKey: Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/GunSplatter.mat using Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4de38dceb36dfc3605668490381a9537') in 0.027055 seconds
+  Import took 0.032898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Materials/Gun & Projectiles/Splatter3Decal.mat
+  artifactKey: Guid(d3ebf065826de90418044fda2acfc4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Splatter3Decal.mat using Guid(d3ebf065826de90418044fda2acfc4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e660266b33c5e9184325b24c83db1d67') in 0.028492 seconds
+  Import took 0.034186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Materials/Gun & Projectiles/MainBlobProjectile.mat
+  artifactKey: Guid(6b022ebbaf31cfd4a92b6f22318fbc2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/MainBlobProjectile.mat using Guid(6b022ebbaf31cfd4a92b6f22318fbc2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d267614e87c576fe10d4655a5b1162') in 0.024255 seconds
+  Import took 0.029806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Materials/Gun & Projectiles/Blob4Variant.mat
+  artifactKey: Guid(135fb6b0632e9564fb5c25c5ecabc144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Blob4Variant.mat using Guid(135fb6b0632e9564fb5c25c5ecabc144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1809ec0ded12c042eb88b740afba86') in 0.030611 seconds
+  Import took 0.035819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Gun Stuff/PlaceholderGun.dae
+  artifactKey: Guid(54a65b633446da5479fbd7171d17b11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/PlaceholderGun.dae using Guid(54a65b633446da5479fbd7171d17b11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2bb6ef46c1a72b9dcb403e991b19e3') in 0.583057 seconds
+  Import took 0.589156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Materials/Gun & Projectiles/Splatter4Decal.mat
+  artifactKey: Guid(a1ec2aded11bd1240bea0a6c1cd103c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Splatter4Decal.mat using Guid(a1ec2aded11bd1240bea0a6c1cd103c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48c90bf795ea4f4daccd12225e2591d') in 0.024464 seconds
+  Import took 0.029685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Materials/Gun & Projectiles/Blob3Variant.mat
+  artifactKey: Guid(04177e3853287794f94910e83d0751b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Blob3Variant.mat using Guid(04177e3853287794f94910e83d0751b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f9989d2bc25362301d6d11cd00d88f') in 0.034773 seconds
+  Import took 0.040919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/Gun Stuff/GunSplatter.prefab
+  artifactKey: Guid(4352e1fdb00eef544900c737c4404f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/GunSplatter.prefab using Guid(4352e1fdb00eef544900c737c4404f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32b746dfcd4a464d6ea670c4c80760a') in 0.007805 seconds
+  Import took 0.013732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Gun Stuff/Crosshair.png
+  artifactKey: Guid(8c0b7e7f2cb183041bfce5aef4174647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Crosshair.png using Guid(8c0b7e7f2cb183041bfce5aef4174647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033c24a1d9f9e36745404fe8b87478c4') in 0.065710 seconds
+  Import took 0.071221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Materials/Gun & Projectiles/Splatter2Decal.mat
+  artifactKey: Guid(29d9386338938d5499a03708dc2795b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Splatter2Decal.mat using Guid(29d9386338938d5499a03708dc2795b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e229e0560488c5ce76b4bab1134ee53c') in 0.025784 seconds
+  Import took 0.031510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.580574 seconds.
+  path: Assets/Gun Stuff/Projectiles
+  artifactKey: Guid(08038586888f64d4088aa171c66c6761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles using Guid(08038586888f64d4088aa171c66c6761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0091c6abe66eda0b91673078ae05e1') in 0.005649 seconds
+  Import took 0.012000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.943764 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob
+  artifactKey: Guid(7e353fbe059f8cf4c999e9e395661abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob using Guid(7e353fbe059f8cf4c999e9e395661abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f317737a85ffcc1ec7172acdd2f4b6') in 0.004965 seconds
+  Import took 0.010402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049163 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf855dae71785a65d2200c3caf701c73') in 0.028660 seconds
+  Import took 0.034349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4eeec52a6ae3fafcf615a8725d1ba3') in 0.007429 seconds
+  Import took 0.012471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Sprinkle.prefab
+  artifactKey: Guid(105d4588d0a951943958bcfb54eb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Sprinkle.prefab using Guid(105d4588d0a951943958bcfb54eb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd47f3bf0cd10bc6576bfca00950aaff') in 0.007829 seconds
+  Import took 0.013622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main CollisionSplash.prefab
+  artifactKey: Guid(7a428a8109e49fb4396b0ed453b1e1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main CollisionSplash.prefab using Guid(7a428a8109e49fb4396b0ed453b1e1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7302de870d04850f949db060d627f46') in 0.008758 seconds
+  Import took 0.013797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000549 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Sprinkle.prefab
+  artifactKey: Guid(105d4588d0a951943958bcfb54eb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Sprinkle.prefab using Guid(105d4588d0a951943958bcfb54eb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd47f3bf0cd10bc6576bfca00950aaff') in 0.004290 seconds
+  Import took 0.011573 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.082138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.517 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3464 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.7 MB.
+System memory in use after: 178.9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4379.
+Total: 3.103700 ms (FindLiveObjects: 0.534700 ms CreateObjectMapping: 0.272600 ms MarkObjects: 2.194300 ms  DeleteObjects: 0.101400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001465 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.992 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.1 MB.
+System memory in use after: 178.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4382.
+Total: 2.712500 ms (FindLiveObjects: 0.382000 ms CreateObjectMapping: 0.196200 ms MarkObjects: 2.074000 ms  DeleteObjects: 0.059100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 782.998150 seconds.
+  path: Assets/Scripts/Projectile & Gun
+  artifactKey: Guid(b1ec62685d3a40c4baf6506acb9ca7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun using Guid(b1ec62685d3a40c4baf6506acb9ca7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0fa9b43eaf63e0fe33040c91ccd5d7') in 0.017122 seconds
+  Import took 0.025240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.405221 seconds.
+  path: Assets/Scripts/Projectile & Gun/PaintGunVisual.cs
+  artifactKey: Guid(c44c1258efb4b7e4eb1a9cbdb5aa3f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/PaintGunVisual.cs using Guid(c44c1258efb4b7e4eb1a9cbdb5aa3f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929429e335ec92891b8f785e122b1cfb') in 0.014688 seconds
+  Import took 0.020715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004101 seconds.
+  path: Assets/Scripts/Projectile & Gun/PaintGunVisual.cs
+  artifactKey: Guid(c44c1258efb4b7e4eb1a9cbdb5aa3f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/PaintGunVisual.cs using Guid(c44c1258efb4b7e4eb1a9cbdb5aa3f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929429e335ec92891b8f785e122b1cfb') in 0.003067 seconds
+  Import took 0.009340 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002110 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.136 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.1 MB.
+System memory in use after: 178.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4385.
+Total: 2.920700 ms (FindLiveObjects: 0.449700 ms CreateObjectMapping: 0.193000 ms MarkObjects: 2.171700 ms  DeleteObjects: 0.105300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.392335 seconds.
+  path: Assets/Scripts/Projectile & Gun/ProjectileSpawn.cs
+  artifactKey: Guid(367d84bd385568947bb86b51e34e1a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/ProjectileSpawn.cs using Guid(367d84bd385568947bb86b51e34e1a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbaa3eb3bc974d1cb5bb8d3dafb7328') in 0.012531 seconds
+  Import took 0.018830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001979 seconds.
+  path: Assets/Scripts/Projectile & Gun/ProjectileSpawn.cs
+  artifactKey: Guid(367d84bd385568947bb86b51e34e1a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/ProjectileSpawn.cs using Guid(367d84bd385568947bb86b51e34e1a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbaa3eb3bc974d1cb5bb8d3dafb7328') in 0.002788 seconds
+  Import took 0.008705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.370251 seconds.
+  path: Assets/Materials/Gun & Projectiles
+  artifactKey: Guid(6b9658b4397a06f42bd2d59e5b85e873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles using Guid(6b9658b4397a06f42bd2d59e5b85e873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb0d441c18c7f16546d00dc73737383') in 0.008393 seconds
+  Import took 0.014516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.903481 seconds.
+  path: Assets/Materials/Gun & Projectiles/Blob5Variant.mat
+  artifactKey: Guid(a4126bf20570cbd40962da993831938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Blob5Variant.mat using Guid(a4126bf20570cbd40962da993831938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f91b612c5ebb116dde428cea16cf033') in 0.472947 seconds
+  Import took 0.478522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Materials/Gun & Projectiles/SplatterMainDecal.mat
+  artifactKey: Guid(b3ed970f4c703224a94780d63ed7e9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/SplatterMainDecal.mat using Guid(b3ed970f4c703224a94780d63ed7e9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abc9f1f9c4c38855f729aafaa0a9209') in 0.040410 seconds
+  Import took 0.046689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Materials/Gun & Projectiles/GunSplatter.mat
+  artifactKey: Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/GunSplatter.mat using Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522f1823d4c3900dacca34a14b61332d') in 0.026334 seconds
+  Import took 0.032412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Materials/Gun & Projectiles/Splatter3Decal.mat
+  artifactKey: Guid(d3ebf065826de90418044fda2acfc4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Splatter3Decal.mat using Guid(d3ebf065826de90418044fda2acfc4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2393fc685fe8d7ec966b7110e5e96193') in 0.029964 seconds
+  Import took 0.036572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Materials/Gun & Projectiles/GunSplatter.mat
+  artifactKey: Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/GunSplatter.mat using Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522f1823d4c3900dacca34a14b61332d') in 0.024695 seconds
+  Import took 0.030464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Materials/Gun & Projectiles/Splatter4Decal.mat
+  artifactKey: Guid(a1ec2aded11bd1240bea0a6c1cd103c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Splatter4Decal.mat using Guid(a1ec2aded11bd1240bea0a6c1cd103c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7cd2690ea40ebeacf1dd18df5244d2') in 0.028855 seconds
+  Import took 0.035519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Materials/Gun & Projectiles/Splatter2Decal.mat
+  artifactKey: Guid(29d9386338938d5499a03708dc2795b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Splatter2Decal.mat using Guid(29d9386338938d5499a03708dc2795b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618879e91e6ef5ca8c93dcb38edd9115') in 0.029547 seconds
+  Import took 0.035971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 174.723915 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab
+  artifactKey: Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab using Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd7d83f3f296abb2c68bf66c3d0d367') in 0.058913 seconds
+  Import took 0.066254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Sprinkle 2 Variant Variant.prefab
+  artifactKey: Guid(2e863096f0100ea49a1970c694b3a533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Sprinkle 2 Variant Variant.prefab using Guid(2e863096f0100ea49a1970c694b3a533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec31f29d1e75888b4c9d5c573e5b9439') in 0.010746 seconds
+  Import took 0.017024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Splatter 2 Decal Variant.prefab
+  artifactKey: Guid(acd653a33e45d3147842e60c7e7657d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Splatter 2 Decal Variant.prefab using Guid(acd653a33e45d3147842e60c7e7657d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0036688586e39f57abb28deb2cee76') in 0.010977 seconds
+  Import took 0.118582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001053 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Collision2Splash Variant Variant.prefab
+  artifactKey: Guid(a73c40a01bdf21545ba60f90e533e600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Collision2Splash Variant Variant.prefab using Guid(a73c40a01bdf21545ba60f90e533e600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9451f341b942f804df1089211f486f18') in 0.011521 seconds
+  Import took 0.019821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.145842 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7f38808c495faa7362fefae66e5443') in 0.047549 seconds
+  Import took 0.054427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Collision3Splash Variant Variant.prefab
+  artifactKey: Guid(d1df5b345cfbc1a4bb321978ddeb2113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Collision3Splash Variant Variant.prefab using Guid(d1df5b345cfbc1a4bb321978ddeb2113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beebd480d3f24f0a9007b4945d27cfe9') in 0.009519 seconds
+  Import took 0.016446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Sprinkle 3 Variant Variant.prefab
+  artifactKey: Guid(6016fa5393a1d5649b35eb90939a24a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Sprinkle 3 Variant Variant.prefab using Guid(6016fa5393a1d5649b35eb90939a24a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884c403344418276c7b2ae412a1a57fb') in 0.050165 seconds
+  Import took 0.110321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Splatter 3 Decal Variant.prefab
+  artifactKey: Guid(30c7c00afe60c7b4382fdccbe7638e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Splatter 3 Decal Variant.prefab using Guid(30c7c00afe60c7b4382fdccbe7638e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffcf216e7bf8a265fe2ab9b188f15ca') in 0.012482 seconds
+  Import took 0.019195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.401526 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Blob 4 Variant Variant.prefab
+  artifactKey: Guid(81853c65e8a46b04ab286d3581a84d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Blob 4 Variant Variant.prefab using Guid(81853c65e8a46b04ab286d3581a84d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6e96f5cbe700634ffdbf24615e868f') in 0.044794 seconds
+  Import took 0.052297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Sprinkle 4 Variant Variant.prefab
+  artifactKey: Guid(4b6a316dc9489044d9c43e2b14ccb524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Sprinkle 4 Variant Variant.prefab using Guid(4b6a316dc9489044d9c43e2b14ccb524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba89c4e1831bb541325c8222c340d1b') in 0.008785 seconds
+  Import took 0.015309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Collision4Splash Variant Variant.prefab
+  artifactKey: Guid(a77fa24cd29de244997b6e7a39adfbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Collision4Splash Variant Variant.prefab using Guid(a77fa24cd29de244997b6e7a39adfbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0bc243f32faf3802dac93e7b90b4b6') in 0.009641 seconds
+  Import took 0.111960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004876 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Splatter 4 Decal Variant.prefab
+  artifactKey: Guid(bda1ae1e6a5379549a6ee896d7a6f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Splatter 4 Decal Variant.prefab using Guid(bda1ae1e6a5379549a6ee896d7a6f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc5ea76c72394473b79c053c65bafb2') in 0.014260 seconds
+  Import took 0.028345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.924446 seconds.
+  path: Assets/Gun Stuff/Projectiles/Ghost Blob/Ghost Blob.prefab
+  artifactKey: Guid(6382b238c3444e14e9410fed067cc50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Ghost Blob/Ghost Blob.prefab using Guid(6382b238c3444e14e9410fed067cc50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f545689f187d8b7c99c52cf540e7a858') in 0.024199 seconds
+  Import took 0.030240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.139953 seconds.
+  path: Assets/Materials/Gun & Projectiles/Blob5Variant.mat
+  artifactKey: Guid(a4126bf20570cbd40962da993831938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/Blob5Variant.mat using Guid(a4126bf20570cbd40962da993831938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc108bc13b1f703db63bf039d824f8d0') in 0.031965 seconds
+  Import took 0.039073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Materials/Gun & Projectiles/New Material.mat
+  artifactKey: Guid(97250b32d9c934e4fbb9521443666c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/New Material.mat using Guid(97250b32d9c934e4fbb9521443666c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76299c329d9985a9888bad7f1c0256f0') in 0.030996 seconds
+  Import took 0.037872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.330238 seconds.
+  path: Assets/Textures/Splatter.png
+  artifactKey: Guid(b8702b5a8624a114f82a6d09bc3ce746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Splatter.png using Guid(b8702b5a8624a114f82a6d09bc3ce746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964329ca584334bdfb787d0a86d0706b') in 0.017113 seconds
+  Import took 0.022834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Textures/SplatterNormal.jpg
+  artifactKey: Guid(945b831b22eb06945bf77e00f16ff51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/SplatterNormal.jpg using Guid(945b831b22eb06945bf77e00f16ff51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5deab9f86879bed0d418f451069fb1a8') in 0.024355 seconds
+  Import took 0.133760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.229298 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant
+  artifactKey: Guid(b461a240c544fde4182dc4a977bb3a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant using Guid(b461a240c544fde4182dc4a977bb3a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e373652adb76ef0df41a3d3b15de64') in 0.010041 seconds
+  Import took 0.020534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.911698 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab
+  artifactKey: Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab using Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7236c76306f204498fdb8251c469078b') in 0.013516 seconds
+  Import took 0.023054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.365700 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Sprinkle 5 Variant Variant.prefab
+  artifactKey: Guid(bdb6492e558c701469351925a9962758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Sprinkle 5 Variant Variant.prefab using Guid(bdb6492e558c701469351925a9962758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44fb20d604b93ec8025b9ae45601e5f') in 0.014428 seconds
+  Import took 0.023409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.608674 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Collision5Splash Variant Variant.prefab
+  artifactKey: Guid(93da61d4ae0512446927a1be80195a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Collision5Splash Variant Variant.prefab using Guid(93da61d4ae0512446927a1be80195a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd053de8056e1abc216de3407b1213fa6') in 0.010887 seconds
+  Import took 0.019090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007745 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Collision5Splash Variant Variant.prefab
+  artifactKey: Guid(93da61d4ae0512446927a1be80195a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Collision5Splash Variant Variant.prefab using Guid(93da61d4ae0512446927a1be80195a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd053de8056e1abc216de3407b1213fa6') in 0.005361 seconds
+  Import took 0.011317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 414.623193 seconds.
+  path: Assets/Scripts/Projectile & Gun/BlobProjectile.cs
+  artifactKey: Guid(132764fcfddb00a4687b62c67dda374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/BlobProjectile.cs using Guid(132764fcfddb00a4687b62c67dda374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9336841cff0af2bba5d175eba99873f') in 0.007806 seconds
+  Import took 0.014557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020047 seconds.
+  path: Assets/Scripts/Projectile & Gun/BlobProjectile.cs
+  artifactKey: Guid(132764fcfddb00a4687b62c67dda374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/BlobProjectile.cs using Guid(132764fcfddb00a4687b62c67dda374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9336841cff0af2bba5d175eba99873f') in 0.002780 seconds
+  Import took 0.008780 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001425 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.091 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.5 MB.
+System memory in use after: 178.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4491.
+Total: 3.537000 ms (FindLiveObjects: 0.489600 ms CreateObjectMapping: 0.217200 ms MarkObjects: 2.726200 ms  DeleteObjects: 0.103100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 533.260711 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab
+  artifactKey: Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab using Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711ac4c8cede74085212844d8a5ff0e8') in 0.501879 seconds
+  Import took 0.508908 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.076 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.8 MB.
+System memory in use after: 179.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4594.
+Total: 4.762200 ms (FindLiveObjects: 0.516400 ms CreateObjectMapping: 0.464300 ms MarkObjects: 3.712400 ms  DeleteObjects: 0.068300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001351 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.118 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.9 MB.
+System memory in use after: 179.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4597.
+Total: 3.803000 ms (FindLiveObjects: 0.414500 ms CreateObjectMapping: 0.367700 ms MarkObjects: 2.934500 ms  DeleteObjects: 0.084900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001847 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.137 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.9 MB.
+System memory in use after: 179.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4600.
+Total: 3.259500 ms (FindLiveObjects: 0.522800 ms CreateObjectMapping: 0.261000 ms MarkObjects: 2.389100 ms  DeleteObjects: 0.085500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
