@@ -57,8 +57,9 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 97250b32d9c934e4fbb9521443666c00, type: 2}
     - target: {fileID: 1388127953541071355, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
       propertyPath: m_Name
-      value: Splatter 5 Decal
+      value: Splatter 5 Decal Variant
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7189712688356433184, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
+    - {fileID: -6125735944812971397, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
