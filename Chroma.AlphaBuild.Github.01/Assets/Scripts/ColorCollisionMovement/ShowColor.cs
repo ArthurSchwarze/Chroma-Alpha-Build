@@ -6,19 +6,20 @@ using UnityEngine;
 
 public class ShowColor : MonoBehaviour
 {
-    private int ColourNumber = 3;
+    private int ColourNumber = 0;
 
     public List<Color> colourList = new List<Color>();
 
     // Start is called before the first frame update
     void Start()
     {
-        colourList.Add(Color.white);
-        colourList.Add(Color.red);
-        colourList.Add(Color.blue);
         colourList.Add(Color.green);
+        colourList.Add(Color.blue);
         colourList.Add(Color.yellow);
-
+        colourList.Add(Color.red);
+        colourList.Add(Color.magenta);
+        colourList.Add(Color.white);
+      
         GetComponent<Image>().color = colourList[ColourNumber];
     }
 
@@ -27,34 +28,23 @@ public class ShowColor : MonoBehaviour
     {
         //GetComponent<Image>().color = Color.green;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        ColourNumber = GetPressedNumber();
+
+        if (ColourNumber != -1 && ColourNumber < 6)
         {
-            ColourNumber = 3;
             GetComponent<Image>().color = colourList[ColourNumber];
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+    }
+
+    public int GetPressedNumber()
+    {
+        for (int number = 0; number <= 9; number++)
         {
-            ColourNumber = 2;
-            GetComponent<Image>().color = colourList[ColourNumber];
+            if (Input.GetKeyDown(number.ToString()))
+                return number - 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            ColourNumber = 4;
-            GetComponent<Image>().color = colourList[ColourNumber];
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            ColourNumber = 1;
-            GetComponent<Image>().color = colourList[ColourNumber];
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            ColourNumber = 0;
-            GetComponent<Image>().color = colourList[ColourNumber];
-        }
+        return -1;
     }
 }

@@ -51,25 +51,25 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
 
-        if ((CheckPositive(move.x) != -StopX) && StopX != 0)
-        {
-            move = new Vector3(0, move.y, move.z);
-            GetComponent<PickAndDrop>().stopXMovement = true;
-        }
-        else 
-        {
-            GetComponent<PickAndDrop>().stopXMovement = false;
-        }
+        //if ((CheckPositive(move.x) != -StopX) && StopX != 0)
+        //{
+            //move = new Vector3(0, move.y, move.z);
+            //GetComponent<PickAndDrop>().stopXMovement = true;
+        //}
+        //else 
+        //{
+            //GetComponent<PickAndDrop>().stopXMovement = false;
+        //}
 
-        if ((CheckPositive(move.z) != -StopZ) && StopZ != 0)
-        {
-            move = new Vector3(move.x, move.y, 0);
-            GetComponent<PickAndDrop>().stopZMovement = true;
-        }
-        else 
-        {
-            GetComponent<PickAndDrop>().stopZMovement = false;
-        }
+        //if ((CheckPositive(move.z) != -StopZ) && StopZ != 0)
+        //{
+            //move = new Vector3(move.x, move.y, 0);
+            //GetComponent<PickAndDrop>().stopZMovement = true;
+        //}
+        //else 
+        //{
+            //GetComponent<PickAndDrop>().stopZMovement = false;
+        //}
 
 
         //controller.Move(move * speed * Time.deltaTime);

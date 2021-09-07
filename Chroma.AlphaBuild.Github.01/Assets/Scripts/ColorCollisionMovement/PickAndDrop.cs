@@ -19,6 +19,8 @@ public class PickAndDrop : MonoBehaviour
 
 	public Vector3 actualMovement;
 
+	public LayerMask ignoreLayer;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -48,33 +50,35 @@ public class PickAndDrop : MonoBehaviour
 
 	void carry(GameObject o)
 	{
-		Vector3 destination = Vector3.Lerp(o.transform.position, mainCamera.transform.position + mainCamera.transform.forward * distance, Time.deltaTime * smooth);
+		Vector3 destination = Vector3.Lerp(o.transform.position, mainCamera.transform.position + mainCamera.transform.forward * distance, Time.deltaTime * smooth * 60);
 
 		Vector3 newMove = destination - o.transform.position;
 		actualMovement = newMove;
 
-		if (stopXMovement) 
-		{
-			newMove = new Vector3(GetComponent<PlayerMovement>().StopX * Time.deltaTime, newMove.y, newMove.z);
-		}
+		//if (stopXMovement) 
+		//{
+		//newMove = new Vector3(GetComponent<PlayerMovement>().StopX * Time.deltaTime, newMove.y, newMove.z);
+		//}
 
-		if (stopZMovement)
-		{
-			newMove = new Vector3(newMove.x, newMove.y, GetComponent<PlayerMovement>().StopZ * Time.deltaTime);
-		}
+		//if (stopZMovement)
+		//{
+		//newMove = new Vector3(newMove.x, newMove.y, GetComponent<PlayerMovement>().StopZ * Time.deltaTime);
+		//}
 
-		if (stopYMovement == 0) 
-		{ 
-			newMove = new Vector3(newMove.x, mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime, newMove.z);
-			//mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime
-		}
-		o.GetComponent<Rigidbody>().velocity = Vector3.zero;
+		//if (stopYMovement == 0) 
+		//{ 
+		//newMove = new Vector3(newMove.x, mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime, newMove.z);
+		//mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime
+		//}
+		//o.GetComponent<Rigidbody>().velocity = Vector3.zero;
+		o.GetComponent<Rigidbody>().velocity = newMove * 6;
 
-		o.transform.position += newMove;
+
+		//o.transform.position += newMove;
 		//o.transform.position = MoveBlock;
 
-		
-		
+
+
 
 		o.transform.rotation = Quaternion.identity;
 	}
@@ -88,7 +92,7 @@ public class PickAndDrop : MonoBehaviour
 
 			Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
 			RaycastHit hit;
-			if (Physics.Raycast(ray, out hit))
+			if (Physics.Raycast(ray, out hit, 50f, ~ignoreLayer))
 			{
 				Pickupable p = hit.collider.GetComponent<Pickupable>();
 				if (p != null)

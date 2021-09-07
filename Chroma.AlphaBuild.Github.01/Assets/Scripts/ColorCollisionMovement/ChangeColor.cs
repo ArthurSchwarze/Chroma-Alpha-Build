@@ -11,6 +11,9 @@ public class ChangeColor : MonoBehaviour
 	public Material MaterialGreen;
 	public Material MaterialWhite;
 	public Material MaterialYellow;
+	public Material MaterialPurple;
+
+	public Material[] MaterialColour;
 
 	public List<Material> colourList = new List<Material>();
 
@@ -19,7 +22,7 @@ public class ChangeColor : MonoBehaviour
 	private GameObject character;
 	private GameObject colouredObject;
 
-	private int ColourNumber = 3;
+	private int ColourNumber = 0;
 
 
 	// Start is called before the first frame update
@@ -34,6 +37,7 @@ public class ChangeColor : MonoBehaviour
 		colourList.Add(MaterialBlue);
 		colourList.Add(MaterialGreen);
 		colourList.Add(MaterialYellow);
+		colourList.Add(MaterialPurple);
 	}
 
 	// Update is called once per frame
@@ -57,84 +61,64 @@ public class ChangeColor : MonoBehaviour
 			}
 		}
 
-
-		if (Input.GetKeyDown(KeyCode.Alpha1))
+		int number = GetPressedNumber();
+		if (0 <= number && number <= 6) 
 		{
-			ColourNumber = 3;
-		}
-
-		if (Input.GetKeyDown(KeyCode.Alpha2))
-		{
-			ColourNumber = 2;
-		}
-
-		if (Input.GetKeyDown(KeyCode.Alpha3))
-		{
-			ColourNumber = 4;	
-		}
-
-		if (Input.GetKeyDown(KeyCode.Alpha4))
-		{
-			ColourNumber = 1;
-		}
-
-		if (Input.GetKeyDown(KeyCode.Alpha5))
-		{
-			ColourNumber = 0;
+			ColourNumber = number;
 		}
 	}
 
 	public void MoveColour(GameObject o)
 	{
-		o.GetComponent<MeshRenderer>().material = colourList[ColourNumber];
-		o.GetComponent<GravityGameObject>().ColorChangeGravity(); 
+		o.GetComponent<MeshRenderer>().material = MaterialColour[ColourNumber];
+		o.GetComponent<GravityGameObject>().ColorChangeGravity();
 
-		if (ColourNumber == 0)
-		{
-			MoveColourWhite(o);
-		}
 
-		if (ColourNumber == 1)
-		{
-			MoveColourRed(o);
-		}
-
-		if (ColourNumber == 2)
-		{
-			MoveColourBlue(o);
-		}
-
-		if (ColourNumber == 3)
-		{
-			MoveColourGreen(o);
-		}
-	}
-
-	void MoveColourRed(GameObject o)
-	{
-		o.GetComponent<GravityGameObject>().gravityModifier = -1;
-		o.tag = "Untagged";
-		Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>(), false);
-	}
-
-	void MoveColourWhite(GameObject o)
-	{
 		o.GetComponent<GravityGameObject>().gravityModifier = 1;
 		o.tag = "Untagged";
 		Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>(), false);
+
+
+		if (ColourNumber == 0) // Colour: Green
+		{
+			//placeholder
+		}
+
+		if (ColourNumber == 1) // Colour: Blue
+		{
+			o.tag = "ignoreCollision";
+			Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>());
+		}
+
+		if (ColourNumber == 2) // Colour: Yellow
+		{
+			//placeholder
+		}
+
+		if (ColourNumber == 3)  // Colour: Red
+		{
+			o.GetComponent<GravityGameObject>().gravityModifier = -1;
+		}
+
+		if (ColourNumber == 4) // Colour: Purple
+		{
+			//placeholder
+		}
+
+		if (ColourNumber == 5) // Colour: White
+		{
+			//placeholder
+		}
 	}
 
-	void MoveColourBlue(GameObject o)
+	public int GetPressedNumber()
 	{
-		o.GetComponent<GravityGameObject>().gravityModifier = 1;
-		o.tag = "ignoreCollision";
-		Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>());
-	}
+		for (int number = 0; number <= 9; number++)
+		{
+			if (Input.GetKeyDown(number.ToString()))
+				return number -1;
+		}
 
-	void MoveColourGreen(GameObject o) 
-	{
-		o.GetComponent<GravityGameObject>().gravityModifier = 1;
-		o.tag = "Untagged";
-		Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>(), false);
+		return -1;
 	}
 }
