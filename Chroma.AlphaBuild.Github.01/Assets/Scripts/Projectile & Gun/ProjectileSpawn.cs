@@ -11,7 +11,7 @@ public class ProjectileSpawn : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
-    private int number = 0;
+    private int number = 4;
 
     // Update is called once per frame
     void Update()
@@ -37,6 +37,11 @@ public class ProjectileSpawn : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             number = 3;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            number = 4;
         }
 
         if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && obstacleCheck.tooNear == false)

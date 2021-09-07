@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     public LayerMask objectMask;
 
-    Vector3 velocity;
+    public Vector3 velocity;
     public bool isGrounded;
     public bool isOnObject;
     float playerGravity;

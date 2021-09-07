@@ -1175,9 +1175,9 @@ MonoBehaviour:
   collisionSplashVFX: {fileID: 2750837154373453514, guid: 7a428a8109e49fb4396b0ed453b1e1d8, type: 3}
   sprinkleVFX: {fileID: 7393026562312004330, guid: 105d4588d0a951943958bcfb54eb2fb1, type: 3}
   splatterDecal: {fileID: 1388127953541071355, guid: ab97560582a052b4fb3c6ec8d7cd9628, type: 3}
-  speed: 25
+  speed: 33
   predictionStepsPerFrame: 6
-  bulletVelocity: {x: 0, y: 0, z: 25}
+  bulletVelocity: {x: 0, y: 0, z: 33}
 --- !u!1001 &3182931288583870298
 PrefabInstance:
   m_ObjectHideFlags: 0

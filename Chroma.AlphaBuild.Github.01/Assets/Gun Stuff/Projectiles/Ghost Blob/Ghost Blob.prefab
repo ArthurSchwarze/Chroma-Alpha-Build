@@ -110,6 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   impactForce: 35
-  speed: 25
+  speed: 33
   predictionStepsPerFrame: 6
-  bulletVelocity: {x: 0, y: 0, z: 25}
+  bulletVelocity: {x: 0, y: 0, z: 33}

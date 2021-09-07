@@ -18,18 +18,18 @@ public class Bounce : MonoBehaviour
 
         if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom"))
         {
-            bounceTrigger.moveXYZ = this.transform.forward * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
-            var direction = Vector3.Reflect(bounceTrigger.moveXYZ.normalized, this.transform.forward);
-            bounceTrigger.moveXYZ = direction * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
+            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
+            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
         }
 
         if (other.gameObject.tag == "Body")
         {
-            bounceTrigger.moveXYZ = this.transform.forward * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
-            var direction = Vector3.Reflect(bounceTrigger.moveXYZ.normalized, this.transform.forward);
-            bounceTrigger.moveXYZ = direction * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
+            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
+            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
 
-            bounceTrigger.moveXYZ.y = bounceTrigger.moveXYZ.magnitude * 0.27f;
+            bounceTrigger.moveXYZ.y = bounceTrigger.moveXYZ.magnitude;// * 0.27f;
         }
 
         bounceTrigger.canJump = false;
@@ -42,18 +42,18 @@ public class Bounce : MonoBehaviour
 
         if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom"))
         {
-            bounceTrigger.moveXYZ = this.transform.forward * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
-            var direction = Vector3.Reflect(bounceTrigger.moveXYZ.normalized, this.transform.forward);
-            bounceTrigger.moveXYZ = direction * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
+            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
+            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
         }
 
         if (other.gameObject.tag == "Body")
         {
-            bounceTrigger.moveXYZ = this.transform.forward * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
-            var direction = Vector3.Reflect(bounceTrigger.moveXYZ.normalized, this.transform.forward);
-            bounceTrigger.moveXYZ = direction * Mathf.Max(bounceTrigger.moveXYZ.magnitude, 13f);
+            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
+            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
 
-            bounceTrigger.moveXYZ.y = bounceTrigger.moveXYZ.magnitude * 0.27f;
+            bounceTrigger.moveXYZ.y = bounceTrigger.moveXYZ.magnitude;// * 0.27f;
         }
 
         bounceTrigger.canJump = false;
