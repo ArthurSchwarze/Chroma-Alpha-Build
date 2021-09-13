@@ -11,7 +11,7 @@ public class ProjectileSpawn : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
-    private int number = 4;
+    private int number = 0;
 
     // Update is called once per frame
     void Update()
