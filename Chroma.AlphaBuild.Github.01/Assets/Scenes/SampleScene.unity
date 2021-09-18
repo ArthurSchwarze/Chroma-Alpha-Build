@@ -1953,6 +1953,7 @@ MonoBehaviour:
   - {fileID: 4449682351320779583, guid: 27d94f202ecb1d74b90c979c3d674022, type: 3}
   - {fileID: 3087136682087708462, guid: 81853c65e8a46b04ab286d3581a84d08, type: 3}
   - {fileID: 7864488718085194110, guid: 85acbb715df4f3a4b93a371ea80a11d3, type: 3}
+  - {fileID: 4506935991068262081, guid: fb9efdc20025a504da734df3a1451386, type: 3}
   ghostProjectile: {fileID: 1195265824113007972, guid: 6382b238c3444e14e9410fed067cc50a, type: 3}
 --- !u!1 &271146968
 GameObject:
