@@ -48,6 +48,11 @@ public class PaintGunVisual : MonoBehaviour
             gunSplatterMaterial.color = new Color32(255, 255, 255, 255);
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            gunSplatterMaterial.color = new Color32(255, 129, 0, 255);
+        }
+
         if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
