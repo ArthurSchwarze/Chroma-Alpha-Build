@@ -32,7 +32,7 @@ public class Bounce : MonoBehaviour
             var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
             bounceTrigger.CharacterVelocity = direction * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
 
-            bounceTrigger.CharacterVelocity += Vector3.up * 3f;
+            bounceTrigger.CharacterVelocity += Vector3.up * 5f;
         }
     }
 
@@ -57,7 +57,7 @@ public class Bounce : MonoBehaviour
             var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
             bounceTrigger.CharacterVelocity = direction * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
 
-            bounceTrigger.CharacterVelocity += Vector3.up * 3f;
+            bounceTrigger.CharacterVelocity += Vector3.up * 5f;
         }
     }
 

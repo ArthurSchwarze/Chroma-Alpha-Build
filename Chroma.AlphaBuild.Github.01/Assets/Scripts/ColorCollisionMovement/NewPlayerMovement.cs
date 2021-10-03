@@ -28,10 +28,12 @@ public class NewPlayerMovement : MonoBehaviour
     public float MaxSpeedInAir = 10f;
 
     public Vector3 CharacterVelocity { get; set; }
+
     [HideInInspector]
     public bool canJump;
     [HideInInspector]
     public bool canBounce;
+
     float lastGroundedTime;
 
     // Start is called before the first frame update
@@ -67,6 +69,12 @@ public class NewPlayerMovement : MonoBehaviour
         if ((flags == CollisionFlags.Sides) && (canBounce == false))
         {
             CharacterVelocity = new Vector3(controller.velocity.x, CharacterVelocity.y, controller.velocity.z);
+        }
+
+        if ((groundSpeed > 13) || (MaxSpeedInAir > 13))
+        {
+            groundSpeed -= 10f * Time.deltaTime;
+            MaxSpeedInAir -= 10f * Time.deltaTime;
         }
 
         // jumping

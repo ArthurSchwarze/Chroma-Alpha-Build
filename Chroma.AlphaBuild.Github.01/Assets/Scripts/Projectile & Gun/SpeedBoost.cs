@@ -7,14 +7,14 @@ public class SpeedBoost : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        PlayerMovement speedTrigger = firstPersonPlayer.GetComponent<PlayerMovement>();
+        NewPlayerMovement speedTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
 
         if (other.gameObject.tag == "Bottom")
         {
-            if (speedTrigger.isGrounded == true)
+            if (speedTrigger.canJump == false)
             {
-                speedTrigger.speed = 24f;
-                speedTrigger.SpeedCountDown();
+                speedTrigger.MaxSpeedInAir = 33f;
+                speedTrigger.groundSpeed = 33f;
             }
         }
     }
@@ -22,14 +22,14 @@ public class SpeedBoost : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        PlayerMovement speedTrigger = firstPersonPlayer.GetComponent<PlayerMovement>();
+        NewPlayerMovement speedTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
 
         if (other.gameObject.tag == "Bottom")
         {
-            if (speedTrigger.isGrounded == true)
+            if (speedTrigger.canJump == false)
             {
-                speedTrigger.speed = 24f;
-                speedTrigger.SpeedCountDown();
+                speedTrigger.MaxSpeedInAir = 33f;
+                speedTrigger.groundSpeed = 33f;
             }
         }
     }
