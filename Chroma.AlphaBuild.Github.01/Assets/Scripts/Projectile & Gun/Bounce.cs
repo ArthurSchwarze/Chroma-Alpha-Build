@@ -14,48 +14,58 @@ public class Bounce : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        PlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<PlayerMovement>();
+        NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
+
+        bounceTrigger.canBounce = true;
+        bounceTrigger.canJump = false;
 
         if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom"))
         {
-            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
-            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
-            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
+            var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
+            bounceTrigger.CharacterVelocity = direction * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
         }
 
         if (other.gameObject.tag == "Body")
         {
-            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
-            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
-            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
+            var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
+            bounceTrigger.CharacterVelocity = direction * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
 
-            bounceTrigger.moveXYZ.y = bounceTrigger.moveXYZ.magnitude;// * 0.27f;
+            bounceTrigger.CharacterVelocity += Vector3.up * 3f;
         }
-
-        bounceTrigger.canJump = false;
     }
 
     private void OnTriggerStay(Collider other)
     {
         GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        PlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<PlayerMovement>();
+        NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
+
+        bounceTrigger.canBounce = true;
+        bounceTrigger.canJump = false;
 
         if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom"))
         {
-            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
-            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
-            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
+            var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
+            bounceTrigger.CharacterVelocity = direction * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
         }
 
         if (other.gameObject.tag == "Body")
         {
-            bounceTrigger.velocity = this.transform.forward * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
-            var direction = Vector3.Reflect(bounceTrigger.velocity.normalized, this.transform.forward);
-            bounceTrigger.velocity = direction * Mathf.Max(bounceTrigger.velocity.magnitude, 16.5f);
+            bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
+            var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
+            bounceTrigger.CharacterVelocity = direction * Mathf.Max(bounceTrigger.CharacterVelocity.magnitude, 13f);
 
-            bounceTrigger.moveXYZ.y = bounceTrigger.moveXYZ.magnitude;// * 0.27f;
+            bounceTrigger.CharacterVelocity += Vector3.up * 3f;
         }
+    }
 
-        bounceTrigger.canJump = false;
+    private void OnTriggerExit(Collider other)
+    {
+        GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
+        NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
+
+        bounceTrigger.canBounce = false;
     }
 }
