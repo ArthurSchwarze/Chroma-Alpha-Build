@@ -129,9 +129,9 @@ public class PickAndDrop : MonoBehaviour
 		carriedObject.GetComponent<GravityGameObject>().temporaryBreak = false;
 		carriedObject.GetComponent<GravityGameObject>().ColorChangeGravity();
 
-		GetComponent<PlayerMovement>().StopX = 0;
-		GetComponent<PlayerMovement>().StopZ = 0;
-		mainCamera.GetComponent<MouseLook>().LimitRotationY = 0;
+		//GetComponent<PlayerMovement>().StopX = 0;
+		//GetComponent<PlayerMovement>().StopZ = 0;
+		//mainCamera.GetComponent<MouseLook>().LimitRotationY = 0;
 
 		//Physics.IgnoreCollision(character.GetComponent<Collider>(), carriedObject.GetComponent<Collider>(), false);
 
