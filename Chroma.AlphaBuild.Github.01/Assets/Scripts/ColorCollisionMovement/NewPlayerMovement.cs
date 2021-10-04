@@ -71,10 +71,11 @@ public class NewPlayerMovement : MonoBehaviour
             CharacterVelocity = new Vector3(controller.velocity.x, CharacterVelocity.y, controller.velocity.z);
         }
 
+        // this is for SpeedBoost script, to reduce to the original speed when exiting the speedboost trigger
         if ((groundSpeed > 14) || (MaxSpeedInAir > 14))
         {
-            groundSpeed -= 10f * Time.deltaTime;
-            MaxSpeedInAir -= 10f * Time.deltaTime;
+            groundSpeed -= 12f * Time.deltaTime;
+            MaxSpeedInAir -= 12f * Time.deltaTime;
         }
 
         // jumping
