@@ -2062,11 +2062,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GravityDownForce: 20
-  groundSpeed: 13
+  groundSpeed: 14
   MovementSharpnessOnGround: 15
   JumpForce: 8
-  AccelerationSpeedInAir: 20
-  MaxSpeedInAir: 13
+  AccelerationSpeedInAir: 40
+  MaxSpeedInAir: 14
   canJump: 0
   canBounce: 0
 --- !u!1 &277070843

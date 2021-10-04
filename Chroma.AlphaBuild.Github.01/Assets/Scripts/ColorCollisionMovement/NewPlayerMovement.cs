@@ -71,7 +71,7 @@ public class NewPlayerMovement : MonoBehaviour
             CharacterVelocity = new Vector3(controller.velocity.x, CharacterVelocity.y, controller.velocity.z);
         }
 
-        if ((groundSpeed > 13) || (MaxSpeedInAir > 13))
+        if ((groundSpeed > 14) || (MaxSpeedInAir > 14))
         {
             groundSpeed -= 10f * Time.deltaTime;
             MaxSpeedInAir -= 10f * Time.deltaTime;
