@@ -13,8 +13,8 @@ public class SpeedBoost : MonoBehaviour
         {
             if (speedTrigger.canJump == false)
             {
-                speedTrigger.MaxSpeedInAir = 33f;
-                speedTrigger.groundSpeed = 33f;
+                speedTrigger.MaxSpeedInAir = 34f;
+                speedTrigger.groundSpeed = 34f;
             }
         }
     }
@@ -28,8 +28,8 @@ public class SpeedBoost : MonoBehaviour
         {
             if (speedTrigger.canJump == false)
             {
-                speedTrigger.MaxSpeedInAir = 33f;
-                speedTrigger.groundSpeed = 33f;
+                speedTrigger.MaxSpeedInAir = 34f;
+                speedTrigger.groundSpeed = 34f;
             }
         }
     }
