@@ -20,6 +20,8 @@ public class BlobProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        groundMask = LayerMask.GetMask("Ground", "1Connect", "2Connect");
+
         bulletVelocity = this.transform.forward * speed;
 
         character = GameObject.Find("FirstPersonPlayer");

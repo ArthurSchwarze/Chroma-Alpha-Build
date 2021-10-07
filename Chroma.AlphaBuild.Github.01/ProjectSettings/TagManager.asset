@@ -20,10 +20,10 @@ TagManager:
   - PhyBox
   - Object
   - Player
-  - 
-  - 
-  - 
-  - 
+  - 1Connect
+  - 2Connect
+  - ConnectCollision1
+  - ConnectCollision2
   - 
   - 
   - 

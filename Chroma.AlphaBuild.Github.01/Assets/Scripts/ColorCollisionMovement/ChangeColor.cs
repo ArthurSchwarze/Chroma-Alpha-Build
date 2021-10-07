@@ -78,31 +78,36 @@ public class ChangeColor : MonoBehaviour
 		o.tag = "Untagged";
 		Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>(), false);
 
+		if (o.GetComponent<ConnectObjects>() != null)
+        {
+			o.GetComponent<ConnectObjects>().DisableScript();
+        }
 
-		if (ColourNumber == 0) // Colour: Green
+
+		if (ColourNumber == 0) // Colour: Green (Bounce) not active 
 		{
 			//placeholder
 		}
 
-		if (ColourNumber == 1) // Colour: Blue
+		if (ColourNumber == 1) // Colour: Blue (No Collision) active
 		{
 			o.tag = "ignoreCollision";
 			Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>());
 		}
 
-		if (ColourNumber == 2) // Colour: Yellow
+		if (ColourNumber == 2) // Colour: Yellow (Speedboost) not active
 		{
 			//placeholder
 		}
 
-		if (ColourNumber == 3)  // Colour: Red
+		if (ColourNumber == 3)  // Colour: Red (Gravity Change) active
 		{
 			o.GetComponent<GravityGameObject>().gravityModifier = -1;
 		}
 
-		if (ColourNumber == 4) // Colour: Purple
+		if (ColourNumber == 4) // Colour: Purple (Connect Objects) active
 		{
-			//placeholder
+			o.AddComponent<ConnectObjects>();
 		}
 
 		if (ColourNumber == 5) // Colour: White
