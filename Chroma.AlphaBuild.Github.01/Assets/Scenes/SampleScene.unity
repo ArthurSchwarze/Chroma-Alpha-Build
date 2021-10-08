@@ -1843,6 +1843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42636a1d4dd101449e8bf9227f0d591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carriedObject: {fileID: 0}
   carrying: 0
   distance: 6
   smooth: 10
@@ -1878,7 +1879,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5a26de236ce89e94b963be8fa2b7ade6, type: 2}
   - {fileID: 2100000, guid: 36bce9ab6cae8ce43962938466458044, type: 2}
   - {fileID: 2100000, guid: c181c23a6120fbe4aadd5bb53a58dd78, type: 2}
-  colourList: []
   values:
   - {fileID: 0}
   - {fileID: 0}
@@ -4004,7 +4004,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21016
+  m_Name: pb_Mesh21038
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4275,7 +4275,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20972
+  m_Name: pb_Mesh20990
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4659,13 +4659,43 @@ CapsuleCollider:
   m_Height: 2.55
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &714204962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714204963}
+  m_Layer: 0
+  m_Name: ClonedCollisionObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &714204963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714204962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &728082642
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20984
+  m_Name: pb_Mesh21006
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4874,7 +4904,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20960
+  m_Name: pb_Mesh20982
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5123,7 +5153,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7615
+    m_Bits: 3519
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -7902,7 +7932,7 @@ GameObject:
   - component: {fileID: 1109667465}
   - component: {fileID: 1109667464}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: GameCube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8581,7 +8611,7 @@ GameObject:
   - component: {fileID: 1322044774}
   - component: {fileID: 1322044773}
   m_Layer: 3
-  m_Name: Cube (1)
+  m_Name: GameCube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12047,7 +12077,7 @@ GameObject:
   - component: {fileID: 1564803186}
   - component: {fileID: 1564803185}
   m_Layer: 3
-  m_Name: Cube (2)
+  m_Name: GameCube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14650,7 +14680,7 @@ GameObject:
   - component: {fileID: 1717205279}
   - component: {fileID: 1717205278}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: GameCube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14824,7 +14854,7 @@ GameObject:
   - component: {fileID: 1729742214}
   - component: {fileID: 1729742218}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: GameCube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16907,7 +16937,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 8, y: 8, z: 8}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1929742216
 Transform:

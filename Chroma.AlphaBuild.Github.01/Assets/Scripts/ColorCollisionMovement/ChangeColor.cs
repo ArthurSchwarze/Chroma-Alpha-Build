@@ -15,7 +15,7 @@ public class ChangeColor : MonoBehaviour
 
 	public Material[] MaterialColour;
 
-	public List<Material> colourList = new List<Material>();
+	//public List<Material> colourList = new List<Material>();
 
 	public Material[] values = new Material[5];
 
@@ -24,7 +24,6 @@ public class ChangeColor : MonoBehaviour
 
 	private int ColourNumber = 0;
 
-
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -32,12 +31,12 @@ public class ChangeColor : MonoBehaviour
 
 		character = GameObject.Find("FirstPersonPlayer");
 
-		colourList.Add(MaterialWhite);
-		colourList.Add(MaterialRed);
-		colourList.Add(MaterialBlue);
-		colourList.Add(MaterialGreen);
-		colourList.Add(MaterialYellow);
-		colourList.Add(MaterialPurple);
+		//colourList.Add(MaterialWhite);
+		//colourList.Add(MaterialRed);
+		//colourList.Add(MaterialBlue);
+		//colourList.Add(MaterialGreen);
+		//colourList.Add(MaterialYellow);
+		//colourList.Add(MaterialPurple);
 	}
 
 	// Update is called once per frame
@@ -70,9 +69,13 @@ public class ChangeColor : MonoBehaviour
 
 	public void MoveColour(GameObject o)
 	{
+		if (o.GetComponent<MeshRenderer>().material.name == MaterialColour[ColourNumber].name + " (Instance)")
+		{
+			return;
+        }
+		
 		o.GetComponent<MeshRenderer>().material = MaterialColour[ColourNumber];
 		o.GetComponent<GravityGameObject>().ColorChangeGravity();
-
 
 		o.GetComponent<GravityGameObject>().gravityModifier = 1;
 		o.tag = "Untagged";

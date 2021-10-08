@@ -4,7 +4,7 @@ using System.Collections;
 public class PickAndDrop : MonoBehaviour
 {
 	GameObject mainCamera;
-	GameObject carriedObject;
+	public GameObject carriedObject;
 
 	[SerializeField] bool carrying;
 
@@ -73,12 +73,31 @@ public class PickAndDrop : MonoBehaviour
 		//o.GetComponent<Rigidbody>().velocity = Vector3.zero;
 		o.GetComponent<Rigidbody>().velocity = newMove * 6;
 
+		if (o.GetComponent<ConnectObjects>() != null)
+        {
+			ConnectObjects connect = o.GetComponent<ConnectObjects>();
+			if (connect.Placement == 1)
+            {
+				var connectedObject = connect.object2;
+				if (connectedObject != null)
+				{
+					connectedObject.GetComponent<Rigidbody>().velocity = newMove * 6;
+					connectedObject.GetComponent<GravityGameObject>().temporaryBreak = true;
+				}
+			}
+			if (connect.Placement == 2)
+            {
+				ConnectObjects connectedObject = connect.object1;
+				if (connectedObject != null)
+				{
+					connectedObject.GetComponent<Rigidbody>().velocity = newMove * 6;
+					connectedObject.GetComponent<GravityGameObject>().temporaryBreak = true;
+				}
+			}
+        }
 
 		//o.transform.position += newMove;
 		//o.transform.position = MoveBlock;
-
-
-
 
 		o.transform.rotation = Quaternion.identity;
 	}
@@ -128,6 +147,33 @@ public class PickAndDrop : MonoBehaviour
 		Rigidbody r = carriedObject.gameObject.GetComponent<Rigidbody>();
 		carriedObject.GetComponent<GravityGameObject>().temporaryBreak = false;
 		carriedObject.GetComponent<GravityGameObject>().ColorChangeGravity();
+
+		if (carriedObject.GetComponent<ConnectObjects>() != null)
+		{
+			ConnectObjects connect = carriedObject.GetComponent<ConnectObjects>();
+			if (connect.Placement == 1)
+			{
+				var connectedObject = connect.object2;
+				if (connectedObject != null)
+				{
+					connectedObject.GetComponent<GravityGameObject>().temporaryBreak = false;
+					Rigidbody connectedRigidbody = connectedObject.GetComponent<Rigidbody>();
+					connectedRigidbody.velocity = Vector3.zero;
+					connectedRigidbody.angularVelocity = Vector3.zero;
+				}
+			}
+			if (connect.Placement == 2)
+			{
+				ConnectObjects connectedObject = connect.object1;
+				if (connectedObject != null)
+				{
+					connectedObject.GetComponent<GravityGameObject>().temporaryBreak = false;
+					Rigidbody connectedRigidbody = connectedObject.GetComponent<Rigidbody>();
+					connectedRigidbody.velocity = Vector3.zero;
+					connectedRigidbody.angularVelocity = Vector3.zero;
+				}
+			}
+		}
 
 		//GetComponent<PlayerMovement>().StopX = 0;
 		//GetComponent<PlayerMovement>().StopZ = 0;
