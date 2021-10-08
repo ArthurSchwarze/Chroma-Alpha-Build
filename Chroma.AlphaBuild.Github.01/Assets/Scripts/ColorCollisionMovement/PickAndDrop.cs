@@ -111,7 +111,7 @@ public class PickAndDrop : MonoBehaviour
 
 			Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
 			RaycastHit hit;
-			if (Physics.Raycast(ray, out hit, 50f, ~ignoreLayer))
+			if (Physics.Raycast(ray, out hit, 20f, ~ignoreLayer))
 			{
 				Pickupable p = hit.collider.GetComponent<Pickupable>();
 				if (p != null)
