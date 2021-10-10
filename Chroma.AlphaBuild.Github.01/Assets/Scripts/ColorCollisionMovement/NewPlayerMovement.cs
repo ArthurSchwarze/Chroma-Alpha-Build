@@ -36,10 +36,13 @@ public class NewPlayerMovement : MonoBehaviour
 
     float lastGroundedTime;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -112,6 +115,26 @@ public class NewPlayerMovement : MonoBehaviour
 
             // apply the gravity to the velocity
             CharacterVelocity += Vector3.down * GravityDownForce * Time.deltaTime;
+        }
+
+        HandleAnimations();
+    }
+
+    private void HandleAnimations()
+    {
+        if (((!Input.GetButton("Horizontal")) && (!Input.GetButton("Vertical"))) || (CharacterVelocity == Vector3.zero))
+        {
+            anim.SetFloat("WalkSpeed", 0f, .2f, Time.deltaTime);
+        }
+
+        else if ((CharacterVelocity != Vector3.zero) && (groundSpeed <= 14f))
+        {
+            anim.SetFloat("WalkSpeed", .5f, .2f, Time.deltaTime);
+        }
+
+        else if ((CharacterVelocity != Vector3.zero) && (groundSpeed > 14f))
+        {
+            anim.SetFloat("WalkSpeed", 1f, .2f, Time.deltaTime);
         }
     }
 }
