@@ -122,7 +122,7 @@ public class NewPlayerMovement : MonoBehaviour
 
     private void HandleAnimations()
     {
-        if (((!Input.GetButton("Horizontal")) && (!Input.GetButton("Vertical"))) || (CharacterVelocity == Vector3.zero))
+        if (((!Input.GetButton("Horizontal")) && (!Input.GetButton("Vertical"))) || (CharacterVelocity == Vector3.zero) || (!controller.isGrounded))
         {
             anim.SetFloat("WalkSpeed", 0f, .2f, Time.deltaTime);
         }

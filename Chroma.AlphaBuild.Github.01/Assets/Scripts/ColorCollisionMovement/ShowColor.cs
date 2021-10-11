@@ -15,12 +15,12 @@ public class ShowColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        colourList.Add(Color.green);
-        colourList.Add(Color.blue);
-        colourList.Add(Color.yellow);
-        colourList.Add(Color.red);
-        colourList.Add(Color.magenta);
-        colourList.Add(Color.white);
+        colourList.Add(new Color32(69, 178, 51, 255));
+        colourList.Add(new Color32(70, 51, 178, 255));
+        colourList.Add(new Color32(243, 237, 63, 255));
+        colourList.Add(new Color32(204, 20, 20, 255));
+        colourList.Add(new Color32(255, 0, 213, 255));
+        colourList.Add(new Color32(255, 255, 255, 255));
 
         GetComponent<Image>().color = colourList[ColourNumber];
 
