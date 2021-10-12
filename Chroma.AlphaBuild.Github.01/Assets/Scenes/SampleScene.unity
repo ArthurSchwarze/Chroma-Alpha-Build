@@ -1775,7 +1775,7 @@ GameObject:
   - component: {fileID: 271146973}
   - component: {fileID: 271146974}
   - component: {fileID: 271146975}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirstPersonPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,6 +1854,7 @@ MonoBehaviour:
   ignoreLayer:
     serializedVersion: 2
     m_Bits: 12997
+  electroMagnet: {fileID: 805338740}
 --- !u!114 &271146974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2911,6 +2912,63 @@ Transform:
   m_Father: {fileID: 754599367}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &428703790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1812849645}
+    m_Modifications:
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.03316729
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.68718344
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.72556555
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.015285486
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 3.886
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -178.442
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028091044600043727, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -86.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 9034212810805023083, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+      propertyPath: m_Name
+      value: ElectroMagnet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a10713888de897e47b8682a13ca564e4, type: 3}
 --- !u!1 &435201469
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,6 +5147,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &805338740 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9194705912925192199, guid: a10713888de897e47b8682a13ca564e4, type: 3}
+  m_PrefabInstance: {fileID: 428703790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -13924,6 +13987,10 @@ PrefabInstance:
     - target: {fileID: 4633751704683270489, guid: 4352e1fdb00eef544900c737c4404f8b, type: 3}
       propertyPath: lengthInSec
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633751704683270489, guid: 4352e1fdb00eef544900c737c4404f8b, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4633751704683270489, guid: 4352e1fdb00eef544900c737c4404f8b, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].cycleCount

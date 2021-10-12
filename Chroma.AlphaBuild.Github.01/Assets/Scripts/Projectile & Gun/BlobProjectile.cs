@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlobProjectile : MonoBehaviour
 {
     public LayerMask groundMask;
-    public LayerMask objectMask;
+    //public LayerMask objectMask;
 
     public GameObject collisionSplashVFX;
     public GameObject sprinkleVFX;
@@ -20,7 +20,7 @@ public class BlobProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        groundMask = LayerMask.GetMask("Ground", "1Connect", "2Connect");
+        groundMask = LayerMask.GetMask("Ground", "Object", "1Connect", "2Connect");
 
         bulletVelocity = this.transform.forward * speed;
 

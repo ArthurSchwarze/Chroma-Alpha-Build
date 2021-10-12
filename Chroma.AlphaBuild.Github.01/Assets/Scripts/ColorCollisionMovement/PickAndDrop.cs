@@ -21,9 +21,13 @@ public class PickAndDrop : MonoBehaviour
 
 	public LayerMask ignoreLayer;
 
+	public ParticleSystem electroMagnet;
+
 	// Use this for initialization
 	void Start()
 	{
+		electroMagnet.Stop();
+
 		mainCamera = GameObject.FindWithTag("MainCamera");
 		character = GameObject.Find("FirstPersonPlayer");
 	}
@@ -116,6 +120,8 @@ public class PickAndDrop : MonoBehaviour
 				Pickupable p = hit.collider.GetComponent<Pickupable>();
 				if (p != null)
 				{
+					electroMagnet.Play();
+
 					carriedObject = p.gameObject;
 					carriedObject.GetComponent<GravityGameObject>().temporaryBreak = true;
 					carrying = true;
@@ -136,6 +142,8 @@ public class PickAndDrop : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.E))
 		{
+			electroMagnet.Stop();
+
 			dropObject();
 		}
 	}

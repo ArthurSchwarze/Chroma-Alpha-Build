@@ -22,7 +22,7 @@ public class ChangeColor : MonoBehaviour
 	private GameObject character;
 	private GameObject colouredObject;
 
-	private int ColourNumber = 0;
+	private int ColourNumber = 5;
 
 	// Start is called before the first frame update
 	void Start()
