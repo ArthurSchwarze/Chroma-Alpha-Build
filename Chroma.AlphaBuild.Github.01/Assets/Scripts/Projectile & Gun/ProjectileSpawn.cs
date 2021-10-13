@@ -15,6 +15,9 @@ public class ProjectileSpawn : MonoBehaviour
 
     private Animator anim;
     private Animator anim2;
+    private AudioSource reloadSource;
+    public AudioClip[] reloadSFXs;
+    private AudioClip reloadClip;
 
     private void Start()
     {
@@ -22,6 +25,7 @@ public class ProjectileSpawn : MonoBehaviour
         anim = arms.GetComponent<Animator>();
         GameObject gun = GameObject.Find("PaintGun");
         anim2 = gun.GetComponent<Animator>();
+        reloadSource = gun.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +40,7 @@ public class ProjectileSpawn : MonoBehaviour
         {
             if (number != 0)
             {
+                playReloadSound();
                 anim.CrossFadeInFixedTime("Arms Reload", .01f);
                 anim2.CrossFadeInFixedTime("Switch Reload", .01f);
             }
@@ -46,6 +51,7 @@ public class ProjectileSpawn : MonoBehaviour
         {
             if (number != 1)
             {
+                playReloadSound();
                 anim.CrossFadeInFixedTime("Arms Reload", .01f);
                 anim2.CrossFadeInFixedTime("Switch Reload", .01f);
             }
@@ -56,6 +62,7 @@ public class ProjectileSpawn : MonoBehaviour
         {
             if (number != 2)
             {
+                playReloadSound();
                 anim.CrossFadeInFixedTime("Arms Reload", .01f);
                 anim2.CrossFadeInFixedTime("Switch Reload", .01f);
             }
@@ -66,6 +73,7 @@ public class ProjectileSpawn : MonoBehaviour
         {
             if (number != 3)
             {
+                playReloadSound();
                 anim.CrossFadeInFixedTime("Arms Reload", .01f);
                 anim2.CrossFadeInFixedTime("Switch Reload", .01f);
             }
@@ -76,6 +84,7 @@ public class ProjectileSpawn : MonoBehaviour
         {
             if (number != 5)
             {
+                playReloadSound();
                 anim.CrossFadeInFixedTime("Arms Reload", .01f);
                 anim2.CrossFadeInFixedTime("Switch Reload", .01f);
             }
@@ -86,6 +95,7 @@ public class ProjectileSpawn : MonoBehaviour
         {
             if (number != 4)
             {
+                playReloadSound();
                 anim.CrossFadeInFixedTime("Arms Reload", .01f);
                 anim2.CrossFadeInFixedTime("Switch Reload", .01f);
             }
@@ -137,5 +147,13 @@ public class ProjectileSpawn : MonoBehaviour
         {
             anim2.SetBool("Action2", false);
         }
+    }
+
+    private void playReloadSound()
+    {
+        int index = Random.Range(0, reloadSFXs.Length);
+        reloadClip = reloadSFXs[index];
+        reloadSource.clip = reloadClip;
+        reloadSource.Play();
     }
 }
