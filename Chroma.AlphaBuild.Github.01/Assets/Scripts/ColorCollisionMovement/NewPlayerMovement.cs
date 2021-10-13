@@ -33,6 +33,10 @@ public class NewPlayerMovement : MonoBehaviour
     public bool canJump;
     [HideInInspector]
     public bool canBounce;
+    [HideInInspector]
+    public bool walks;
+    [HideInInspector]
+    public bool runs;
 
     float lastGroundedTime;
 
@@ -124,16 +128,20 @@ public class NewPlayerMovement : MonoBehaviour
     {
         if (((!Input.GetButton("Horizontal")) && (!Input.GetButton("Vertical"))) || (CharacterVelocity == Vector3.zero) || (!controller.isGrounded))
         {
+            walks = false;
+            runs = false;
             anim.SetFloat("WalkSpeed", 0f, .2f, Time.deltaTime);
         }
 
         else if ((CharacterVelocity != Vector3.zero) && (groundSpeed <= 14f))
         {
+            walks = true;
             anim.SetFloat("WalkSpeed", .5f, .2f, Time.deltaTime);
         }
 
         else if ((CharacterVelocity != Vector3.zero) && (groundSpeed > 14f))
         {
+            runs = true;
             anim.SetFloat("WalkSpeed", 1f, .2f, Time.deltaTime);
         }
     }

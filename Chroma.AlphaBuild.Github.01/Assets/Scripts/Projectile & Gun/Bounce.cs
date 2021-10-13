@@ -6,6 +6,15 @@ public class Bounce : MonoBehaviour
 {
     private float magnitude;
 
+    private AudioSource bounceSource;
+    public AudioClip[] bounceSFXs;
+    private AudioClip bounceClip;
+
+    private void Start()
+    {
+        bounceSource = this.GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
@@ -84,5 +93,18 @@ public class Bounce : MonoBehaviour
         NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
 
         bounceTrigger.canBounce = false;
+
+        if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom") || (other.gameObject.tag == "Body"))
+        {
+            playBounceSound();
+        }
+    }
+
+    private void playBounceSound()
+    {
+        int index = Random.Range(0, bounceSFXs.Length);
+        bounceClip = bounceSFXs[index];
+        bounceSource.clip = bounceClip;
+        bounceSource.Play();
     }
 }

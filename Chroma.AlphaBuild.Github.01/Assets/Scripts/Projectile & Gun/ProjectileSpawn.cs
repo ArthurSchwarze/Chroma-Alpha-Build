@@ -18,6 +18,9 @@ public class ProjectileSpawn : MonoBehaviour
     private AudioSource reloadSource;
     public AudioClip[] reloadSFXs;
     private AudioClip reloadClip;
+    private AudioSource shootSource;
+    public AudioClip[] shootSFXs;
+    private AudioClip shootClip;
 
     private void Start()
     {
@@ -26,6 +29,8 @@ public class ProjectileSpawn : MonoBehaviour
         GameObject gun = GameObject.Find("PaintGun");
         anim2 = gun.GetComponent<Animator>();
         reloadSource = gun.GetComponent<AudioSource>();
+        GameObject splatter = GameObject.Find("GunSplatter");
+        shootSource = splatter.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -108,6 +113,8 @@ public class ProjectileSpawn : MonoBehaviour
             Instantiate(blobProjectiles[number], transform.position, transform.rotation);
             Instantiate(ghostProjectile, transform.position, transform.rotation);
 
+            playShootSound();
+
             anim.CrossFadeInFixedTime("Arms Shoot", .01f);
             anim2.CrossFadeInFixedTime("Barrel Recoil", .01f);
         }
@@ -155,5 +162,13 @@ public class ProjectileSpawn : MonoBehaviour
         reloadClip = reloadSFXs[index];
         reloadSource.clip = reloadClip;
         reloadSource.Play();
+    }
+
+    private void playShootSound()
+    {
+        int index = Random.Range(0, shootSFXs.Length);
+        shootClip = shootSFXs[index];
+        shootSource.clip = shootClip;
+        shootSource.Play();
     }
 }

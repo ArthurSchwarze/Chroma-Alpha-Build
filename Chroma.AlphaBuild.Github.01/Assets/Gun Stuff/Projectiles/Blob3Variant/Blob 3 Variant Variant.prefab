@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 843167786496981940, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3182931289649275808, guid: 990e3c4aae65a9c4c94ad9600984156f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
