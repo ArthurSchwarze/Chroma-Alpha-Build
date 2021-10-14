@@ -9,6 +9,7 @@ TagManager:
   - Bottom
   - ignoreCollision
   - Object
+  - PGBody
   layers:
   - Default
   - TransparentFX
@@ -24,8 +25,8 @@ TagManager:
   - 2Connect
   - ConnectCollision1
   - ConnectCollision2
-  - 
-  - 
+  - Equip
+  - Unequip
   - 
   - 
   - 

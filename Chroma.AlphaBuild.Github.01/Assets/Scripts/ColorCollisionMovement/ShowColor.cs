@@ -12,6 +12,8 @@ public class ShowColor : MonoBehaviour
 
     private Animator anim;
 
+    private EquipWeapon doesAction;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,9 @@ public class ShowColor : MonoBehaviour
 
         GameObject arms = GameObject.Find("Arms");
         anim = arms.GetComponent<Animator>();
+
+        GameObject FP = GameObject.Find("FirstPersonPlayer");
+        doesAction = FP.GetComponent<EquipWeapon>();
     }
 
     // Update is called once per frame
@@ -36,9 +41,12 @@ public class ShowColor : MonoBehaviour
 
         ColourNumber = GetPressedNumber();
 
-        if (ColourNumber != -1 && ColourNumber < 6 && !isReloading.IsName("Arms Reload"))
+        if (doesAction.action == false)
         {
-            GetComponent<Image>().color = colourList[ColourNumber];
+            if (ColourNumber != -1 && ColourNumber < 6 && !isReloading.IsName("Arms Reload"))
+            {
+                GetComponent<Image>().color = colourList[ColourNumber];
+            }
         }
     }
 

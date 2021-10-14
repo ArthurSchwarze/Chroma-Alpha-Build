@@ -14,12 +14,17 @@ public class PaintGunVisual : MonoBehaviour
 
     private Animator anim;
 
+    private EquipWeapon doesAction;
+
     // Start is called before the first frame update
     void Start()
     {
         gunSplatterMaterial.color = new Color32(255, 255, 255, 255);
         GameObject arms = GameObject.Find("Arms");
         anim = arms.GetComponent<Animator>();
+
+        GameObject FP = GameObject.Find("FirstPersonPlayer");
+        doesAction = FP.GetComponent<EquipWeapon>();
     }
 
     // Update is called once per frame
@@ -27,45 +32,48 @@ public class PaintGunVisual : MonoBehaviour
     {
         AnimatorStateInfo isReloading = anim.GetCurrentAnimatorStateInfo(0);
 
-        if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
+        if (doesAction.action == false)
         {
-            Invoke("changeC1", .62f);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
+            {
+                Invoke("changeC1", .62f);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload"))
-        {
-            Invoke("changeC2", .62f);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload"))
+            {
+                Invoke("changeC2", .62f);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload"))
-        {
-            Invoke("changeC3", .62f);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload"))
+            {
+                Invoke("changeC3", .62f);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload"))
-        {
-            Invoke("changeC4", .62f);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload"))
+            {
+                Invoke("changeC4", .62f);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload"))
-        {
-            Invoke("changeC5", .62f);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload"))
+            {
+                Invoke("changeC5", .62f);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload"))
-        {
-            Invoke("changeC6", .62f);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload"))
+            {
+                Invoke("changeC6", .62f);
+            }
 
-        if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && !isReloading.IsName("Arms Reload"))
-        {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            gunSplatterVFX.Play();
-        }
+            if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && !isReloading.IsName("Arms Reload"))
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                gunSplatterVFX.Play();
+            }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            gunSplatterVFX.Stop();
+            if (Input.GetMouseButtonUp(0))
+            {
+                gunSplatterVFX.Stop();
+            }
         }
     }
 

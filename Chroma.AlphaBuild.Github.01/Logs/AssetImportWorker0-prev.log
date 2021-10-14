@@ -15,11 +15,11 @@ C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62135
+56219
 Successfully changed project path to: C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
 C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 72.55 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 80.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,161 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001885 seconds.
+Registered in 0.002270 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.43 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 76.75 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.022 seconds
+- Completed reload, in  1.261 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001583 seconds.
+Registered in 0.001656 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 113.19 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.368 seconds
+- Completed reload, in  1.728 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3771 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 187.8 MB.
 System memory in use after: 188.0 MB.
 
 Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4208.
-Total: 3.702800 ms (FindLiveObjects: 0.594300 ms CreateObjectMapping: 0.344100 ms MarkObjects: 2.561600 ms  DeleteObjects: 0.201100 ms)
+Total: 4.459700 ms (FindLiveObjects: 0.881200 ms CreateObjectMapping: 0.430200 ms MarkObjects: 2.793100 ms  DeleteObjects: 0.353900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/SFX/reload_sound.wav
-  artifactKey: Guid(7194cb7ca04063d4f96b39746348b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SFX/reload_sound.wav using Guid(7194cb7ca04063d4f96b39746348b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eaeb8c88e37be56d0efc5a74fd27be3') in 0.101791 seconds
-  Import took 0.107281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.782455 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/NewPlayerMovement.cs
-  artifactKey: Guid(8fc6ea2f40cf38f479204c1d2ee72884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/NewPlayerMovement.cs using Guid(8fc6ea2f40cf38f479204c1d2ee72884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66676586cfc11f40dffac29fff1682e3') in 0.016054 seconds
-  Import took 0.022489 seconds .
+  path: Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs
+  artifactKey: Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs using Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16633448d035750d3f54d1f90245221') in 0.036548 seconds
+  Import took 0.048621 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001664 seconds.
+Registered in 0.001426 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.165 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.0 MB.
-System memory in use after: 171.2 MB.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4220.
-Total: 2.689100 ms (FindLiveObjects: 0.334500 ms CreateObjectMapping: 0.190300 ms MarkObjects: 2.105300 ms  DeleteObjects: 0.058000 ms)
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.231 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.6 MB.
+System memory in use after: 170.8 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4211.
+Total: 2.967900 ms (FindLiveObjects: 0.413900 ms CreateObjectMapping: 0.266900 ms MarkObjects: 2.210700 ms  DeleteObjects: 0.075400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 658.109512 seconds.
+  path: Assets/SFX/bouncy_sound.wav
+  artifactKey: Guid(368f7195ca591f64ca356a9dbf146c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/bouncy_sound.wav using Guid(368f7195ca591f64ca356a9dbf146c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662ee789f343e620870eb3f360e28da2') in 0.102248 seconds
+  Import took 0.110796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000552 seconds.
+  path: Assets/SFX/splatimp_sound2.wav
+  artifactKey: Guid(d1a4d0477123d964f840e1acce295038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/splatimp_sound2.wav using Guid(d1a4d0477123d964f840e1acce295038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3943bd5c203128b828dcc5273f95b5c4') in 0.017273 seconds
+  Import took 0.024106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/SFX/shoot_sound2.wav
+  artifactKey: Guid(0822d897a06fa93478d5e848f5dc4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/shoot_sound2.wav using Guid(0822d897a06fa93478d5e848f5dc4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e0531725738b33c103f79540edad04') in 0.026010 seconds
+  Import took 0.034497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/SFX/splatimp_sound3.wav
+  artifactKey: Guid(9ee45fc185c73844d8efb7a449b83646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/splatimp_sound3.wav using Guid(9ee45fc185c73844d8efb7a449b83646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e821fae2421cbb9858868adf5b26186') in 0.031816 seconds
+  Import took 0.038562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/SFX/bouncy_sound3.wav
+  artifactKey: Guid(fa85a35f0066cbd4695505083383b557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/bouncy_sound3.wav using Guid(fa85a35f0066cbd4695505083383b557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c99f0acaee585917fd26cc8011d1c37') in 0.017166 seconds
+  Import took 0.023558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/SFX/splatimp_sound.wav
+  artifactKey: Guid(7bb4d4175937f4343b829d6f30dad52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/splatimp_sound.wav using Guid(7bb4d4175937f4343b829d6f30dad52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01615c9167421e446e5bca8d11b9cfed') in 0.021341 seconds
+  Import took 0.027537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/SFX/shoot_sound4.wav
+  artifactKey: Guid(9d25cde7e1eadd84889105f24a15f7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/shoot_sound4.wav using Guid(9d25cde7e1eadd84889105f24a15f7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5239072849deeaa495d7fd44d0e9bb67') in 0.015736 seconds
+  Import took 0.022516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/SFX/shoot_sound.wav
+  artifactKey: Guid(6c22704ec306a4249bd8e57e26cc80ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/shoot_sound.wav using Guid(6c22704ec306a4249bd8e57e26cc80ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7dd61b54495d3de5e2c1bf49c1337f7') in 0.012578 seconds
+  Import took 0.018954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/SFX/bouncy_sound2.wav
+  artifactKey: Guid(1cd9f1992ec109348807af4f095e4547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/bouncy_sound2.wav using Guid(1cd9f1992ec109348807af4f095e4547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20d45fff84e58ae1cd56878ca5117f5') in 0.014136 seconds
+  Import took 0.019966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/SFX/shoot_sound3.wav
+  artifactKey: Guid(fa4a33cc7a7b8bf4384d5d1f1fd6e2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/shoot_sound3.wav using Guid(fa4a33cc7a7b8bf4384d5d1f1fd6e2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3527b7b17b85323b7b1a7933479142c5') in 0.013486 seconds
+  Import took 0.019107 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001969 seconds.
+Registered in 0.001917 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -129,24 +201,24 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.081 seconds
+- Completed reload, in  1.085 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 171.0 MB.
 System memory in use after: 171.2 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4223.
-Total: 3.546800 ms (FindLiveObjects: 0.613900 ms CreateObjectMapping: 0.332800 ms MarkObjects: 2.535500 ms  DeleteObjects: 0.063100 ms)
+Total: 2.766500 ms (FindLiveObjects: 0.344700 ms CreateObjectMapping: 0.217000 ms MarkObjects: 2.151200 ms  DeleteObjects: 0.052900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001523 seconds.
+Registered in 0.001626 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -158,24 +230,179 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.141 seconds
+- Completed reload, in  1.330 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 171.1 MB.
 System memory in use after: 171.3 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4226.
-Total: 3.089400 ms (FindLiveObjects: 0.387600 ms CreateObjectMapping: 0.244700 ms MarkObjects: 2.396700 ms  DeleteObjects: 0.059400 ms)
+Total: 2.814500 ms (FindLiveObjects: 0.333600 ms CreateObjectMapping: 0.217800 ms MarkObjects: 2.205600 ms  DeleteObjects: 0.056300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 307.518377 seconds.
+  path: Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset
+  artifactKey: Guid(efb50331f6a4acc4db50f85af6ed2532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset using Guid(efb50331f6a4acc4db50f85af6ed2532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45232ca97c312e7fc1aefe495aed821a') in 0.022392 seconds
+  Import took 0.028450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.876952 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob
+  artifactKey: Guid(7e353fbe059f8cf4c999e9e395661abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob using Guid(7e353fbe059f8cf4c999e9e395661abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f317737a85ffcc1ec7172acdd2f4b6') in 0.009481 seconds
+  Import took 0.017271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059457 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+ -> (artifact id: 'e3e917132985f384bef011d306490d16') in 1.052187 seconds
+  Import took 1.060099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02907e0466699e01833b28219506cd10') in 0.008639 seconds
+  Import took 0.014487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Sprinkle.prefab
+  artifactKey: Guid(105d4588d0a951943958bcfb54eb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Sprinkle.prefab using Guid(105d4588d0a951943958bcfb54eb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd47f3bf0cd10bc6576bfca00950aaff') in 0.010243 seconds
+  Import took 0.016741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main CollisionSplash.prefab
+  artifactKey: Guid(7a428a8109e49fb4396b0ed453b1e1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main CollisionSplash.prefab using Guid(7a428a8109e49fb4396b0ed453b1e1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7302de870d04850f949db060d627f46') in 0.009201 seconds
+  Import took 0.015689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.033722 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3e13a8c9a40768ccaed7a14aa6e288') in 0.031488 seconds
+  Import took 0.038441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.712188 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484d49b4a0c2c34fa375eb3e35d3a28c') in 0.045975 seconds
+  Import took 0.053333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.454944 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c92fbecfffcb551dd4c3fc13e5c92db') in 0.063361 seconds
+  Import took 0.070292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.460507 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3282e764c3131b05c02329192f516137') in 0.031585 seconds
+  Import took 0.038816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.007995 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab
+  artifactKey: Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab using Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3620c21f4544200c2030832c24eadcdf') in 0.039854 seconds
+  Import took 0.046834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.090675 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab
+  artifactKey: Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab using Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8472e2a8a9f497c7f2e1e3fce5c1573') in 0.030904 seconds
+  Import took 0.038402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 148.903549 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9a5196bccfbf0cabbe3770b56caf1c') in 0.028753 seconds
+  Import took 0.036786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9a5196bccfbf0cabbe3770b56caf1c') in 0.028149 seconds
+  Import took 0.035521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.738977 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3591404b3e4fdc6023a4ba2497f16bac') in 0.034945 seconds
+  Import took 0.041599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Collision3Splash Variant Variant.prefab
+  artifactKey: Guid(d1df5b345cfbc1a4bb321978ddeb2113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Collision3Splash Variant Variant.prefab using Guid(d1df5b345cfbc1a4bb321978ddeb2113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beebd480d3f24f0a9007b4945d27cfe9') in 0.009918 seconds
+  Import took 0.015992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Sprinkle 3 Variant Variant.prefab
+  artifactKey: Guid(6016fa5393a1d5649b35eb90939a24a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Sprinkle 3 Variant Variant.prefab using Guid(6016fa5393a1d5649b35eb90939a24a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884c403344418276c7b2ae412a1a57fb') in 0.009954 seconds
+  Import took 0.016782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Splatter 3 Decal Variant.prefab
+  artifactKey: Guid(30c7c00afe60c7b4382fdccbe7638e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Splatter 3 Decal Variant.prefab using Guid(30c7c00afe60c7b4382fdccbe7638e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a9c5a19162cdc8fb4a966c5beca6c6') in 0.010646 seconds
+  Import took 0.017819 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001490 seconds.
+Registered in 0.001844 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -187,37 +414,109 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.169 seconds
+- Completed reload, in  1.180 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.1 MB.
-System memory in use after: 171.3 MB.
+Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.2 MB.
+System memory in use after: 179.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4229.
-Total: 3.630400 ms (FindLiveObjects: 0.589400 ms CreateObjectMapping: 0.275400 ms MarkObjects: 2.698600 ms  DeleteObjects: 0.066100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1818.758940 seconds.
-  path: Assets/SFX/reload_sound2.wav
-  artifactKey: Guid(c0701b7a2f3cead439cd40a4776270b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SFX/reload_sound2.wav using Guid(c0701b7a2f3cead439cd40a4776270b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084141f49acd884f36765a624945be8c') in 0.061202 seconds
-  Import took 0.068552 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4360.
+Total: 3.503300 ms (FindLiveObjects: 0.433300 ms CreateObjectMapping: 0.266400 ms MarkObjects: 2.531600 ms  DeleteObjects: 0.271000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.481830 seconds.
-  path: Assets/SFX/reload_sound3.wav
-  artifactKey: Guid(fc81940c84ebbf444a8a0fc930a9be4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SFX/reload_sound3.wav using Guid(fc81940c84ebbf444a8a0fc930a9be4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e22468daaf63aadbf0247cca9910c2') in 0.013864 seconds
-  Import took 0.020057 seconds .
+  Time since last request: 180.449604 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f46a04ec2aaa385d07644078722f50') in 0.614017 seconds
+  Import took 0.621528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97209328b92ed81e3d6564db0bdfce9') in 0.029206 seconds
+  Import took 0.036833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.461993 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1c3c819e2f70a841b002d6a9fa03b9') in 0.062757 seconds
+  Import took 0.069226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.722180 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02514ead283a678f0e252bc6236ffacd') in 0.063742 seconds
+  Import took 0.070408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.138618 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708bfc34b6e0345d77892f288cf62a64') in 0.067792 seconds
+  Import took 0.074332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.817334 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebeee4088f697501bbce7048a51fa2eb') in 0.030776 seconds
+  Import took 0.038384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005091 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebeee4088f697501bbce7048a51fa2eb') in 0.029714 seconds
+  Import took 0.037619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.853260 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869437b762777df71d153e25eb00d01a') in 0.065039 seconds
+  Import took 0.072853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003318 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869437b762777df71d153e25eb00d01a') in 0.034837 seconds
+  Import took 0.042736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.990633 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1813417690088d8548741acda3570d7') in 0.051337 seconds
+  Import took 0.059841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.360333 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5e7c39eb7de0ba7179ff7342a38ece') in 0.030039 seconds
+  Import took 0.037268 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001677 seconds.
+Registered in 0.001463 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
@@ -232,32 +531,1016 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.068 seconds
+- Completed reload, in  1.131 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.1 MB.
-System memory in use after: 171.3 MB.
+System memory in use before: 179.0 MB.
+System memory in use after: 179.2 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4233.
-Total: 2.829200 ms (FindLiveObjects: 0.383000 ms CreateObjectMapping: 0.229400 ms MarkObjects: 2.158200 ms  DeleteObjects: 0.057700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 482.536881 seconds.
-  path: Assets/SFX/reload_sound2.wav
-  artifactKey: Guid(c0701b7a2f3cead439cd40a4776270b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SFX/reload_sound2.wav using Guid(c0701b7a2f3cead439cd40a4776270b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8274236503d4633f6536c3ebcc35a5e') in 0.048270 seconds
-  Import took 0.058223 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4464.
+Total: 3.187400 ms (FindLiveObjects: 0.375100 ms CreateObjectMapping: 0.209200 ms MarkObjects: 2.539800 ms  DeleteObjects: 0.062400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001654 seconds.
+Registered in 0.001778 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.204 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.0 MB.
+System memory in use after: 179.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4467.
+Total: 3.855500 ms (FindLiveObjects: 0.411400 ms CreateObjectMapping: 0.251800 ms MarkObjects: 3.117500 ms  DeleteObjects: 0.073100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 187.210348 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b9a8303c15ebb7e2db9a05180326cc') in 0.714733 seconds
+  Import took 0.722350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.365277 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b9a8303c15ebb7e2db9a05180326cc') in 0.033174 seconds
+  Import took 0.040634 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001613 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.139 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.4 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4570.
+Total: 3.743000 ms (FindLiveObjects: 0.612700 ms CreateObjectMapping: 0.271300 ms MarkObjects: 2.773000 ms  DeleteObjects: 0.084700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001558 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.182 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.4 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4573.
+Total: 3.194300 ms (FindLiveObjects: 0.370000 ms CreateObjectMapping: 0.210700 ms MarkObjects: 2.544000 ms  DeleteObjects: 0.068700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 513.083566 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab
+  artifactKey: Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab using Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8c97f6e68207f5ff39426287687d3c') in 0.719691 seconds
+  Import took 0.727663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Sprinkle 2 Variant Variant.prefab
+  artifactKey: Guid(2e863096f0100ea49a1970c694b3a533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Sprinkle 2 Variant Variant.prefab using Guid(2e863096f0100ea49a1970c694b3a533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec31f29d1e75888b4c9d5c573e5b9439') in 0.010392 seconds
+  Import took 0.016661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Splatter 2 Decal Variant.prefab
+  artifactKey: Guid(acd653a33e45d3147842e60c7e7657d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Splatter 2 Decal Variant.prefab using Guid(acd653a33e45d3147842e60c7e7657d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45df763bd89a9feb7785232c96516ad7') in 0.010299 seconds
+  Import took 0.017392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Collision2Splash Variant Variant.prefab
+  artifactKey: Guid(a73c40a01bdf21545ba60f90e533e600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Collision2Splash Variant Variant.prefab using Guid(a73c40a01bdf21545ba60f90e533e600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9451f341b942f804df1089211f486f18') in 0.009345 seconds
+  Import took 0.017316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.609496 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e08f4614c822f28145d3e4c9baee13') in 0.041046 seconds
+  Import took 0.048934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.385811 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab
+  artifactKey: Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab using Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdaa511ca82a60e86ba4cb1fc15b0daf') in 0.030339 seconds
+  Import took 0.037186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.327066 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab
+  artifactKey: Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab using Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc9c669a61b724364d697d41a2994d5') in 0.028433 seconds
+  Import took 0.035131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.281507 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Blob 4 Variant Variant.prefab
+  artifactKey: Guid(81853c65e8a46b04ab286d3581a84d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Blob 4 Variant Variant.prefab using Guid(81853c65e8a46b04ab286d3581a84d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ba416f0f8cd16acb92cb366887c780') in 0.033014 seconds
+  Import took 0.039515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Sprinkle 4 Variant Variant.prefab
+  artifactKey: Guid(4b6a316dc9489044d9c43e2b14ccb524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Sprinkle 4 Variant Variant.prefab using Guid(4b6a316dc9489044d9c43e2b14ccb524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba89c4e1831bb541325c8222c340d1b') in 0.010460 seconds
+  Import took 0.016358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Collision4Splash Variant Variant.prefab
+  artifactKey: Guid(a77fa24cd29de244997b6e7a39adfbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Collision4Splash Variant Variant.prefab using Guid(a77fa24cd29de244997b6e7a39adfbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0bc243f32faf3802dac93e7b90b4b6') in 0.009677 seconds
+  Import took 0.015716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Splatter 4 Decal Variant.prefab
+  artifactKey: Guid(bda1ae1e6a5379549a6ee896d7a6f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Splatter 4 Decal Variant.prefab using Guid(bda1ae1e6a5379549a6ee896d7a6f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81eb4f83f35fe637a105706bf2160777') in 0.010444 seconds
+  Import took 0.017166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.982251 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '939e22f9ca3be837e77634b48e22bfd8') in 0.029857 seconds
+  Import took 0.037232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.857088 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab
+  artifactKey: Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab using Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4567fde39547956f0d6c50c80f20013') in 0.027797 seconds
+  Import took 0.034894 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.175 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.7 MB.
+System memory in use after: 179.9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4676.
+Total: 3.615000 ms (FindLiveObjects: 0.559000 ms CreateObjectMapping: 0.284700 ms MarkObjects: 2.699100 ms  DeleteObjects: 0.071100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.719803 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab
+  artifactKey: Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab using Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a7f898532b001bc4600991c45df3e7') in 0.730378 seconds
+  Import took 0.737732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.003804 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab
+  artifactKey: Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab using Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a7f898532b001bc4600991c45df3e7') in 0.033596 seconds
+  Import took 0.040190 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001663 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.167 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.0 MB.
+System memory in use after: 180.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4779.
+Total: 3.696700 ms (FindLiveObjects: 0.576000 ms CreateObjectMapping: 0.303600 ms MarkObjects: 2.749400 ms  DeleteObjects: 0.066900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.105505 seconds.
+  path: Assets/Scripts/Projectile & Gun
+  artifactKey: Guid(b1ec62685d3a40c4baf6506acb9ca7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun using Guid(b1ec62685d3a40c4baf6506acb9ca7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0fa9b43eaf63e0fe33040c91ccd5d7') in 0.013176 seconds
+  Import took 0.020355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.608473 seconds.
+  path: Assets/Scripts/Projectile & Gun/ImpDecalSFX.cs
+  artifactKey: Guid(e729450c2bdf5df49a7c9d8d23e21830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/ImpDecalSFX.cs using Guid(e729450c2bdf5df49a7c9d8d23e21830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf9f58371895f9f3ecc3ce4a2dc3b16') in 0.008288 seconds
+  Import took 0.015716 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002764 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.352 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.1 MB.
+System memory in use after: 180.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4783.
+Total: 3.596900 ms (FindLiveObjects: 0.526800 ms CreateObjectMapping: 0.242100 ms MarkObjects: 2.758600 ms  DeleteObjects: 0.068200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.1 MB.
+System memory in use after: 180.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4786.
+Total: 4.147000 ms (FindLiveObjects: 0.708200 ms CreateObjectMapping: 0.363100 ms MarkObjects: 3.004700 ms  DeleteObjects: 0.069700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.638451 seconds.
+  path: Assets/Scripts/Projectile & Gun/ImpDecalSFX.cs
+  artifactKey: Guid(e729450c2bdf5df49a7c9d8d23e21830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/ImpDecalSFX.cs using Guid(e729450c2bdf5df49a7c9d8d23e21830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1ea3425286dc0efa40288a89832c2f') in 0.006103 seconds
+  Import took 0.011962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4717454503f2d8c19afe432387dab520') in 0.575680 seconds
+  Import took 0.582348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.864099 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab
+  artifactKey: Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Main Blob Projectile.prefab using Guid(990e3c4aae65a9c4c94ad9600984156f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c326447c6b7db8039237434efe7f1b') in 0.032063 seconds
+  Import took 0.038429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.148077 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab
+  artifactKey: Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Blob 3 Variant Variant.prefab using Guid(27d94f202ecb1d74b90c979c3d674022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc944f27813765e6eded7af70631bd44') in 0.030394 seconds
+  Import took 0.037110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.826937 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Blob 4 Variant Variant.prefab
+  artifactKey: Guid(81853c65e8a46b04ab286d3581a84d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Blob 4 Variant Variant.prefab using Guid(81853c65e8a46b04ab286d3581a84d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d68c9a3db641275535b0cfceecc460') in 0.030263 seconds
+  Import took 0.037180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.620946 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d060690d449a34f68a47cd508bc9fb') in 0.004628 seconds
+  Import took 0.011543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.444350 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d40021adf471c70b3d83db3385a84f9') in 0.005121 seconds
+  Import took 0.011543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017883 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d40021adf471c70b3d83db3385a84f9') in 0.004630 seconds
+  Import took 0.011715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.169091 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32b87e9149d83c55f87abcfe62c6a49') in 0.005336 seconds
+  Import took 0.012281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021137 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32b87e9149d83c55f87abcfe62c6a49') in 0.004664 seconds
+  Import took 0.010521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.617908 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ad7a3f9cd9fe5d64921f373dcaa91c') in 0.005169 seconds
+  Import took 0.011169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027674 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ad7a3f9cd9fe5d64921f373dcaa91c') in 0.004543 seconds
+  Import took 0.011242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.575681 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6c72f43cf6b840657f305be8be718c') in 0.004964 seconds
+  Import took 0.011384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.925044 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10fc773feee0645aaade9670f16d653b') in 0.005025 seconds
+  Import took 0.011546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.066899 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4427c746e126c8058fb8ade354ad165') in 0.005422 seconds
+  Import took 0.012293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018560 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4427c746e126c8058fb8ade354ad165') in 0.004939 seconds
+  Import took 0.011571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.422761 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f870a771373c1a76daacb457c6d03a39') in 0.004972 seconds
+  Import took 0.011715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022199 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f870a771373c1a76daacb457c6d03a39') in 0.005078 seconds
+  Import took 0.011099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.862827 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea14c4455119cf9a5aad43314cdd8c57') in 0.005565 seconds
+  Import took 0.012418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024479 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea14c4455119cf9a5aad43314cdd8c57') in 0.005805 seconds
+  Import took 0.012213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.914826 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob4Variant/Splatter 4 Decal Variant.prefab
+  artifactKey: Guid(bda1ae1e6a5379549a6ee896d7a6f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob4Variant/Splatter 4 Decal Variant.prefab using Guid(bda1ae1e6a5379549a6ee896d7a6f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7404a2a4f4f39fbaf04bf493567ffadc') in 0.009883 seconds
+  Import took 0.016171 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001414 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.163 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.4 MB.
+System memory in use after: 180.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4889.
+Total: 3.540300 ms (FindLiveObjects: 0.407800 ms CreateObjectMapping: 0.202500 ms MarkObjects: 2.862400 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.078826 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a569114b16a51d91e221c683ecbfd73') in 0.022722 seconds
+  Import took 0.028825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.089463 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a569114b16a51d91e221c683ecbfd73') in 0.005396 seconds
+  Import took 0.011815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144878 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a688ce41b401b58bdd0512f09b0ee5f') in 0.005162 seconds
+  Import took 0.012014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.684116 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42979a87acef97da58b0fffc31afef33') in 0.005507 seconds
+  Import took 0.012208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.662216 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab
+  artifactKey: Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Blob 5 Variant Variant.prefab using Guid(85acbb715df4f3a4b93a371ea80a11d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ebea0c0ff3257738afed030c95c7edb') in 0.758019 seconds
+  Import took 0.765001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab
+  artifactKey: Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab using Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca30ce7de3e95177f95533b664083594') in 0.010892 seconds
+  Import took 0.016620 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001634 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.155 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.8 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4992.
+Total: 3.707700 ms (FindLiveObjects: 0.451200 ms CreateObjectMapping: 0.223000 ms MarkObjects: 2.960800 ms  DeleteObjects: 0.070600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.433975 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df494b12ff394102c159ebbdf54db97e') in 0.022575 seconds
+  Import took 0.028865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.957723 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050950b653ee104d67fe110f8879688e') in 0.005107 seconds
+  Import took 0.012256 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.179 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4995.
+Total: 4.096600 ms (FindLiveObjects: 0.473300 ms CreateObjectMapping: 0.245700 ms MarkObjects: 3.294700 ms  DeleteObjects: 0.081900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.951255 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab
+  artifactKey: Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab using Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55f9398e95c5bb5b884118c757a6489') in 0.022723 seconds
+  Import took 0.029055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c177550437f968873f6771431a38f0') in 0.005378 seconds
+  Import took 0.011323 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001751 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.199 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4998.
+Total: 4.655300 ms (FindLiveObjects: 0.560200 ms CreateObjectMapping: 0.318200 ms MarkObjects: 3.692200 ms  DeleteObjects: 0.083400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.157389 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4030fa89fd5742a594b821b212b675d9') in 0.024092 seconds
+  Import took 0.030803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.396279 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4030fa89fd5742a594b821b212b675d9') in 0.005228 seconds
+  Import took 0.012465 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001485 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.215 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5001.
+Total: 3.931100 ms (FindLiveObjects: 0.509600 ms CreateObjectMapping: 0.246400 ms MarkObjects: 3.098000 ms  DeleteObjects: 0.075500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.897134 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be942105d6d58cbe640601c18a7e6b0') in 0.026194 seconds
+  Import took 0.033022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.174821 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be942105d6d58cbe640601c18a7e6b0') in 0.005043 seconds
+  Import took 0.011193 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001600 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.199 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5004.
+Total: 3.808400 ms (FindLiveObjects: 0.549000 ms CreateObjectMapping: 0.271400 ms MarkObjects: 2.914900 ms  DeleteObjects: 0.072100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.386516 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f31debf8d7409308ff72c403b73dabd') in 0.024902 seconds
+  Import took 0.030937 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.214 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5007.
+Total: 3.449300 ms (FindLiveObjects: 0.402600 ms CreateObjectMapping: 0.188600 ms MarkObjects: 2.773800 ms  DeleteObjects: 0.083300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001577 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.199 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5010.
+Total: 3.761000 ms (FindLiveObjects: 0.620800 ms CreateObjectMapping: 0.299000 ms MarkObjects: 2.758600 ms  DeleteObjects: 0.081300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 464.555880 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8e05c55137190cd2340523f67bf2d3c') in 0.020352 seconds
+  Import took 0.026182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.021345 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09eb1b8368b24d5040371c0d732f45b') in 0.005668 seconds
+  Import took 0.012507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.013907 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bd3e411c10631aac218a5b8e029c58') in 0.005213 seconds
+  Import took 0.012340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.031257 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8956cc54836abb7515e48314016dcf82') in 0.005727 seconds
+  Import took 0.013156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.297236 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786240e8853a8298069ad1472289eb20') in 0.005980 seconds
+  Import took 0.013207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.670955 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33aaa0dd3692b3485383e707b5e933c') in 0.005483 seconds
+  Import took 0.012248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.826714 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18770bd1de92ed16c6583d4e310c56d0') in 0.006112 seconds
+  Import took 0.013642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023806 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18770bd1de92ed16c6583d4e310c56d0') in 0.005510 seconds
+  Import took 0.011557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.409563 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab
+  artifactKey: Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob5Variant/Splatter 5 Decal Variant.prefab using Guid(2489205812d282b41a4537e7f306f291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a85384857d26374f3b80bd0935ff82') in 0.006664 seconds
+  Import took 0.013361 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001601 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5013.
+Total: 3.996700 ms (FindLiveObjects: 0.524100 ms CreateObjectMapping: 0.324700 ms MarkObjects: 3.060500 ms  DeleteObjects: 0.086000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.423975 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707d20fccb44e3c057fd45a60dc75663') in 0.027732 seconds
+  Import took 0.034058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.613975 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707d20fccb44e3c057fd45a60dc75663') in 0.005352 seconds
+  Import took 0.011967 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001631 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -271,13 +1554,1101 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Mono: successfully reloaded assembly
 - Completed reload, in  1.212 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.9 MB.
+System memory in use after: 181.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5016.
+Total: 4.036500 ms (FindLiveObjects: 0.691000 ms CreateObjectMapping: 0.308900 ms MarkObjects: 2.959300 ms  DeleteObjects: 0.075900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.274178 seconds.
+  path: Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab
+  artifactKey: Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Main Blob/Splatter Main Decal.prefab using Guid(ab97560582a052b4fb3c6ec8d7cd9628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23fa46a4aa1be02629e381f0c179d3e') in 0.028690 seconds
+  Import took 0.034954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.245735 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob3Variant/Splatter 3 Decal Variant.prefab
+  artifactKey: Guid(30c7c00afe60c7b4382fdccbe7638e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob3Variant/Splatter 3 Decal Variant.prefab using Guid(30c7c00afe60c7b4382fdccbe7638e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58a149f9d0f6fdb54d4f425f81e8277') in 0.010432 seconds
+  Import took 0.016648 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002007 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.3 MB.
+System memory in use after: 181.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5019.
+Total: 4.231400 ms (FindLiveObjects: 0.699800 ms CreateObjectMapping: 0.335600 ms MarkObjects: 3.117200 ms  DeleteObjects: 0.077000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.220597 seconds.
+  path: Assets/SFX/Footsteps
+  artifactKey: Guid(9bf856520e6e4e642a24c6f938fb3909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps using Guid(9bf856520e6e4e642a24c6f938fb3909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c434c18224db7b74b82bda518ce76c20') in 0.013584 seconds
+  Import took 0.021373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 173.133346 seconds.
+  path: Assets/SFX/Footsteps/Concrete-01.wav
+  artifactKey: Guid(105ffe1f74b291d4388378c8552cbf83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-01.wav using Guid(105ffe1f74b291d4388378c8552cbf83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ee0daa11131bd0e78136179bfc3b553') in 0.041603 seconds
+  Import took 0.047897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/SFX/Footsteps/Concrete-07.wav
+  artifactKey: Guid(80b57f675d6e3394091e0ef8e8bd8da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-07.wav using Guid(80b57f675d6e3394091e0ef8e8bd8da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ae5ce5b7c10540a0d22adaddeafc05') in 0.014037 seconds
+  Import took 0.021035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/SFX/Footsteps/Concrete-11.wav
+  artifactKey: Guid(32cbb8d1738f4494083dbd6ea7194a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-11.wav using Guid(32cbb8d1738f4494083dbd6ea7194a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4db2b53cebf233363aa5e90c365947e') in 0.018358 seconds
+  Import took 0.025911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/SFX/Footsteps/Concrete-10.wav
+  artifactKey: Guid(6096efa98dd13f647bbf9ce9a8ec43f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-10.wav using Guid(6096efa98dd13f647bbf9ce9a8ec43f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4081741a3df880b5cbf2690c477777cd') in 0.018857 seconds
+  Import took 0.027400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/SFX/Footsteps/Concrete-03.wav
+  artifactKey: Guid(2618f92f680f23d4ba56d09135768f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-03.wav using Guid(2618f92f680f23d4ba56d09135768f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a098ed92691c7eeade46a153730c7ad5') in 0.020285 seconds
+  Import took 0.029646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/SFX/Footsteps/Concrete-04.wav
+  artifactKey: Guid(9eddf9c47eb008f41ad14ab5c84dae58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-04.wav using Guid(9eddf9c47eb008f41ad14ab5c84dae58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407ea225f3c806a9467cc6fc22304991') in 0.020286 seconds
+  Import took 0.027849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/SFX/Footsteps/Concrete-09.wav
+  artifactKey: Guid(59581c619b578fa49b1ee34ce5849d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-09.wav using Guid(59581c619b578fa49b1ee34ce5849d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad0d92a41bc75afbb957e0457660b36') in 0.018320 seconds
+  Import took 0.027754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/SFX/Footsteps/Concrete-06.wav
+  artifactKey: Guid(6360cefe1f102694ca6178822ae1a30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-06.wav using Guid(6360cefe1f102694ca6178822ae1a30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9b6a39e3c4938662fa8cf3ed2aaeb5') in 0.014877 seconds
+  Import took 0.024266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/SFX/Footsteps/Concrete-02.wav
+  artifactKey: Guid(8bda5b9ecf236a64697a094bd9b9f94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-02.wav using Guid(8bda5b9ecf236a64697a094bd9b9f94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e8b264cbb09a086d7c6b1f47c22849') in 0.016309 seconds
+  Import took 0.024510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/SFX/Footsteps/Concrete-08.wav
+  artifactKey: Guid(8e81104c8f68db74591340f2b7a5ea84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-08.wav using Guid(8e81104c8f68db74591340f2b7a5ea84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f94992d02086c8023b070d3c6a93e666') in 0.015320 seconds
+  Import took 0.022383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/SFX/Footsteps/Concrete-05.wav
+  artifactKey: Guid(80a752c9d0848d945854e6fa752ace18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Footsteps/Concrete-05.wav using Guid(80a752c9d0848d945854e6fa752ace18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cbb6ebe994a79e8a572f319c511eb2e') in 0.015114 seconds
+  Import took 0.022220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 311.243532 seconds.
+  path: Assets/Scripts/Player Scripts/FootstepSounds.cs
+  artifactKey: Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/FootstepSounds.cs using Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3961d482f3d2991b221168355c7688af') in 0.009313 seconds
+  Import took 0.019976 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.043759 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.466 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.4 MB.
+System memory in use after: 181.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5024.
+Total: 4.485400 ms (FindLiveObjects: 0.546000 ms CreateObjectMapping: 0.393200 ms MarkObjects: 3.459500 ms  DeleteObjects: 0.085200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001449 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.115 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.4 MB.
+System memory in use after: 181.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5027.
+Total: 3.576900 ms (FindLiveObjects: 0.441600 ms CreateObjectMapping: 0.219700 ms MarkObjects: 2.841300 ms  DeleteObjects: 0.072800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 264.526269 seconds.
+  path: Assets/Scripts/Player Scripts/FootstepSounds.cs
+  artifactKey: Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/FootstepSounds.cs using Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e58fcb61f40328b826a5984dc372969') in 0.005986 seconds
+  Import took 0.011712 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001818 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.166 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.4 MB.
+System memory in use after: 181.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5030.
+Total: 3.697200 ms (FindLiveObjects: 0.433800 ms CreateObjectMapping: 0.209800 ms MarkObjects: 2.974600 ms  DeleteObjects: 0.078000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 310.333224 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab
+  artifactKey: Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob2Variant/Blob 2 Variant Variant.prefab using Guid(aaae4a0b6de961e46b74a097bfe2fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4c650cebb4c4f0479b553c5545318b') in 0.670083 seconds
+  Import took 0.678072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab
+  artifactKey: Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab using Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d9c82f834fd6df53a48ff368920b87') in 0.039617 seconds
+  Import took 0.049219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002893 seconds.
+  path: Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab
+  artifactKey: Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Projectiles/Blob6Variant/Blob 6 Variant Variant.prefab using Guid(fb9efdc20025a504da734df3a1451386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d9c82f834fd6df53a48ff368920b87') in 0.035980 seconds
+  Import took 0.045457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.498111 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb50a4373aa539e8685c577e56f42f1') in 0.023447 seconds
+  Import took 0.031497 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001444 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.194 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.8 MB.
+System memory in use after: 182.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5133.
+Total: 4.406600 ms (FindLiveObjects: 0.513700 ms CreateObjectMapping: 0.295800 ms MarkObjects: 3.522100 ms  DeleteObjects: 0.073800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 243.436332 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2dceca3fef2a33562c3a79516b2792') in 0.026277 seconds
+  Import took 0.033678 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002014 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.129 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.8 MB.
+System memory in use after: 182.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5136.
+Total: 4.483900 ms (FindLiveObjects: 0.736000 ms CreateObjectMapping: 0.265800 ms MarkObjects: 3.396200 ms  DeleteObjects: 0.084300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 327.512444 seconds.
+  path: Assets/Animators/Player Animator.controller
+  artifactKey: Guid(6857b55f8104a0a4e8988cf1f86595b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animators/Player Animator.controller using Guid(6857b55f8104a0a4e8988cf1f86595b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106252e1697164297aa3af14f521013b') in 0.024745 seconds
+  Import took 0.030967 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001439 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.151 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.8 MB.
+System memory in use after: 182.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5139.
+Total: 3.824700 ms (FindLiveObjects: 0.553200 ms CreateObjectMapping: 0.188700 ms MarkObjects: 2.980700 ms  DeleteObjects: 0.100400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 543.605290 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b30e0ce2f8c8f7a5c8d7cad5338a41f') in 0.027049 seconds
+  Import took 0.034265 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001741 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.138 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.1 MB.
-System memory in use after: 171.3 MB.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.8 MB.
+System memory in use after: 182.0 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4237.
-Total: 3.151300 ms (FindLiveObjects: 0.414200 ms CreateObjectMapping: 0.274800 ms MarkObjects: 2.399500 ms  DeleteObjects: 0.061800 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5142.
+Total: 4.319000 ms (FindLiveObjects: 0.561400 ms CreateObjectMapping: 0.299200 ms MarkObjects: 3.380000 ms  DeleteObjects: 0.077100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001816 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.169 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.8 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5145.
+Total: 4.681900 ms (FindLiveObjects: 0.579800 ms CreateObjectMapping: 0.279600 ms MarkObjects: 3.727400 ms  DeleteObjects: 0.094100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001747 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.124 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.8 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5148.
+Total: 4.505000 ms (FindLiveObjects: 0.694800 ms CreateObjectMapping: 0.268700 ms MarkObjects: 3.448000 ms  DeleteObjects: 0.092300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001578 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.345 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5151.
+Total: 5.129600 ms (FindLiveObjects: 0.609900 ms CreateObjectMapping: 0.286000 ms MarkObjects: 4.144400 ms  DeleteObjects: 0.087400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 686.615418 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985b07fb44b36d2266500cd27ca86b33') in 0.026042 seconds
+  Import took 0.033508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.208648 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391daec0e09b8132bfc6eb69ca29936c') in 0.006062 seconds
+  Import took 0.013551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020470 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391daec0e09b8132bfc6eb69ca29936c') in 0.005944 seconds
+  Import took 0.012986 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001498 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.178 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5154.
+Total: 4.383900 ms (FindLiveObjects: 0.709500 ms CreateObjectMapping: 0.352500 ms MarkObjects: 3.235200 ms  DeleteObjects: 0.085700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001881 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.189 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5157.
+Total: 4.846200 ms (FindLiveObjects: 0.766700 ms CreateObjectMapping: 0.380100 ms MarkObjects: 3.609100 ms  DeleteObjects: 0.088700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001737 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.146 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5160.
+Total: 5.472200 ms (FindLiveObjects: 0.590300 ms CreateObjectMapping: 0.276500 ms MarkObjects: 4.479100 ms  DeleteObjects: 0.125000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1278.597709 seconds.
+  path: Assets/Scripts/Player Scripts/FootstepSounds.cs
+  artifactKey: Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/FootstepSounds.cs using Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b033b686d023607bcbc5d8e0815ff0ac') in 0.008525 seconds
+  Import took 0.016171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001539 seconds.
+  path: Assets/Scripts/Player Scripts/FootstepSounds.cs
+  artifactKey: Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/FootstepSounds.cs using Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b033b686d023607bcbc5d8e0815ff0ac') in 0.002564 seconds
+  Import took 0.008994 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001675 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.140 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5163.
+Total: 3.859000 ms (FindLiveObjects: 0.469000 ms CreateObjectMapping: 0.248200 ms MarkObjects: 3.056400 ms  DeleteObjects: 0.084100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.610714 seconds.
+  path: Assets/Scripts/Player Scripts/FootstepSounds.cs
+  artifactKey: Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/FootstepSounds.cs using Guid(446c3b8833a68e04e9d70a4ffdfab4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999914ae0aec3c4a34b2d053d5933d5a') in 0.005721 seconds
+  Import took 0.011612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.647004 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d6a1be03e67d409460f122f101f925') in 0.016925 seconds
+  Import took 0.023746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.264269 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Run.fbx
+  artifactKey: Guid(25207b84f3e24f6429ae0fe0ee92d4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Run.fbx using Guid(25207b84f3e24f6429ae0fe0ee92d4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0c7540a2971cca3ab9e131ead73196') in 0.010352 seconds
+  Import took 0.017276 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001489 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5166.
+Total: 4.391100 ms (FindLiveObjects: 0.582000 ms CreateObjectMapping: 0.242600 ms MarkObjects: 3.485400 ms  DeleteObjects: 0.079900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 413.463515 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx
+  artifactKey: Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Walk.fbx using Guid(ae3371325ce350e46bcf3e73d40b3c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ddacae0914c2f7db26a3a977cb3dbd') in 0.023579 seconds
+  Import took 0.029478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.324900 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Run.fbx
+  artifactKey: Guid(25207b84f3e24f6429ae0fe0ee92d4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Run.fbx using Guid(25207b84f3e24f6429ae0fe0ee92d4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d61e0a6fd71005abf0c3aa8d867c41') in 0.006001 seconds
+  Import took 0.012485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011410 seconds.
+  path: Assets/FBX/Arms/Animations/PaintGun and Arms Run.fbx
+  artifactKey: Guid(25207b84f3e24f6429ae0fe0ee92d4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Arms/Animations/PaintGun and Arms Run.fbx using Guid(25207b84f3e24f6429ae0fe0ee92d4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d61e0a6fd71005abf0c3aa8d867c41') in 0.006136 seconds
+  Import took 0.013040 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001907 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.244 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5169.
+Total: 4.307400 ms (FindLiveObjects: 0.643600 ms CreateObjectMapping: 0.278300 ms MarkObjects: 3.293900 ms  DeleteObjects: 0.090800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2971.427045 seconds.
+  path: Assets/SFX/Ambiance
+  artifactKey: Guid(df265504cd89360468fc593e682c2f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Ambiance using Guid(df265504cd89360468fc593e682c2f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa627136951a6a793f72422081c497a') in 0.016833 seconds
+  Import took 0.024346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.620633 seconds.
+  path: Assets/SFX/Ambiance/chill_scifi_ambiance.wav
+  artifactKey: Guid(edd9a975f9e346d4f811d876e4c6e9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Ambiance/chill_scifi_ambiance.wav using Guid(edd9a975f9e346d4f811d876e4c6e9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358c2bbaa17806b65f60547e20da0fee') in 0.043617 seconds
+  Import took 0.049487 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002227 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.159 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5173.
+Total: 5.128000 ms (FindLiveObjects: 0.555500 ms CreateObjectMapping: 0.250700 ms MarkObjects: 4.218300 ms  DeleteObjects: 0.101800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 757.410760 seconds.
+  path: Assets/SFX/Ambiance/scifi_ambiance.wav
+  artifactKey: Guid(31013c24d90a4f249abfb53ffbd1ac21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Ambiance/scifi_ambiance.wav using Guid(31013c24d90a4f249abfb53ffbd1ac21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ea8a8d00a19b9f51329e3afb581697') in 0.051508 seconds
+  Import took 0.060012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 483.701577 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ChangeColor.cs
+  artifactKey: Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ChangeColor.cs using Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7648f3494f1e15b6929b746d9cdbdf') in 0.007817 seconds
+  Import took 0.015222 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002053 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.189 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5177.
+Total: 3.602800 ms (FindLiveObjects: 0.431500 ms CreateObjectMapping: 0.232000 ms MarkObjects: 2.860700 ms  DeleteObjects: 0.077800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.256 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.9 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5180.
+Total: 4.249400 ms (FindLiveObjects: 0.490100 ms CreateObjectMapping: 0.256600 ms MarkObjects: 3.413300 ms  DeleteObjects: 0.088400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1945.432566 seconds.
+  path: Assets/Gun Stuff/crosshair165.png
+  artifactKey: Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/crosshair165.png using Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9484670348f49e7062f2d953a178ae32') in 0.047654 seconds
+  Import took 0.055518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003421 seconds.
+  path: Assets/Gun Stuff/crosshair165.png
+  artifactKey: Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/crosshair165.png using Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9484670348f49e7062f2d953a178ae32') in 0.006100 seconds
+  Import took 0.013243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.918612 seconds.
+  path: Assets/Gun Stuff/crosshair165.png
+  artifactKey: Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/crosshair165.png using Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bd7b35af1b758f6143fc9f514a75ea') in 0.062288 seconds
+  Import took 0.068529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.772741 seconds.
+  path: Assets/Gun Stuff/d.png
+  artifactKey: Guid(8c0b7e7f2cb183041bfce5aef4174647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/d.png using Guid(8c0b7e7f2cb183041bfce5aef4174647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55029b341d2d8a15793ababbb418e7ca') in 0.044672 seconds
+  Import took 0.050471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.510524 seconds.
+  path: Assets/Gun Stuff/Crosshair.png
+  artifactKey: Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Crosshair.png using Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcb32a060e61b87c262f4360a9dc23c') in 0.045266 seconds
+  Import took 0.051437 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001489 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.135 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.0 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5186.
+Total: 3.537000 ms (FindLiveObjects: 0.412200 ms CreateObjectMapping: 0.192400 ms MarkObjects: 2.847000 ms  DeleteObjects: 0.084500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.811952 seconds.
+  path: Assets/Gun Stuff/f.png
+  artifactKey: Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/f.png using Guid(8d57d5d607f2a164f835e153cdfc760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc60ef702440845782ee222ca7bfce35') in 0.060362 seconds
+  Import took 0.066167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.946716 seconds.
+  path: Assets/Gun Stuff/crosshair169.png
+  artifactKey: Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/crosshair169.png using Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db0eb141e667e8641555ce6d3e45926') in 0.012476 seconds
+  Import took 0.019016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.470860 seconds.
+  path: Assets/Gun Stuff/crosshair169.png
+  artifactKey: Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/crosshair169.png using Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2735659d31f225663e5ebe5bbe8997') in 0.012105 seconds
+  Import took 0.019732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007553 seconds.
+  path: Assets/Gun Stuff/crosshair169.png
+  artifactKey: Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/crosshair169.png using Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2735659d31f225663e5ebe5bbe8997') in 0.016025 seconds
+  Import took 0.022030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.041030 seconds.
+  path: Assets/Gun Stuff/Crosshair.png
+  artifactKey: Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Crosshair.png using Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33101881d68213e911a50bef959ed14') in 0.009290 seconds
+  Import took 0.015984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008263 seconds.
+  path: Assets/Gun Stuff/Crosshair.png
+  artifactKey: Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun Stuff/Crosshair.png using Guid(8ccb6114e09a52847a891c8a2b098027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33101881d68213e911a50bef959ed14') in 0.014789 seconds
+  Import took 0.021936 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001726 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.166 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.0 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5190.
+Total: 3.868200 ms (FindLiveObjects: 0.470900 ms CreateObjectMapping: 0.232200 ms MarkObjects: 3.077400 ms  DeleteObjects: 0.086700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001522 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.188 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.0 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5193.
+Total: 4.330800 ms (FindLiveObjects: 0.675700 ms CreateObjectMapping: 0.288300 ms MarkObjects: 3.271500 ms  DeleteObjects: 0.094300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002036 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.351 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.0 MB.
+System memory in use after: 182.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 5196.
+Total: 4.898100 ms (FindLiveObjects: 0.787300 ms CreateObjectMapping: 0.392500 ms MarkObjects: 3.618900 ms  DeleteObjects: 0.098100 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

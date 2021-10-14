@@ -22,6 +22,8 @@ public class ProjectileSpawn : MonoBehaviour
     public AudioClip[] shootSFXs;
     private AudioClip shootClip;
 
+    private EquipWeapon doesAction;
+
     private void Start()
     {
         GameObject arms = GameObject.Find("Arms");
@@ -31,6 +33,9 @@ public class ProjectileSpawn : MonoBehaviour
         reloadSource = gun.GetComponent<AudioSource>();
         GameObject splatter = GameObject.Find("GunSplatter");
         shootSource = splatter.GetComponent<AudioSource>();
+
+        GameObject FP = GameObject.Find("FirstPersonPlayer");
+        doesAction = FP.GetComponent<EquipWeapon>();
     }
 
     // Update is called once per frame
@@ -41,87 +46,90 @@ public class ProjectileSpawn : MonoBehaviour
         GameObject paintGun = GameObject.Find("PaintGun");
         TooNear obstacleCheck = paintGun.GetComponent<TooNear>();
 
-        if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
+        if (doesAction.action == false)
         {
-            if (number != 0)
+            if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
             {
-                playReloadSound();
-                anim.CrossFadeInFixedTime("Arms Reload", .01f);
-                anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                if (number != 0)
+                {
+                    playReloadSound();
+                    anim.CrossFadeInFixedTime("Arms Reload", .01f);
+                    anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                }
+                number = 0;
             }
-            number = 0;
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload"))
-        {
-            if (number != 1)
+            if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload"))
             {
-                playReloadSound();
-                anim.CrossFadeInFixedTime("Arms Reload", .01f);
-                anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                if (number != 1)
+                {
+                    playReloadSound();
+                    anim.CrossFadeInFixedTime("Arms Reload", .01f);
+                    anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                }
+                number = 1;
             }
-            number = 1;
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload"))
-        {
-            if (number != 2)
+            if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload"))
             {
-                playReloadSound();
-                anim.CrossFadeInFixedTime("Arms Reload", .01f);
-                anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                if (number != 2)
+                {
+                    playReloadSound();
+                    anim.CrossFadeInFixedTime("Arms Reload", .01f);
+                    anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                }
+                number = 2;
             }
-            number = 2;
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload"))
-        {
-            if (number != 3)
+            if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload"))
             {
-                playReloadSound();
-                anim.CrossFadeInFixedTime("Arms Reload", .01f);
-                anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                if (number != 3)
+                {
+                    playReloadSound();
+                    anim.CrossFadeInFixedTime("Arms Reload", .01f);
+                    anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                }
+                number = 3;
             }
-            number = 3;
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload"))
-        {
-            if (number != 5)
+            if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload"))
             {
-                playReloadSound();
-                anim.CrossFadeInFixedTime("Arms Reload", .01f);
-                anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                if (number != 5)
+                {
+                    playReloadSound();
+                    anim.CrossFadeInFixedTime("Arms Reload", .01f);
+                    anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                }
+                number = 5;
             }
-            number = 5;
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload"))
-        {
-            if (number != 4)
+            if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload"))
             {
-                playReloadSound();
-                anim.CrossFadeInFixedTime("Arms Reload", .01f);
-                anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                if (number != 4)
+                {
+                    playReloadSound();
+                    anim.CrossFadeInFixedTime("Arms Reload", .01f);
+                    anim2.CrossFadeInFixedTime("Switch Reload", .01f);
+                }
+                number = 4;
             }
-            number = 4;
-        }
 
-        if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && obstacleCheck.tooNear == false && !isReloading.IsName("Arms Reload"))
-        {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Instantiate(blobProjectiles[number], transform.position, transform.rotation);
-            Instantiate(ghostProjectile, transform.position, transform.rotation);
+            if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && obstacleCheck.tooNear == false && !isReloading.IsName("Arms Reload"))
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                Instantiate(blobProjectiles[number], transform.position, transform.rotation);
+                Instantiate(ghostProjectile, transform.position, transform.rotation);
 
-            playShootSound();
+                playShootSound();
 
-            anim.CrossFadeInFixedTime("Arms Shoot", .01f);
-            anim2.CrossFadeInFixedTime("Barrel Recoil", .01f);
-        }
+                anim.CrossFadeInFixedTime("Arms Shoot", .01f);
+                anim2.CrossFadeInFixedTime("Barrel Recoil", .01f);
+            }
 
-        else
-        {
-            obstacleCheck.tooNear = false;
+            else
+            {
+                obstacleCheck.tooNear = false;
+            }
         }
     }
 
