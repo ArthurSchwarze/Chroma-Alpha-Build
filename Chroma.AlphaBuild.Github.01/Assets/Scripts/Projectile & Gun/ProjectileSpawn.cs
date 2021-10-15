@@ -24,8 +24,14 @@ public class ProjectileSpawn : MonoBehaviour
 
     private EquipWeapon doesAction;
 
+    private GameObject pauseCanvas;
+    private PauseMenu mouse;
+
     private void Start()
     {
+        pauseCanvas = GameObject.Find("Pause Menu Canvas");
+        mouse = pauseCanvas.GetComponent<PauseMenu>();
+
         GameObject arms = GameObject.Find("Arms");
         anim = arms.GetComponent<Animator>();
         GameObject gun = GameObject.Find("PaintGun");
@@ -46,7 +52,7 @@ public class ProjectileSpawn : MonoBehaviour
         GameObject paintGun = GameObject.Find("PaintGun");
         TooNear obstacleCheck = paintGun.GetComponent<TooNear>();
 
-        if (doesAction.action == false)
+        if (doesAction.action == false && !mouse.gameIsPaused)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
             {

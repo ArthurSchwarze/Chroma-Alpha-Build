@@ -22,9 +22,15 @@ public class EquipWeapon : MonoBehaviour
 
     private Animator anim;
 
+    private GameObject pauseCanvas;
+    private PauseMenu mouse;
+
     // Start is called before the first frame update
     void Start()
     {
+        pauseCanvas = GameObject.Find("Pause Menu Canvas");
+        mouse = pauseCanvas.GetComponent<PauseMenu>();
+
         // the first Animator Component in Children, here Arms
         anim = GetComponentInChildren<Animator>();
 
@@ -46,15 +52,17 @@ public class EquipWeapon : MonoBehaviour
     {
         AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1) && !mouse.gameIsPaused)
         {
             int x = Screen.width / 2;
             int y = Screen.height / 2;
 
             Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
-
-            if (Physics.Raycast(ray, 7f, equip))
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 7f, equip))
             {
+                hit.collider.gameObject.layer = LayerMask.NameToLayer("Object");
+
                 isEquipped.equipped = true;
                 isUnequipped.equipped = true;
 
@@ -63,8 +71,10 @@ public class EquipWeapon : MonoBehaviour
                 Destroy(equipGun);
             }
 
-            if (Physics.Raycast(ray, 7f, unequip))
+            if (Physics.Raycast(ray, out hit, 7f, unequip))
             {
+                hit.collider.gameObject.layer = LayerMask.NameToLayer("Object");
+
                 anim.CrossFadeInFixedTime("PaintGun Unequip", .01f);
 
                 Invoke("deactivateMyHands", .7f);

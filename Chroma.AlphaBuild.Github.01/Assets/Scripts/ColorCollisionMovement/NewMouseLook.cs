@@ -8,7 +8,6 @@ public class NewMouseLook : MonoBehaviour
     Vector2 _smoothMouse;
 
     public Vector2 clampInDegrees = new Vector2(360, 180);
-    public bool lockCursor;
     public Vector2 sensitivity = new Vector2(2, 2);
     public Vector2 smoothing = new Vector2(3, 3);
     public Vector2 targetDirection;
@@ -18,8 +17,14 @@ public class NewMouseLook : MonoBehaviour
     // Yaw rotation will affect this object instead of the camera if set.
     public GameObject characterBody;
 
+    private GameObject pauseCanvas;
+    private PauseMenu mouse;
+
     void Start()
     {
+        pauseCanvas = GameObject.Find("Pause Menu Canvas");
+        mouse = pauseCanvas.GetComponent<PauseMenu>();
+
         // Set target direction to the camera's initial orientation.
         targetDirection = transform.localRotation.eulerAngles;
 
@@ -30,10 +35,14 @@ public class NewMouseLook : MonoBehaviour
 
     void Update()
     {
-        // Ensure the cursor is always locked when set
-        if (lockCursor)
+        if (!mouse.gameIsPaused)
         {
             Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
 
         // Allow the script to clamp based on a desired target value.

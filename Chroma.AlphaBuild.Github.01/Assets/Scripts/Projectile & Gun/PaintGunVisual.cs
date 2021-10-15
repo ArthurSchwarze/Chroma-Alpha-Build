@@ -16,9 +16,15 @@ public class PaintGunVisual : MonoBehaviour
 
     private EquipWeapon doesAction;
 
+    private GameObject pauseCanvas;
+    private PauseMenu mouse;
+
     // Start is called before the first frame update
     void Start()
     {
+        pauseCanvas = GameObject.Find("Pause Menu Canvas");
+        mouse = pauseCanvas.GetComponent<PauseMenu>();
+
         gunSplatterMaterial.color = new Color32(255, 255, 255, 255);
         GameObject arms = GameObject.Find("Arms");
         anim = arms.GetComponent<Animator>();
@@ -32,7 +38,7 @@ public class PaintGunVisual : MonoBehaviour
     {
         AnimatorStateInfo isReloading = anim.GetCurrentAnimatorStateInfo(0);
 
-        if (doesAction.action == false)
+        if (doesAction.action == false && !mouse.gameIsPaused)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
             {

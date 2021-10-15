@@ -24,9 +24,15 @@ public class PickAndDrop : MonoBehaviour
 	public ParticleSystem electroMagnet;
 	private AudioSource emSound;
 
+	private GameObject pauseCanvas;
+	private PauseMenu mouse;
+
 	// Use this for initialization
 	void Start()
 	{
+		pauseCanvas = GameObject.Find("Pause Menu Canvas");
+		mouse = pauseCanvas.GetComponent<PauseMenu>();
+
 		GameObject emParticle = GameObject.Find("ElectroMagnet");
 		emSound = emParticle.GetComponent<AudioSource>();
 		mainCamera = GameObject.FindWithTag("MainCamera");
@@ -109,7 +115,7 @@ public class PickAndDrop : MonoBehaviour
 
 	void pickup()
 	{
-		if (Input.GetKeyDown(KeyCode.E))
+		if (Input.GetKeyDown(KeyCode.E) && !mouse.gameIsPaused)
 		{
 			int x = Screen.width / 2;
 			int y = Screen.height / 2;
@@ -142,7 +148,7 @@ public class PickAndDrop : MonoBehaviour
 
 	void checkDrop()
 	{
-		if (Input.GetKeyDown(KeyCode.E))
+		if (Input.GetKeyDown(KeyCode.E) && !mouse.gameIsPaused)
 		{
 			emSound.Stop();
 			electroMagnet.Stop();

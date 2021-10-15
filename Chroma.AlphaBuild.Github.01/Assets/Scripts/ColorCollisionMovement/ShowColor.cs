@@ -14,9 +14,15 @@ public class ShowColor : MonoBehaviour
 
     private EquipWeapon doesAction;
 
+    private GameObject pauseCanvas;
+    private PauseMenu mouse;
+
     // Start is called before the first frame update
     void Start()
     {
+        pauseCanvas = GameObject.Find("Pause Menu Canvas");
+        mouse = pauseCanvas.GetComponent<PauseMenu>();
+
         colourList.Add(new Color32(69, 178, 51, 255));
         colourList.Add(new Color32(70, 51, 178, 255));
         colourList.Add(new Color32(243, 237, 63, 255));
@@ -41,7 +47,7 @@ public class ShowColor : MonoBehaviour
 
         ColourNumber = GetPressedNumber();
 
-        if (doesAction.action == false)
+        if (doesAction.action == false && !mouse.gameIsPaused)
         {
             if (ColourNumber != -1 && ColourNumber < 6 && !isReloading.IsName("Arms Reload"))
             {
