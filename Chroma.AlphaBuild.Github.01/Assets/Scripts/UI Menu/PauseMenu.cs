@@ -9,6 +9,9 @@ public class PauseMenu : MonoBehaviour
     public bool gameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject containerUI;
+    public GameObject menuPanelUI;
+    public GameObject quitPanelUI;
 
     private GameObject mainCamera;
     private NewMouseLook look;
@@ -40,6 +43,9 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        menuPanelUI.SetActive(false);
+        quitPanelUI.SetActive(false);
+        containerUI.SetActive(true);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
 
@@ -51,6 +57,9 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        menuPanelUI.SetActive(false);
+        quitPanelUI.SetActive(false);
+        containerUI.SetActive(true);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
 

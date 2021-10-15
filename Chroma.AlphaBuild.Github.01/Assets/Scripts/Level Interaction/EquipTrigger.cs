@@ -23,7 +23,7 @@ public class EquipTrigger : MonoBehaviour
         gunSplatter = GameObject.Find("GunSplatter");
         crosshair = GameObject.Find("Crosshair");
         image = GameObject.Find("Image");
-        colorSign = GameObject.Find("Color-Sign");
+        colorSign = GameObject.FindWithTag("ColorSign");
     }
 
     private void OnTriggerEnter(Collider other)

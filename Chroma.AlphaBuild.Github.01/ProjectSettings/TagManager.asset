@@ -10,6 +10,7 @@ TagManager:
   - ignoreCollision
   - Object
   - PGBody
+  - ColorSign
   layers:
   - Default
   - TransparentFX
