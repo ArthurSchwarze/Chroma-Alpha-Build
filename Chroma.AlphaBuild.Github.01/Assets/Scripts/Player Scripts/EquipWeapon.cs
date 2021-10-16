@@ -25,9 +25,13 @@ public class EquipWeapon : MonoBehaviour
     private GameObject pauseCanvas;
     private PauseMenu mouse;
 
+    private GameObject crosshairNormal;
+
     // Start is called before the first frame update
     void Start()
     {
+        crosshairNormal = GameObject.Find("CrosshairNormal");
+
         pauseCanvas = GameObject.Find("Pause Menu Canvas");
         mouse = pauseCanvas.GetComponent<PauseMenu>();
 
@@ -61,7 +65,10 @@ public class EquipWeapon : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 7f, equip))
             {
+                Destroy(hit.collider.GetComponent<Interactable>());
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Object");
+
+                crosshairNormal.SetActive(false);
 
                 isEquipped.equipped = true;
                 isUnequipped.equipped = true;
@@ -73,6 +80,7 @@ public class EquipWeapon : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 7f, unequip))
             {
+                Destroy(hit.collider.GetComponent<Interactable>());
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Object");
 
                 anim.CrossFadeInFixedTime("PaintGun Unequip", .01f);
@@ -108,6 +116,7 @@ public class EquipWeapon : MonoBehaviour
     {
         isEquipped.equipped = false;
         isUnequipped.equipped = false;
+        crosshairNormal.SetActive(true);
     }
 
     private void Action()
