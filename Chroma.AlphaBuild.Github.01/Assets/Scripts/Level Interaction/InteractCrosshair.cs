@@ -35,12 +35,12 @@ public class InteractCrosshair : MonoBehaviour
                 crosshair.GetComponent<Image>().color = Color.green;
                 crosshairNormal.GetComponent<Image>().color = Color.green;
             }
+        }
 
-            else
-            {
-                crosshair.GetComponent<Image>().color = Color.white;
-                crosshairNormal.GetComponent<Image>().color = Color.white;
-            }
+        else
+        {
+            crosshair.GetComponent<Image>().color = Color.white;
+            crosshairNormal.GetComponent<Image>().color = Color.white;
         }
     }
 }
