@@ -110,18 +110,7 @@ public class ConnectObjects : MonoBehaviour
             return;
         }
         
-        foreach (ConnectObjects gameObject in allObjects)
-        {
-            if (gameObject.GetComponent<ConnectObjects>().Placement == 1)
-            {
-                gameObject.DestroyAllClones();
-            }
-
-            if (gameObject.GetComponent<ConnectObjects>().Placement == 2)
-            {
-                gameObject.DestroyAllClones();
-            }
-        }
+        
 
         //Debug.Log("Disabled");
 
@@ -151,6 +140,19 @@ public class ConnectObjects : MonoBehaviour
             }
         }
 
+        foreach (ConnectObjects gameObject in allObjects)
+        {
+            if (gameObject.GetComponent<ConnectObjects>().Placement == 1)
+            {
+                gameObject.DestroyAllClones();
+            }
+
+            if (gameObject.GetComponent<ConnectObjects>().Placement == 2)
+            {
+                gameObject.DestroyAllClones();
+            }
+        }
+
         Destroy(clonedHitbox);
         Destroy(GetComponent<ConnectObjects>());
 
@@ -170,6 +172,8 @@ public class ConnectObjects : MonoBehaviour
                 Destroy(clone);
             }
         }
+
+
 
         object1 = null;
         object2 = null;
