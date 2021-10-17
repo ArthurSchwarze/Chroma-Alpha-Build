@@ -11,7 +11,15 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject containerUI;
     public GameObject menuPanelUI;
+    public GameObject helpPanelUI;
     public GameObject quitPanelUI;
+
+    public GameObject whitePanelUI;
+    public GameObject bluePanelUI;
+    public GameObject redPanelUI;
+    public GameObject yellowPanelUI;
+    public GameObject greenPanelUI;
+    public GameObject magentaPanelUI;
 
     private GameObject mainCamera;
     private NewMouseLook look;
@@ -43,9 +51,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        menuPanelUI.SetActive(false);
-        quitPanelUI.SetActive(false);
-        containerUI.SetActive(true);
+        ResetUI();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
 
@@ -57,9 +63,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        menuPanelUI.SetActive(false);
-        quitPanelUI.SetActive(false);
-        containerUI.SetActive(true);
+        ResetUI();
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
 
@@ -79,5 +83,20 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("quit game...");
         Application.Quit();
+    }
+
+    private void ResetUI()
+    {
+        menuPanelUI.SetActive(false);
+        helpPanelUI.SetActive(false);
+        quitPanelUI.SetActive(false);
+        containerUI.SetActive(true);
+
+        whitePanelUI.SetActive(false);
+        bluePanelUI.SetActive(false);
+        redPanelUI.SetActive(false);
+        yellowPanelUI.SetActive(false);
+        greenPanelUI.SetActive(false);
+        magentaPanelUI.SetActive(false);
     }
 }
