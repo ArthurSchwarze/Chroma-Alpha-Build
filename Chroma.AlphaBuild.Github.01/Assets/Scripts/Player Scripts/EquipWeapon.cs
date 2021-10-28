@@ -6,12 +6,14 @@ public class EquipWeapon : MonoBehaviour
 {
     GameObject mainCamera;
     GameObject equipTrigger;
+    GameObject equipTrigger2;
     GameObject unequipTrigger;
 
     GameObject equipGun;
     GameObject unequipGun;
 
     EquipTrigger isEquipped;
+    EquipTrigger isEquipped2;
     EquipTrigger isUnequipped;
 
     public LayerMask equip;
@@ -42,6 +44,8 @@ public class EquipWeapon : MonoBehaviour
 
         equipTrigger = GameObject.Find("EquipTrigger");
         isEquipped = equipTrigger.GetComponent<EquipTrigger>();
+        equipTrigger2 = GameObject.Find("EquipTrigger2");
+        isEquipped2 = equipTrigger2.GetComponent<EquipTrigger>();
 
         unequipTrigger = GameObject.Find("UnequipTrigger");
         isUnequipped = unequipTrigger.GetComponent<EquipTrigger>();
@@ -71,6 +75,7 @@ public class EquipWeapon : MonoBehaviour
                 crosshairNormal.SetActive(false);
 
                 isEquipped.equipped = true;
+                isEquipped2.equipped = true;
                 isUnequipped.equipped = true;
 
                 anim.CrossFadeInFixedTime("PaintGun Equip", .01f);
@@ -115,6 +120,7 @@ public class EquipWeapon : MonoBehaviour
     private void deactivateMyHands()
     {
         isEquipped.equipped = false;
+        isEquipped2.equipped = false;
         isUnequipped.equipped = false;
         crosshairNormal.SetActive(true);
     }

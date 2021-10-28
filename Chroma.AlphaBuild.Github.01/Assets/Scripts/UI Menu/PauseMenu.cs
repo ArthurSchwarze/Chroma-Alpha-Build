@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject helpPanelUI;
     public GameObject quitPanelUI;
 
+    public GameObject controlsPanelUI;
     public GameObject whitePanelUI;
     public GameObject bluePanelUI;
     public GameObject redPanelUI;
@@ -92,6 +93,7 @@ public class PauseMenu : MonoBehaviour
         quitPanelUI.SetActive(false);
         containerUI.SetActive(true);
 
+        controlsPanelUI.SetActive(false);
         whitePanelUI.SetActive(false);
         bluePanelUI.SetActive(false);
         redPanelUI.SetActive(false);

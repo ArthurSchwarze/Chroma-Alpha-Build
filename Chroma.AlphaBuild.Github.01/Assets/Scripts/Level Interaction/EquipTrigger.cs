@@ -11,6 +11,8 @@ public class EquipTrigger : MonoBehaviour
     GameObject crosshair;
     GameObject image;
     GameObject colorSign;
+    GameObject fpsPL;
+    PickAndDrop pickUp;
 
     [HideInInspector]
     public bool equipped = false;
@@ -24,6 +26,8 @@ public class EquipTrigger : MonoBehaviour
         crosshair = GameObject.Find("Crosshair");
         image = GameObject.Find("Image");
         colorSign = GameObject.FindWithTag("ColorSign");
+        fpsPL = GameObject.Find("FirstPersonPlayer");
+        pickUp = fpsPL.GetComponent<PickAndDrop>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -74,6 +78,7 @@ public class EquipTrigger : MonoBehaviour
         crosshair.SetActive(false);
         image.SetActive(false);
         colorSign.SetActive(false);
+        pickUp.enabled = false;
     }
     private void activation()
     {
@@ -84,5 +89,6 @@ public class EquipTrigger : MonoBehaviour
         crosshair.SetActive(true);
         image.SetActive(true);
         colorSign.SetActive(true);
+        pickUp.enabled = true;
     }
 }
