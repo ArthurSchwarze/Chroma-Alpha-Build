@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ShowColor : MonoBehaviour
 {
-    private int ColourNumber = 5;
+    private int ColourNumber = 0;
 
     public List<Color> colourList = new List<Color>();
 
@@ -17,18 +17,20 @@ public class ShowColor : MonoBehaviour
     private GameObject pauseCanvas;
     private PauseMenu mouse;
 
+    private ColorActivation colAct;
+
     // Start is called before the first frame update
     void Start()
     {
         pauseCanvas = GameObject.Find("Pause Menu Canvas");
         mouse = pauseCanvas.GetComponent<PauseMenu>();
 
-        colourList.Add(new Color32(69, 178, 51, 255));
-        colourList.Add(new Color32(70, 51, 178, 255));
-        colourList.Add(new Color32(243, 237, 63, 255));
-        colourList.Add(new Color32(204, 20, 20, 255));
-        colourList.Add(new Color32(255, 0, 213, 255));
         colourList.Add(new Color32(255, 255, 255, 255));
+        colourList.Add(new Color32(70, 51, 178, 255));
+        colourList.Add(new Color32(204, 20, 20, 255));
+        colourList.Add(new Color32(243, 237, 63, 255));
+        colourList.Add(new Color32(69, 178, 51, 255));
+        colourList.Add(new Color32(255, 0, 213, 255));
 
         GetComponent<Image>().color = colourList[ColourNumber];
 
@@ -37,13 +39,13 @@ public class ShowColor : MonoBehaviour
 
         GameObject FP = GameObject.Find("FirstPersonPlayer");
         doesAction = FP.GetComponent<EquipWeapon>();
+        colAct = FP.GetComponent<ColorActivation>();
     }
 
     // Update is called once per frame
     void Update()
     {
         AnimatorStateInfo isReloading = anim.GetCurrentAnimatorStateInfo(0);
-        //GetComponent<Image>().color = Color.green;
 
         ColourNumber = GetPressedNumber();
 
@@ -58,12 +60,31 @@ public class ShowColor : MonoBehaviour
 
     public int GetPressedNumber()
     {
-        for (int number = 0; number <= 9; number++)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && colAct.white)
         {
-            if (Input.GetKeyDown(number.ToString()))
-                return number - 1;
+            ColourNumber = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2) && colAct.blue)
+        {
+            ColourNumber = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) && colAct.red)
+        {
+            ColourNumber = 2;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4) && colAct.yellow)
+        {
+            ColourNumber = 3;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5) && colAct.green)
+        {
+            ColourNumber = 4;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6) && colAct.magenta)
+        {
+            ColourNumber = 5;
         }
 
-        return -1;
+        return ColourNumber;
     }
 }

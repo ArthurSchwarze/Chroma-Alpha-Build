@@ -19,6 +19,8 @@ public class PaintGunVisual : MonoBehaviour
     private GameObject pauseCanvas;
     private PauseMenu mouse;
 
+    private ColorActivation colAct;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class PaintGunVisual : MonoBehaviour
 
         GameObject FP = GameObject.Find("FirstPersonPlayer");
         doesAction = FP.GetComponent<EquipWeapon>();
+        colAct = FP.GetComponent<ColorActivation>();
     }
 
     // Update is called once per frame
@@ -40,32 +43,32 @@ public class PaintGunVisual : MonoBehaviour
 
         if (doesAction.action == false && !mouse.gameIsPaused)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload") && colAct.green)
             {
                 Invoke("changeC1", .62f);
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload") && colAct.blue)
             {
                 Invoke("changeC2", .62f);
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload") && colAct.yellow)
             {
                 Invoke("changeC3", .62f);
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload") && colAct.red)
             {
                 Invoke("changeC4", .62f);
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload") && colAct.magenta)
             {
                 Invoke("changeC5", .62f);
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload") && colAct.white)
             {
                 Invoke("changeC6", .62f);
             }

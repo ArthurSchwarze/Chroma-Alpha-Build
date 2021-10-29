@@ -27,6 +27,8 @@ public class ProjectileSpawn : MonoBehaviour
     private GameObject pauseCanvas;
     private PauseMenu mouse;
 
+    private ColorActivation colAct;
+
     private void Start()
     {
         pauseCanvas = GameObject.Find("Pause Menu Canvas");
@@ -42,6 +44,7 @@ public class ProjectileSpawn : MonoBehaviour
 
         GameObject FP = GameObject.Find("FirstPersonPlayer");
         doesAction = FP.GetComponent<EquipWeapon>();
+        colAct = FP.GetComponent<ColorActivation>();
     }
 
     // Update is called once per frame
@@ -54,7 +57,7 @@ public class ProjectileSpawn : MonoBehaviour
 
         if (doesAction.action == false && !mouse.gameIsPaused)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload") && colAct.green)
             {
                 if (number != 0)
                 {
@@ -65,7 +68,7 @@ public class ProjectileSpawn : MonoBehaviour
                 number = 0;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && !isReloading.IsName("Arms Reload") && colAct.blue)
             {
                 if (number != 1)
                 {
@@ -76,7 +79,7 @@ public class ProjectileSpawn : MonoBehaviour
                 number = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload") && colAct.yellow)
             {
                 if (number != 2)
                 {
@@ -87,7 +90,7 @@ public class ProjectileSpawn : MonoBehaviour
                 number = 2;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha4) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha3) && !isReloading.IsName("Arms Reload") && colAct.red)
             {
                 if (number != 3)
                 {
@@ -98,7 +101,7 @@ public class ProjectileSpawn : MonoBehaviour
                 number = 3;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha5) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload") && colAct.magenta)
             {
                 if (number != 5)
                 {
@@ -109,7 +112,7 @@ public class ProjectileSpawn : MonoBehaviour
                 number = 5;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha6) && !isReloading.IsName("Arms Reload"))
+            if (Input.GetKeyDown(KeyCode.Alpha1) && !isReloading.IsName("Arms Reload") && colAct.white)
             {
                 if (number != 4)
                 {
