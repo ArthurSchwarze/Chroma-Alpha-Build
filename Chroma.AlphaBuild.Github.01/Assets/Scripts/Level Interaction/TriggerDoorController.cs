@@ -6,7 +6,9 @@ public class TriggerDoorController : MonoBehaviour
 {
     [SerializeField] private Animator myDoor = null;
 
-    [SerializeField] private int openNumber = 0;
+    [SerializeField] int howManyCubesToOpen = 1;
+
+    [SerializeField] static private int openNumber = 0;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,7 +27,7 @@ public class TriggerDoorController : MonoBehaviour
         }
         */
 
-        if (LayerMask.NameToLayer("Ground") == collision.gameObject.layer)
+        if (LayerMask.NameToLayer("Object") == collision.gameObject.layer)
         {
             return;
         }
@@ -43,7 +45,7 @@ public class TriggerDoorController : MonoBehaviour
             MoveDoor();
         }
 
-        if (LayerMask.NameToLayer("Ground") == collision.gameObject.layer)
+        if (LayerMask.NameToLayer("Object") == collision.gameObject.layer)
         {
             return;
         }
@@ -69,7 +71,7 @@ public class TriggerDoorController : MonoBehaviour
             myDoor.Play("DoorClose", 0, 0.0f);
         }
 
-        else if (openNumber == 1)
+        else if (openNumber == howManyCubesToOpen)
         {
             if (time < 1.0f)
             {
