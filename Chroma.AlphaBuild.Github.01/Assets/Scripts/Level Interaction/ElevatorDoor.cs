@@ -10,6 +10,6 @@ public class ElevatorDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, targetPos, speed * Time.deltaTime);
+        transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, targetPos, speed * Time.deltaTime);
     }
 }
