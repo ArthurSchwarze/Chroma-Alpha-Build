@@ -15,11 +15,11 @@ C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49384
+50047
 Successfully changed project path to: C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
 C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 66.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 61.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,484 +35,88 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001708 seconds.
+Registered in 0.001954 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 64.06 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 60.75 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.908 seconds
+- Completed reload, in  0.893 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001316 seconds.
+Registered in 0.001315 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 65.64 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 65.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.205 seconds
+- Completed reload, in  1.183 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3797 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3798 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 190.5 MB.
 System memory in use after: 190.7 MB.
 
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4235.
-Total: 2.950300 ms (FindLiveObjects: 0.455300 ms CreateObjectMapping: 0.180100 ms MarkObjects: 2.073000 ms  DeleteObjects: 0.241100 ms)
+Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4236.
+Total: 3.045700 ms (FindLiveObjects: 0.380300 ms CreateObjectMapping: 0.208300 ms MarkObjects: 2.217800 ms  DeleteObjects: 0.224200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Level 1.unity
-  artifactKey: Guid(586036015e530474a9e2b6773f6c2ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 1.unity using Guid(586036015e530474a9e2b6773f6c2ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1c5191d670e148fe1063898bd928b9') in 0.015597 seconds
-  Import took 0.021131 seconds .
+  path: Assets/UI
+  artifactKey: Guid(f39609616b19ee84fa71379c91d7a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI using Guid(f39609616b19ee84fa71379c91d7a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f922c3ce90dc9c3841e22c566110fd6') in 0.011274 seconds
+  Import took 0.016186 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.799178 seconds.
-  path: Assets/Scenes/Main Menu.unity
-  artifactKey: Guid(9a8246e299f785d41b6cdd91e4e57acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Menu.unity using Guid(9a8246e299f785d41b6cdd91e4e57acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44b345f0a6db34d129eeff385f07e2a') in 0.010193 seconds
-  Import took 0.016737 seconds .
+  Time since last request: 682.716292 seconds.
+  path: Assets/UI/Space_Key_Light.png
+  artifactKey: Guid(25a42b02bb736044fb1c5bf0f572ce0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Space_Key_Light.png using Guid(25a42b02bb736044fb1c5bf0f572ce0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0ec0f0cb4ff8007c6cc3faf0a79e93') in 0.066274 seconds
+  Import took 0.072128 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.837748 seconds.
-  path: Assets/Scenes/Mavin Lvl.unity
-  artifactKey: Guid(bfa5b2266e712ba45bf31eaf9dd29762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Mavin Lvl.unity using Guid(bfa5b2266e712ba45bf31eaf9dd29762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d9047825e13a3d94c8779391ba8eff') in 0.007210 seconds
-  Import took 0.012998 seconds .
+  Time since last request: 10.915895 seconds.
+  path: Assets/Materials/Gun & Projectiles/GunSplatter.mat
+  artifactKey: Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gun & Projectiles/GunSplatter.mat using Guid(7196ad02031b402478c130faf2a68657) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+ -> (artifact id: 'c15963856077ab1b77d1428a10b70a23') in 0.965305 seconds
+  Import took 0.972224 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.158352 seconds.
-  path: Assets/Scenes/Level 1.unity
-  artifactKey: Guid(bfa5b2266e712ba45bf31eaf9dd29762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 1.unity using Guid(bfa5b2266e712ba45bf31eaf9dd29762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda486bc6a2b01b102eca9707dfdd547') in 0.007702 seconds
-  Import took 0.015314 seconds .
+  Time since last request: 42.391512 seconds.
+  path: Assets/UI/Space_Key_Light.png
+  artifactKey: Guid(25a42b02bb736044fb1c5bf0f572ce0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Space_Key_Light.png using Guid(25a42b02bb736044fb1c5bf0f572ce0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '007ad81a5c6710627881c9c1bd9aac1c') in 0.021451 seconds
+  Import took 0.026601 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001839 seconds.
+Registered in 0.001315 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.972 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.0 MB.
-System memory in use after: 172.2 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4238.
-Total: 2.958700 ms (FindLiveObjects: 0.736100 ms CreateObjectMapping: 0.207500 ms MarkObjects: 1.912200 ms  DeleteObjects: 0.102200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001451 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.990 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.1 MB.
-System memory in use after: 172.3 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4241.
-Total: 3.229800 ms (FindLiveObjects: 0.339800 ms CreateObjectMapping: 0.203000 ms MarkObjects: 2.552500 ms  DeleteObjects: 0.133800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001504 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.1 MB.
-System memory in use after: 172.3 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4244.
-Total: 3.702300 ms (FindLiveObjects: 0.570700 ms CreateObjectMapping: 0.404100 ms MarkObjects: 2.637800 ms  DeleteObjects: 0.088600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1060.571211 seconds.
-  path: Assets/Scripts/ColorCollisionMovement
-  artifactKey: Guid(e71b28cc43d1f574bbd59ce60299712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement using Guid(e71b28cc43d1f574bbd59ce60299712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640031398966bf625e371db3ffe02a79') in 0.013506 seconds
-  Import took 0.019868 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002153 seconds.
-  path: Assets/Scripts/ColorCollisionMovement
-  artifactKey: Guid(e71b28cc43d1f574bbd59ce60299712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement using Guid(e71b28cc43d1f574bbd59ce60299712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640031398966bf625e371db3ffe02a79') in 0.002283 seconds
-  Import took 0.007664 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.151605 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/Pickupable.cs
-  artifactKey: Guid(db174c33f9d16eb4ba6de024a06c3734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/Pickupable.cs using Guid(db174c33f9d16eb4ba6de024a06c3734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a63efeaae5e0827bcd93f348d3c7eef') in 0.029801 seconds
-  Import took 0.035140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.630641 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ShowColor.cs
-  artifactKey: Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ShowColor.cs using Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d84a48115f205067b6b3a835bac4f2') in 0.007130 seconds
-  Import took 0.012434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016224 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ShowColor.cs
-  artifactKey: Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ShowColor.cs using Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d84a48115f205067b6b3a835bac4f2') in 0.002653 seconds
-  Import took 0.008957 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.335896 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs
-  artifactKey: Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs using Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28cb182e53525393f485b6d2fa0caac') in 0.007159 seconds
-  Import took 0.012752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.891199 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/NewPlayerMovement.cs
-  artifactKey: Guid(8fc6ea2f40cf38f479204c1d2ee72884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/NewPlayerMovement.cs using Guid(8fc6ea2f40cf38f479204c1d2ee72884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8ded54e3829287ab86f58b62dbd3cd') in 0.007030 seconds
-  Import took 0.013621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.601778 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/NewMouseLook.cs
-  artifactKey: Guid(1b77a1361804aa6408b0daf1eb0c2994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/NewMouseLook.cs using Guid(1b77a1361804aa6408b0daf1eb0c2994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7229834b7b8470e4825f5e4ee59a7ed') in 0.008132 seconds
-  Import took 0.014257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.635227 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/MouseLook.cs
-  artifactKey: Guid(3a7d4d1ce08560c42b4913081712f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/MouseLook.cs using Guid(3a7d4d1ce08560c42b4913081712f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7af20d50899c7281ff73ef632cf2ce') in 0.009745 seconds
-  Import took 0.015196 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001837 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/MouseLook.cs
-  artifactKey: Guid(3a7d4d1ce08560c42b4913081712f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/MouseLook.cs using Guid(3a7d4d1ce08560c42b4913081712f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7af20d50899c7281ff73ef632cf2ce') in 0.002507 seconds
-  Import took 0.008378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.822437 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/GravityGameObject.cs
-  artifactKey: Guid(8102c59dd9f0ff64fabe3bcffae78340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/GravityGameObject.cs using Guid(8102c59dd9f0ff64fabe3bcffae78340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e92bb50cb2eec77124de2e874abaf0a') in 0.008038 seconds
-  Import took 0.014319 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.447832 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ConnectObjects.cs
-  artifactKey: Guid(e2a1522a3cc40d641bdb94fd903e7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ConnectObjects.cs using Guid(e2a1522a3cc40d641bdb94fd903e7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beeb2ad3232edc93d5f446a222d065b1') in 0.007688 seconds
-  Import took 0.013927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.191915 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/Colorable.cs
-  artifactKey: Guid(bc200d0ebf968b14681603d983606741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/Colorable.cs using Guid(bc200d0ebf968b14681603d983606741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0daeb82637029eebb7bcd6b12594e69') in 0.008217 seconds
-  Import took 0.013723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001405 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/Colorable.cs
-  artifactKey: Guid(bc200d0ebf968b14681603d983606741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/Colorable.cs using Guid(bc200d0ebf968b14681603d983606741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0daeb82637029eebb7bcd6b12594e69') in 0.002347 seconds
-  Import took 0.009175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.427709 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ChildCollision.cs
-  artifactKey: Guid(b97a579ff4b95884eb1b982f8e95a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ChildCollision.cs using Guid(b97a579ff4b95884eb1b982f8e95a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba812bd1d2f7fd6cbd40607f1ed55dc') in 0.007874 seconds
-  Import took 0.013719 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.403845 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ChangeColor.cs
-  artifactKey: Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ChangeColor.cs using Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7648f3494f1e15b6929b746d9cdbdf') in 0.007233 seconds
-  Import took 0.012916 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001744 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.974 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4247.
-Total: 2.854000 ms (FindLiveObjects: 0.443700 ms CreateObjectMapping: 0.220500 ms MarkObjects: 2.051800 ms  DeleteObjects: 0.137300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 335.644586 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/PlayerMovement.cs
-  artifactKey: Guid(b6905129eec4016429abcb1d6d4bbe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/PlayerMovement.cs using Guid(b6905129eec4016429abcb1d6d4bbe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc921e60e40ede6dff44644c76b34e54') in 0.013330 seconds
-  Import took 0.019884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000853 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/PlayerMovement.cs
-  artifactKey: Guid(b6905129eec4016429abcb1d6d4bbe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/PlayerMovement.cs using Guid(b6905129eec4016429abcb1d6d4bbe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc921e60e40ede6dff44644c76b34e54') in 0.002850 seconds
-  Import took 0.010711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.571362 seconds.
-  path: Assets/Scripts/Level Interaction/BlockDisplacement.cs
-  artifactKey: Guid(7076917cedbd3444a9205c1bc9a69e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/BlockDisplacement.cs using Guid(7076917cedbd3444a9205c1bc9a69e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3254a4c48ee3b021e2bb21327dbbf494') in 0.008253 seconds
-  Import took 0.014633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.819502 seconds.
-  path: Assets/Scripts/Level Interaction/ButtonInput.cs
-  artifactKey: Guid(981cbae027403b14fbc4a1f73831b912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/ButtonInput.cs using Guid(981cbae027403b14fbc4a1f73831b912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af844610b077e93a25169a16025ad855') in 0.008995 seconds
-  Import took 0.015555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001485 seconds.
-  path: Assets/Scripts/Level Interaction/ButtonInput.cs
-  artifactKey: Guid(981cbae027403b14fbc4a1f73831b912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/ButtonInput.cs using Guid(981cbae027403b14fbc4a1f73831b912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af844610b077e93a25169a16025ad855') in 0.002188 seconds
-  Import took 0.007971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.288552 seconds.
-  path: Assets/Scripts/Level Interaction/EquipTrigger.cs
-  artifactKey: Guid(4246097cd8bb2bf42ad5dc873d36cf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/EquipTrigger.cs using Guid(4246097cd8bb2bf42ad5dc873d36cf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f92a00172133f4d3f1e31dec651993') in 0.007674 seconds
-  Import took 0.015093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.280139 seconds.
-  path: Assets/Scripts/Level Interaction/InteractCrosshair.cs
-  artifactKey: Guid(f7dc1096f87d24b46b3121907eefd286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/InteractCrosshair.cs using Guid(f7dc1096f87d24b46b3121907eefd286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ae01abd2350344efe6331cead5e23f') in 0.007992 seconds
-  Import took 0.013577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001428 seconds.
-  path: Assets/Scripts/Level Interaction/InteractCrosshair.cs
-  artifactKey: Guid(f7dc1096f87d24b46b3121907eefd286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/InteractCrosshair.cs using Guid(f7dc1096f87d24b46b3121907eefd286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ae01abd2350344efe6331cead5e23f') in 0.002732 seconds
-  Import took 0.009435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.179768 seconds.
-  path: Assets/Scripts/Level Interaction/TriggerDoorController.cs
-  artifactKey: Guid(eb01c0e7124655c44b75d9ea48f00bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/TriggerDoorController.cs using Guid(eb01c0e7124655c44b75d9ea48f00bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439dd5a25536c76121f34a52dfa39d75') in 0.008046 seconds
-  Import took 0.014535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.448137 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ChangeColor.cs
-  artifactKey: Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ChangeColor.cs using Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b05869629c50587fda3df05e5b503c8') in 0.003841 seconds
-  Import took 0.010986 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001353 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.953 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4250.
-Total: 3.236700 ms (FindLiveObjects: 0.566000 ms CreateObjectMapping: 0.198800 ms MarkObjects: 2.402400 ms  DeleteObjects: 0.068700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 788.022049 seconds.
-  path: Assets/New Lighting Settings.lighting
-  artifactKey: Guid(e84bc02bbea85844dba0208a1140e1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Lighting Settings.lighting using Guid(e84bc02bbea85844dba0208a1140e1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 2.
- -> (artifact id: '72edcb9e400b6fa1342dcf2385b24ab8') in 0.026956 seconds
-  Import took 0.034316 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001407 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.010 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4253.
-Total: 2.840100 ms (FindLiveObjects: 0.380500 ms CreateObjectMapping: 0.238000 ms MarkObjects: 2.101100 ms  DeleteObjects: 0.119900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 156.357762 seconds.
-  path: Assets/Scripts/Player Scripts
-  artifactKey: Guid(973268d43996d8342aca1368457b7893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts using Guid(973268d43996d8342aca1368457b7893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c21dba3e06d9df54d393ff76c6357028') in 0.013891 seconds
-  Import took 0.020189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.530415 seconds.
-  path: Assets/Scripts/Player Scripts/ColorActivation.cs
-  artifactKey: Guid(ca1eda85577a37d42bf2de761a7fe719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/ColorActivation.cs using Guid(ca1eda85577a37d42bf2de761a7fe719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e177cb03d03ae6eca9f59ac3c6d9d74') in 0.006922 seconds
-  Import took 0.012577 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001614 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
@@ -523,363 +127,125 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
+- Completed reload, in  1.049 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4257.
-Total: 2.848600 ms (FindLiveObjects: 0.379900 ms CreateObjectMapping: 0.160100 ms MarkObjects: 2.187800 ms  DeleteObjects: 0.118000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001402 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.995 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4260.
-Total: 3.300900 ms (FindLiveObjects: 0.459400 ms CreateObjectMapping: 0.188000 ms MarkObjects: 2.578300 ms  DeleteObjects: 0.074500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2096.675481 seconds.
-  path: Assets/Scripts/Player Scripts/ColorActivation.cs
-  artifactKey: Guid(ca1eda85577a37d42bf2de761a7fe719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/ColorActivation.cs using Guid(ca1eda85577a37d42bf2de761a7fe719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd545740e0f99580cc0a3fbea8fa5600d') in 0.010179 seconds
-  Import took 0.016123 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001574 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.101 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4263.
-Total: 2.933900 ms (FindLiveObjects: 0.396300 ms CreateObjectMapping: 0.256300 ms MarkObjects: 2.171700 ms  DeleteObjects: 0.108600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 217.489189 seconds.
-  path: Assets/Scripts/Player Scripts/PhysicsWithObjects.cs
-  artifactKey: Guid(501d610341a632045bbbf526d8c60972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/PhysicsWithObjects.cs using Guid(501d610341a632045bbbf526d8c60972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20fb2ce4791b1cf8f380de49b94ac2c7') in 0.011224 seconds
-  Import took 0.017015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.903376 seconds.
-  path: Assets/Scripts/Player Scripts/MouseLookAround.cs
-  artifactKey: Guid(c13286e324784884db6a82e300825708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/MouseLookAround.cs using Guid(c13286e324784884db6a82e300825708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71ce7942b269aa7d4aba0dbb3643007') in 0.007246 seconds
-  Import took 0.012656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.730388 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ShowColor.cs
-  artifactKey: Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ShowColor.cs using Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15aed2d28cfd128015150c0d7d8679a') in 0.009137 seconds
-  Import took 0.014969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001007 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/ShowColor.cs
-  artifactKey: Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/ShowColor.cs using Guid(0ad395fc01c76364b80bea8da283dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15aed2d28cfd128015150c0d7d8679a') in 0.002898 seconds
-  Import took 0.008348 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001434 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4266.
-Total: 2.923000 ms (FindLiveObjects: 0.376100 ms CreateObjectMapping: 0.207800 ms MarkObjects: 2.208300 ms  DeleteObjects: 0.129800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 112.894383 seconds.
-  path: Assets/Scripts/Projectile & Gun/BlobProjectile.cs
-  artifactKey: Guid(132764fcfddb00a4687b62c67dda374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Projectile & Gun/BlobProjectile.cs using Guid(132764fcfddb00a4687b62c67dda374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e1363ab6af33611b9e6593bf143883') in 0.009998 seconds
-  Import took 0.015928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 289.246218 seconds.
-  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab
-  artifactKey: Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab using Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50992b436b36e9b6f1cd04fd8e78ab43') in 0.021251 seconds
-  Import took 0.028563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.642424 seconds.
-  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.asset
-  artifactKey: Guid(5f94f2870e246b24bade0f45e67ed485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.asset using Guid(5f94f2870e246b24bade0f45e67ed485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bae464297eb3b771ba1e52f46dc69f9') in 0.070380 seconds
-  Import took 0.076088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.615224 seconds.
-  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab
-  artifactKey: Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab using Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
- -> (artifact id: 'd9a0be7d85686a59398c220d0e27c45b') in 0.958113 seconds
-  Import took 0.965009 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.907812 seconds.
-  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab
-  artifactKey: Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab using Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8049746fcc34838c799afc09982f7d8') in 0.060930 seconds
-  Import took 0.067310 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001727 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.107 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 180.5 MB.
 System memory in use after: 180.7 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4408.
-Total: 2.817600 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.177100 ms MarkObjects: 2.190400 ms  DeleteObjects: 0.141500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001449 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.003 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.0 MB.
-System memory in use after: 180.2 MB.
-
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4411.
-Total: 2.886800 ms (FindLiveObjects: 0.432600 ms CreateObjectMapping: 0.162400 ms MarkObjects: 2.169100 ms  DeleteObjects: 0.121600 ms)
+Total: 2.857600 ms (FindLiveObjects: 0.455500 ms CreateObjectMapping: 0.211600 ms MarkObjects: 2.094700 ms  DeleteObjects: 0.095100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 310.780903 seconds.
-  path: Assets/FBX/Prefabs/Structures/Wall_Support_Big_snaps002.prefab
-  artifactKey: Guid(322dcfc6d3aa0ef499ecf5aebe8c7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Wall_Support_Big_snaps002.prefab using Guid(322dcfc6d3aa0ef499ecf5aebe8c7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cafb447a7e33340bf28c0c03f325342d') in 0.482627 seconds
-  Import took 0.488717 seconds .
+  Time since last request: 526.971440 seconds.
+  path: Assets/UI/Mouse_Right_Key_Light.png
+  artifactKey: Guid(aeb62a82f1d3c5541958deb86714a8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Mouse_Right_Key_Light.png using Guid(aeb62a82f1d3c5541958deb86714a8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1e19b8a00bfaba1be1671e775d7423') in 0.040228 seconds
+  Import took 0.045760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.847644 seconds.
+  path: Assets/UI/Mouse_Right_Key_Light.png
+  artifactKey: Guid(aeb62a82f1d3c5541958deb86714a8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Mouse_Right_Key_Light.png using Guid(aeb62a82f1d3c5541958deb86714a8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e615a0d073beda193c8c334682b054a0') in 0.032310 seconds
+  Import took 0.037822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 803.165686 seconds.
+  path: Assets/UI/E_Key_Light.png
+  artifactKey: Guid(96ad21689342dfc4791c7c71f3c1aa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/E_Key_Light.png using Guid(96ad21689342dfc4791c7c71f3c1aa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb6e67f03084d6209b791ba780d40c9') in 0.023274 seconds
+  Import took 0.030663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.419849 seconds.
+  path: Assets/UI/E_Key_Light.png
+  artifactKey: Guid(96ad21689342dfc4791c7c71f3c1aa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/E_Key_Light.png using Guid(96ad21689342dfc4791c7c71f3c1aa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950478cbe5226a1668f13039712f390e') in 0.016804 seconds
+  Import took 0.022536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 515.238167 seconds.
+  path: Assets/UI/S_Key_Light.png
+  artifactKey: Guid(1081cbd90d0baed4eae327687397cf40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/S_Key_Light.png using Guid(1081cbd90d0baed4eae327687397cf40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c67da01fdc7e0bb79c222b5801cd642') in 0.022119 seconds
+  Import took 0.028706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.767031 seconds.
+  path: Assets/UI/W_Key_Light.png
+  artifactKey: Guid(95bf8a3d7d0b28b49a9b15db9c818707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/W_Key_Light.png using Guid(95bf8a3d7d0b28b49a9b15db9c818707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb306f8d3a52bc36df556bbca9394d7') in 0.019979 seconds
+  Import took 0.025515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.193248 seconds.
+  path: Assets/UI/D_Key_Light.png
+  artifactKey: Guid(3183619c0dc4dfa429641b282951038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/D_Key_Light.png using Guid(3183619c0dc4dfa429641b282951038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8828518ea5ef57c3fd20e8df5d917996') in 0.018551 seconds
+  Import took 0.024591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/UI/D_Key_Light.png
+  artifactKey: Guid(3183619c0dc4dfa429641b282951038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/D_Key_Light.png using Guid(3183619c0dc4dfa429641b282951038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8828518ea5ef57c3fd20e8df5d917996') in 0.007596 seconds
+  Import took 0.014092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.915392 seconds.
+  path: Assets/UI/A_Key_Light.png
+  artifactKey: Guid(68e923ab620d59247a448e20611c259c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/A_Key_Light.png using Guid(68e923ab620d59247a448e20611c259c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da178ab12867190825f647fd767db7b5') in 0.019034 seconds
+  Import took 0.025323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.519523 seconds.
+  path: Assets/UI/A_Key_Light.png
+  artifactKey: Guid(68e923ab620d59247a448e20611c259c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/A_Key_Light.png using Guid(68e923ab620d59247a448e20611c259c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b3249b4773d36ced56b72de0f46d3e') in 0.020798 seconds
+  Import took 0.026170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/UI/W_Key_Light.png
+  artifactKey: Guid(95bf8a3d7d0b28b49a9b15db9c818707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/W_Key_Light.png using Guid(95bf8a3d7d0b28b49a9b15db9c818707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db07fd40b39ff3b5a4fea05c707aab75') in 0.033830 seconds
+  Import took 0.038983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/UI/S_Key_Light.png
+  artifactKey: Guid(1081cbd90d0baed4eae327687397cf40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/S_Key_Light.png using Guid(1081cbd90d0baed4eae327687397cf40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30f6cb077f8956804fa463aead38554') in 0.031895 seconds
+  Import took 0.037202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/UI/D_Key_Light.png
+  artifactKey: Guid(3183619c0dc4dfa429641b282951038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/D_Key_Light.png using Guid(3183619c0dc4dfa429641b282951038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a3713a912b88282373dba184bc25be') in 0.016772 seconds
+  Import took 0.022016 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001370 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.066 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.4 MB.
-System memory in use after: 180.6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4514.
-Total: 3.847000 ms (FindLiveObjects: 0.552200 ms CreateObjectMapping: 0.287600 ms MarkObjects: 2.938000 ms  DeleteObjects: 0.068300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 733.683476 seconds.
-  path: Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab
-  artifactKey: Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab using Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970bdc9a11b08fc5937fe860be75d811') in 0.029917 seconds
-  Import took 0.036867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.328945 seconds.
-  path: Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.asset
-  artifactKey: Guid(65b858d7e93d4d84a85aff71ad48d32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.asset using Guid(65b858d7e93d4d84a85aff71ad48d32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25d9267614f83d36a3f9eecacd92edf') in 0.055856 seconds
-  Import took 0.061610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001664 seconds.
-  path: Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.asset
-  artifactKey: Guid(65b858d7e93d4d84a85aff71ad48d32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.asset using Guid(65b858d7e93d4d84a85aff71ad48d32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25d9267614f83d36a3f9eecacd92edf') in 0.009785 seconds
-  Import took 0.016545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.614513 seconds.
-  path: Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab
-  artifactKey: Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab using Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f11f15962ccfec30715e0fe1d1d5363') in 0.482877 seconds
-  Import took 0.488877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.987459 seconds.
-  path: Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab
-  artifactKey: Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab using Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a72e63bd49b740a616cc3fdd14c208e') in 0.059411 seconds
-  Import took 0.065998 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001653 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.180 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.7 MB.
-System memory in use after: 180.9 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4617.
-Total: 3.565400 ms (FindLiveObjects: 0.410600 ms CreateObjectMapping: 0.205600 ms MarkObjects: 2.821800 ms  DeleteObjects: 0.126400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001499 seconds.
+Registered in 0.001467 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
@@ -894,24 +260,136 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.110 seconds
+- Completed reload, in  1.025 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.7 MB.
-System memory in use after: 180.9 MB.
+System memory in use before: 179.9 MB.
+System memory in use after: 180.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4620.
-Total: 3.386500 ms (FindLiveObjects: 0.369400 ms CreateObjectMapping: 0.188800 ms MarkObjects: 2.637900 ms  DeleteObjects: 0.175200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4415.
+Total: 3.803200 ms (FindLiveObjects: 0.411400 ms CreateObjectMapping: 0.462600 ms MarkObjects: 2.826600 ms  DeleteObjects: 0.101800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 948.280221 seconds.
+  path: Assets/UI/1_Key_Light.png
+  artifactKey: Guid(45e778085a39160458e3ed5e41ef951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/1_Key_Light.png using Guid(45e778085a39160458e3ed5e41ef951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0801c169b9922474fce9f569b05b18a9') in 0.037642 seconds
+  Import took 0.043076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/UI/2_Key_Light.png
+  artifactKey: Guid(caecef133308aa24fb396303f131863b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/2_Key_Light.png using Guid(caecef133308aa24fb396303f131863b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c4da8a99a4373ce21e9736527b39c2') in 0.010822 seconds
+  Import took 0.015985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/UI/Mouse_Left_Key_Light.png
+  artifactKey: Guid(a97651b9deacabb4fa772b2440c452d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Mouse_Left_Key_Light.png using Guid(a97651b9deacabb4fa772b2440c452d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45640210db9c3bee8316f0d90af7db5b') in 0.010722 seconds
+  Import took 0.015411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/UI/3_Key_Light.png
+  artifactKey: Guid(d1d16250f075c1145a20492b31208e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/3_Key_Light.png using Guid(d1d16250f075c1145a20492b31208e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb4247756897817a35ce5b7fce26880') in 0.009920 seconds
+  Import took 0.014628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/UI/5_Key_Light.png
+  artifactKey: Guid(72ff59e9317a9834784f00b3c40ad2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/5_Key_Light.png using Guid(72ff59e9317a9834784f00b3c40ad2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a47b21f8632dbf7eb91855ed36bb818') in 0.011006 seconds
+  Import took 0.015686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/UI/6_Key_Light.png
+  artifactKey: Guid(dd7700900dfd65646bc1ee5ff86e04f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/6_Key_Light.png using Guid(dd7700900dfd65646bc1ee5ff86e04f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948cf9a1e14f175091dafa432f069d4a') in 0.010572 seconds
+  Import took 0.015285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/UI/4_Key_Light.png
+  artifactKey: Guid(d3069abffd8b9f94cbabf095d6e90bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/4_Key_Light.png using Guid(d3069abffd8b9f94cbabf095d6e90bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d2c0a46d4f92ad920ea4b93d4d1651') in 0.012359 seconds
+  Import took 0.017288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.345129 seconds.
+  path: Assets/UI/1_Key_Light.png
+  artifactKey: Guid(45e778085a39160458e3ed5e41ef951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/1_Key_Light.png using Guid(45e778085a39160458e3ed5e41ef951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627724e0c11f578761c2b50f38e2beec') in 0.039054 seconds
+  Import took 0.044079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/UI/2_Key_Light.png
+  artifactKey: Guid(caecef133308aa24fb396303f131863b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/2_Key_Light.png using Guid(caecef133308aa24fb396303f131863b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02eab627833f53bd8ee18b1ae7922c8') in 0.012733 seconds
+  Import took 0.018287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/UI/Mouse_Left_Key_Light.png
+  artifactKey: Guid(a97651b9deacabb4fa772b2440c452d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Mouse_Left_Key_Light.png using Guid(a97651b9deacabb4fa772b2440c452d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873d2e4dfeb4c66f645f121b13296270') in 0.013357 seconds
+  Import took 0.019400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/UI/3_Key_Light.png
+  artifactKey: Guid(d1d16250f075c1145a20492b31208e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/3_Key_Light.png using Guid(d1d16250f075c1145a20492b31208e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b050acf0fc1859c7dbaa0ed11214ea') in 0.012157 seconds
+  Import took 0.017319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/UI/5_Key_Light.png
+  artifactKey: Guid(72ff59e9317a9834784f00b3c40ad2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/5_Key_Light.png using Guid(72ff59e9317a9834784f00b3c40ad2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0b903cc70ab8cf00ff1fe8135da112') in 0.014204 seconds
+  Import took 0.019886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/UI/6_Key_Light.png
+  artifactKey: Guid(dd7700900dfd65646bc1ee5ff86e04f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/6_Key_Light.png using Guid(dd7700900dfd65646bc1ee5ff86e04f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325b4a7eedd47ad4c8c5e404b46a6d92') in 0.011032 seconds
+  Import took 0.017171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/UI/4_Key_Light.png
+  artifactKey: Guid(d3069abffd8b9f94cbabf095d6e90bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/4_Key_Light.png using Guid(d3069abffd8b9f94cbabf095d6e90bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1687ffc90bb206ba76733b7ada11d73b') in 0.011799 seconds
+  Import took 0.017373 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001887 seconds.
+Registered in 0.001368 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -923,15 +401,15 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.174 seconds
+- Completed reload, in  1.029 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.7 MB.
-System memory in use after: 180.9 MB.
+System memory in use before: 179.9 MB.
+System memory in use after: 180.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4623.
-Total: 3.918900 ms (FindLiveObjects: 0.431000 ms CreateObjectMapping: 0.200100 ms MarkObjects: 3.170000 ms  DeleteObjects: 0.117000 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4419.
+Total: 3.156300 ms (FindLiveObjects: 0.557700 ms CreateObjectMapping: 0.300900 ms MarkObjects: 2.175500 ms  DeleteObjects: 0.121300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
