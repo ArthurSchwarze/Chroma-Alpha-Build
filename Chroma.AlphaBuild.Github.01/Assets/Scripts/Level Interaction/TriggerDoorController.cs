@@ -8,14 +8,36 @@ public class TriggerDoorController : MonoBehaviour
 
     [SerializeField] int howManyCubesToOpen = 1;
 
-    [SerializeField] static private int openNumber = 0;
+    static private int openNumber = 0;
+
+    [HideInInspector] public bool triggered;
+
+    private void Start()
+    {
+        
+    }
+
+    private void IfReset()
+    {
+        if (openNumber > howManyCubesToOpen)
+        {
+            openNumber = howManyCubesToOpen;
+
+        }
+        if (openNumber < 0)
+        {
+            openNumber = 0;
+
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-
         if (collision.gameObject.GetComponent<GravityGameObject>())
         {
-            openNumber++;
+            openNumber += howManyCubesToOpen;
+            //openNumber++;
+            IfReset();
             MoveDoor();
         }
 
@@ -32,7 +54,9 @@ public class TriggerDoorController : MonoBehaviour
             return;
         }
 
-        openNumber++;
+        openNumber += howManyCubesToOpen;
+        //openNumber++;
+        IfReset();
         MoveDoor();
 
     }
@@ -41,7 +65,9 @@ public class TriggerDoorController : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<GravityGameObject>())
         {
-            openNumber--;
+            openNumber -= howManyCubesToOpen;
+            //openNumber--;
+            IfReset();
             MoveDoor();
         }
 
@@ -50,9 +76,10 @@ public class TriggerDoorController : MonoBehaviour
             return;
         }
 
-        openNumber--;
+        openNumber -= howManyCubesToOpen;
+        //openNumber--;
+        IfReset();
         MoveDoor();
-
 
     }
 
@@ -60,7 +87,7 @@ public class TriggerDoorController : MonoBehaviour
     {
         float time = myDoor.GetCurrentAnimatorStateInfo(0).normalizedTime;
 
-        if (openNumber == 0)
+        if (openNumber < howManyCubesToOpen)
         {
             if (time < 1.0f)
             {
