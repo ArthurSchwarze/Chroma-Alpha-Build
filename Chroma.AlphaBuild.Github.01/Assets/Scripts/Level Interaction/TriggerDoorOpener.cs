@@ -4,19 +4,33 @@ using UnityEngine;
 
 public class TriggerDoorOpener : MonoBehaviour
 {
+    [Header("Which Buttons?")]
     public TriggerDoorButton cylinder1;
     public TriggerDoorButton cylinder2;
     public TriggerDoorButton cylinder3;
     public TriggerDoorButton cylinder4;
 
     public bool cylinder1_2NotConnected; // if the 2 Buttons are independent or not (like in LVL 1 the first door)
+    public bool keepDoorOpen; // after opening the door it will not close anymore
 
     [SerializeField] Animator myDoor = null;
 
     bool oneTime;
 
-    private void FixedUpdate()
+    const float fixedFramerate = .001f;
+
+    IEnumerator Start()
     {
+        while (Application.isPlaying)
+        {
+            CustomFixedUpdate();
+            yield return new WaitForSeconds(fixedFramerate);
+        }
+    }
+
+    private void CustomFixedUpdate()
+    {
+        #region OneButton
         // 1 Button
         if (cylinder1 && !cylinder2 && !cylinder3 && !cylinder4)
         {
@@ -31,20 +45,22 @@ public class TriggerDoorOpener : MonoBehaviour
                 ResetTriggers1();
             }
 
-            else if (cylinder1.exitTriggered)
+            else if (cylinder1.exitTriggered && !keepDoorOpen)
             {
                 CloseDoor();
                 ResetTriggers1();
             }
         }
-        
+        #endregion
+
+        #region TwoButtons
         // 2 Buttons
         else if (cylinder1 && cylinder2 && !cylinder3 && !cylinder4)
         {
             // dependent Buttons
             if (!cylinder1_2NotConnected)
             {
-                if ((cylinder1.triggered && cylinder2.triggered) || (cylinder1.triggered && cylinder2.stays) || (cylinder1.stays && cylinder2.triggered))
+                if ((cylinder1.triggered && cylinder2.triggered) || (cylinder1.triggered && cylinder2.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && !keepDoorOpen))
                 {
                     OpenDoor();
                     ResetTriggers2();
@@ -55,14 +71,14 @@ public class TriggerDoorOpener : MonoBehaviour
                     ResetTriggers2();
                 }
 
-                else if ((cylinder1.exitTriggered && cylinder2.stays) || (cylinder1.stays && cylinder2.exitTriggered))
+                else if ((cylinder1.exitTriggered && cylinder2.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && !keepDoorOpen))
                 {
                     CloseDoor();
                     ResetTriggers2();
                 }
             }
 
-            // independent Buttons
+            // independent Buttons (implementing keepDoorOpen variabel here doesn't make sense)
             else if (cylinder1_2NotConnected)
             {
                 if ((cylinder1.triggered && !cylinder2.stays && !oneTime) || (!cylinder1.stays && cylinder2.triggered && !oneTime))
@@ -80,51 +96,56 @@ public class TriggerDoorOpener : MonoBehaviour
                 }
             }
         }
-        /*
+        #endregion
+
+        #region ThreeButtons
         // 3 Buttons
         else if (cylinder1 && cylinder2 && cylinder3 && !cylinder4)
         {
-            if (cylinder1.triggered + cylinder2.triggered + cylinder3.triggered == 6)
+            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && !keepDoorOpen))
             {
                 OpenDoor();
-                cylinder1.triggered = 0;
-                cylinder2.triggered = 0;
-                cylinder3.triggered = 0;
+                ResetTriggers3();
             }
 
-            else if (cylinder1.triggered + cylinder2.triggered + cylinder3.triggered < 6)
+            if (!cylinder1.stays && !cylinder2.stays && !cylinder3.stays)
+            {
+                ResetTriggers3();
+            }
+
+            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && !keepDoorOpen))
             {
                 CloseDoor();
-                cylinder1.triggered = 0;
-                cylinder2.triggered = 0;
-                cylinder3.triggered = 0;
+                ResetTriggers3();
             }
         }
+        #endregion
 
+        #region FourButtons
         // 4 Buttons
         else if (cylinder1 && cylinder2 && cylinder3 && cylinder4)
         {
-            if (cylinder1.triggered + cylinder2.triggered + cylinder3.triggered + cylinder4.triggered == 8)
+            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && cylinder4.triggered) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.triggered && !keepDoorOpen))
             {
                 OpenDoor();
-                cylinder1.triggered = 0;
-                cylinder2.triggered = 0;
-                cylinder3.triggered = 0;
-                cylinder4.triggered = 0;
+                ResetTriggers4();
             }
 
-            else if (cylinder1.triggered + cylinder2.triggered + cylinder3.triggered + cylinder4.triggered < 8)
+            if (!cylinder1.stays && !cylinder2.stays && !cylinder3.stays && !cylinder4.stays)
+            {
+                ResetTriggers4();
+            }
+
+            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.exitTriggered && !keepDoorOpen))
             {
                 CloseDoor();
-                cylinder1.triggered = 0;
-                cylinder2.triggered = 0;
-                cylinder3.triggered = 0;
-                cylinder4.triggered = 0;
+                ResetTriggers4();
             }
         }
-        */
+        #endregion
     }
 
+    #region ResetTriggers
     void ResetTriggers1()
     {
         cylinder1.triggered = false;
@@ -173,7 +194,9 @@ public class TriggerDoorOpener : MonoBehaviour
         cylinder4.exitTriggered = false;
         cylinder4.stays = false;
     }
+    #endregion
 
+    #region DoorAction
     void CloseDoor()
     {
         float time = myDoor.GetCurrentAnimatorStateInfo(0).normalizedTime;
@@ -199,4 +222,5 @@ public class TriggerDoorOpener : MonoBehaviour
 
         myDoor.Play("DoorOpen", 0, 0.0f);
     }
+    #endregion
 }
