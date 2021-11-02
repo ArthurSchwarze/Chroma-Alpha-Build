@@ -11,7 +11,7 @@ public class PickAndDrop : MonoBehaviour
 	public float distance;
 	public float smooth;
 
-	private GameObject character;
+	//private GameObject character;
 
 	public bool stopXMovement;
 	public int stopYMovement;
@@ -33,10 +33,9 @@ public class PickAndDrop : MonoBehaviour
 		pauseCanvas = GameObject.Find("Pause Menu Canvas");
 		mouse = pauseCanvas.GetComponent<PauseMenu>();
 
-		GameObject emParticle = GameObject.Find("ElectroMagnet");
-		emSound = emParticle.GetComponent<AudioSource>();
+		emSound = electroMagnet.GetComponent<AudioSource>();
 		mainCamera = GameObject.FindWithTag("MainCamera");
-		character = GameObject.Find("FirstPersonPlayer");
+		//character = GameObject.Find("FirstPersonPlayer");
 	}
 
 	// Update is called once per frame
@@ -157,7 +156,7 @@ public class PickAndDrop : MonoBehaviour
 		}
 	}
 
-	void dropObject()
+	public void dropObject()
 	{
 		carrying = false;
 		//carriedObject.GetComponent<Rigidbody>().isKinematic = false;

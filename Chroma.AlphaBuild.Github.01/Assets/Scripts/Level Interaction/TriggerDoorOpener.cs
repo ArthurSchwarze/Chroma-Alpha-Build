@@ -34,10 +34,11 @@ public class TriggerDoorOpener : MonoBehaviour
         // 1 Button
         if (cylinder1 && !cylinder2 && !cylinder3 && !cylinder4)
         {
-            if (cylinder1.triggered)
+            if (cylinder1.triggered && !oneTime)
             {
                 OpenDoor();
                 ResetTriggers1();
+                oneTime = true;
             }
 
             if (!cylinder1.stays)
@@ -45,10 +46,11 @@ public class TriggerDoorOpener : MonoBehaviour
                 ResetTriggers1();
             }
 
-            else if (cylinder1.exitTriggered && !keepDoorOpen)
+            else if (cylinder1.exitTriggered && oneTime && !keepDoorOpen)
             {
                 CloseDoor();
                 ResetTriggers1();
+                oneTime = false;
             }
         }
         #endregion
@@ -60,10 +62,11 @@ public class TriggerDoorOpener : MonoBehaviour
             // dependent Buttons
             if (!cylinder1_2NotConnected)
             {
-                if ((cylinder1.triggered && cylinder2.triggered) || (cylinder1.triggered && cylinder2.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && !keepDoorOpen))
+                if ((cylinder1.triggered && cylinder2.triggered && !oneTime) || (cylinder1.triggered && cylinder2.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && !oneTime && !keepDoorOpen))
                 {
                     OpenDoor();
                     ResetTriggers2();
+                    oneTime = true;
                 }
 
                 if (!cylinder1.stays && !cylinder2.stays)
@@ -71,10 +74,11 @@ public class TriggerDoorOpener : MonoBehaviour
                     ResetTriggers2();
                 }
 
-                else if ((cylinder1.exitTriggered && cylinder2.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && !keepDoorOpen))
+                else if ((cylinder1.exitTriggered && cylinder2.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && oneTime && !keepDoorOpen))
                 {
                     CloseDoor();
                     ResetTriggers2();
+                    oneTime = false;
                 }
             }
 
@@ -102,10 +106,11 @@ public class TriggerDoorOpener : MonoBehaviour
         // 3 Buttons
         else if (cylinder1 && cylinder2 && cylinder3 && !cylinder4)
         {
-            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && !keepDoorOpen))
+            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && !oneTime && !keepDoorOpen))
             {
                 OpenDoor();
                 ResetTriggers3();
+                oneTime = true;
             }
 
             if (!cylinder1.stays && !cylinder2.stays && !cylinder3.stays)
@@ -113,10 +118,11 @@ public class TriggerDoorOpener : MonoBehaviour
                 ResetTriggers3();
             }
 
-            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && !keepDoorOpen))
+            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && oneTime && !keepDoorOpen))
             {
                 CloseDoor();
                 ResetTriggers3();
+                oneTime = false;
             }
         }
         #endregion
@@ -125,10 +131,11 @@ public class TriggerDoorOpener : MonoBehaviour
         // 4 Buttons
         else if (cylinder1 && cylinder2 && cylinder3 && cylinder4)
         {
-            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && cylinder4.triggered) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.triggered && !keepDoorOpen))
+            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && cylinder4.triggered && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.triggered && !oneTime && !keepDoorOpen))
             {
                 OpenDoor();
                 ResetTriggers4();
+                oneTime = true;
             }
 
             if (!cylinder1.stays && !cylinder2.stays && !cylinder3.stays && !cylinder4.stays)
@@ -136,10 +143,11 @@ public class TriggerDoorOpener : MonoBehaviour
                 ResetTriggers4();
             }
 
-            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && cylinder4.stays && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.exitTriggered && !keepDoorOpen))
+            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.exitTriggered && oneTime && !keepDoorOpen))
             {
                 CloseDoor();
                 ResetTriggers4();
+                oneTime = false;
             }
         }
         #endregion

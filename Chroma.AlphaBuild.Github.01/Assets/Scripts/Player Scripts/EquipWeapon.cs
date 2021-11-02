@@ -29,6 +29,10 @@ public class EquipWeapon : MonoBehaviour
 
     private GameObject crosshairNormal;
 
+    private PickAndDrop drop;
+    public ParticleSystem electroMagnet;
+    private AudioSource emSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +57,9 @@ public class EquipWeapon : MonoBehaviour
         equipGun = GameObject.Find("EquipGun");
         unequipGun = GameObject.Find("UnequipGun");
         unequipGun.SetActive(false);
+
+        drop = gameObject.GetComponent<PickAndDrop>();
+        emSound = electroMagnet.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -87,6 +94,10 @@ public class EquipWeapon : MonoBehaviour
             {
                 Destroy(hit.collider.GetComponent<Interactable>());
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Object");
+
+                emSound.Stop();
+                electroMagnet.Stop();
+                drop.dropObject();
 
                 anim.CrossFadeInFixedTime("PaintGun Unequip", .01f);
 
