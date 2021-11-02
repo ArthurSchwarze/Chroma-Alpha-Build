@@ -32,40 +32,49 @@ public class EquipTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (equipped == false)
+        if (other.CompareTag("PlayerBody"))
         {
-            deactivation();
-        }
+            if (equipped == false)
+            {
+                deactivation();
+            }
 
-        if (equipped == true)
-        {
-            activation();
+            if (equipped == true)
+            {
+                activation();
+            }
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (equipped == false)
+        if (other.CompareTag("PlayerBody"))
         {
-            deactivation();
-        }
+            if (equipped == false)
+            {
+                deactivation();
+            }
 
-        if (equipped == true)
-        {
-            activation();
+            if (equipped == true)
+            {
+                activation();
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (equipped == false)
+        if (other.CompareTag("PlayerBody"))
         {
-            deactivation();
-        }
+            if (equipped == false)
+            {
+                deactivation();
+            }
 
-        if (equipped == true)
-        {
-            activation();
+            if (equipped == true)
+            {
+                activation();
+            }
         }
     }
 

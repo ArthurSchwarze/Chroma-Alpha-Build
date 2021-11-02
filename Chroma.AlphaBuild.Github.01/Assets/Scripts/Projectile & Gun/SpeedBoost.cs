@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour
 {
+    GameObject firstPersonPlayer;
+    NewPlayerMovement speedTrigger;
+
+    private void Start()
+    {
+        firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
+        speedTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        NewPlayerMovement speedTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
-
-        if (other.gameObject.tag == "Bottom")
+        if (other.CompareTag("Bottom"))
         {
             if (speedTrigger.canJump == false)
             {
@@ -21,10 +27,7 @@ public class SpeedBoost : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        NewPlayerMovement speedTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
-
-        if (other.gameObject.tag == "Bottom")
+        if (other.CompareTag("Bottom"))
         {
             if (speedTrigger.canJump == false)
             {

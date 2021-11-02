@@ -11,7 +11,7 @@ public class PopUpUI : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom") || (other.gameObject.tag == "Body"))
+        if(other.CompareTag("PlayerBody"))
         {
             if (oneTime == true)
             {

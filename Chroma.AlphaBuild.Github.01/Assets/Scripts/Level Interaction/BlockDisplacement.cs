@@ -121,4 +121,20 @@ public class BlockDisplacement : MonoBehaviour
     {
         Debug.Log("collision.gameObject.layer");
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerBody") || other.CompareTag("Cube"))
+        {
+            other.transform.parent = this.transform;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("PlayerBody") || other.CompareTag("Cube"))
+        {
+            other.transform.parent = null;
+        }
+    }
 }

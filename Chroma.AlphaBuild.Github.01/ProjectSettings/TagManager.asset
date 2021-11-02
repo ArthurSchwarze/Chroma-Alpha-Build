@@ -11,6 +11,8 @@ TagManager:
   - Object
   - PGBody
   - ColorSign
+  - Cube
+  - PlayerBody
   layers:
   - Default
   - TransparentFX

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
+    GameObject firstPersonPlayer;
+    NewPlayerMovement bounceTrigger;
+
     private float magnitude;
 
     private AudioSource bounceSource;
@@ -12,14 +15,14 @@ public class Bounce : MonoBehaviour
 
     private void Start()
     {
+        firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
+        bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
+
         bounceSource = this.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
-
         bounceTrigger.canBounce = true;
         bounceTrigger.canJump = false;
 
@@ -34,14 +37,14 @@ public class Bounce : MonoBehaviour
         }
 
 
-        if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom"))
+        if (other.CompareTag("Head") || other.CompareTag("Bottom"))
         {
             bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(magnitude, 13f);
             var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
             bounceTrigger.CharacterVelocity = direction * Mathf.Max(magnitude, 13f);
         }
 
-        if (other.gameObject.tag == "Body")
+        if (other.CompareTag("Body"))
         {
             bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(magnitude, 13f);
             var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
@@ -53,9 +56,6 @@ public class Bounce : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
-
         bounceTrigger.canBounce = true;
         bounceTrigger.canJump = false;
 
@@ -70,14 +70,14 @@ public class Bounce : MonoBehaviour
         }
 
 
-        if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom"))
+        if (other.CompareTag("Head") || other.CompareTag("Bottom"))
         {
             bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(magnitude, 13f);
             var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
             bounceTrigger.CharacterVelocity = direction * Mathf.Max(magnitude, 13f);
         }
 
-        if (other.gameObject.tag == "Body")
+        if (other.CompareTag("Body"))
         {
             bounceTrigger.CharacterVelocity = this.transform.forward * Mathf.Max(magnitude, 13f);
             var direction = Vector3.Reflect(bounceTrigger.CharacterVelocity.normalized, this.transform.forward);
@@ -89,12 +89,9 @@ public class Bounce : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        GameObject firstPersonPlayer = GameObject.Find("FirstPersonPlayer");
-        NewPlayerMovement bounceTrigger = firstPersonPlayer.GetComponent<NewPlayerMovement>();
-
         bounceTrigger.canBounce = false;
 
-        if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom") || (other.gameObject.tag == "Body"))
+        if (other.CompareTag("PlayerBody"))
         {
             playBounceSound();
         }
