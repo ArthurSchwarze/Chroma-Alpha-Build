@@ -24,12 +24,22 @@ public class ChangeColor : MonoBehaviour
 
 	private int ColourNumber = 0;
 
+	private ColorActivation colAct;
+	private PauseMenu mouse;
+	private EquipWeapon doesAction;
+	private Animator anim;
+
 	// Start is called before the first frame update
 	void Start()
 	{
 		mainCamera = GameObject.FindWithTag("MainCamera");
 
-		character = GameObject.Find("FirstPersonPlayer");
+		character = this.gameObject;
+
+		colAct = gameObject.GetComponent<ColorActivation>();
+		mouse = GameObject.Find("Pause Menu Canvas").GetComponent<PauseMenu>();
+		doesAction = gameObject.GetComponent<EquipWeapon>();
+		anim = GameObject.Find("Arms").GetComponent<Animator>();
 
 		//colourList.Add(MaterialWhite);
 		//colourList.Add(MaterialRed);
@@ -42,6 +52,8 @@ public class ChangeColor : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		AnimatorStateInfo isReloading = anim.GetCurrentAnimatorStateInfo(0);
+
 		if (Input.GetKeyDown(KeyCode.R))
 		{
 			int x = Screen.width / 2;
@@ -61,9 +73,12 @@ public class ChangeColor : MonoBehaviour
 		}
 
 		int number = GetPressedNumber();
-		if (0 <= number && number <= 6) 
-		{
-			ColourNumber = number;
+		if (doesAction.action == false && !mouse.gameIsPaused)
+        {
+			if (number >= 0 && number < 6 && !isReloading.IsName("Arms Reload"))
+			{
+				ColourNumber = number;
+			}
 		}
 	}
 
@@ -87,7 +102,7 @@ public class ChangeColor : MonoBehaviour
         }
 
 
-		if (ColourNumber == 0) // Colour: Green (Bounce) not active 
+		if (ColourNumber == 4) // Colour: Green (Bounce) not active 
 		{
 			//placeholder
 		}
@@ -98,27 +113,27 @@ public class ChangeColor : MonoBehaviour
 			Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>());
 		}
 
-		if (ColourNumber == 2) // Colour: Yellow (Speedboost) not active
+		if (ColourNumber == 3) // Colour: Yellow (Speedboost) not active
 		{
 			//placeholder
 		}
 
-		if (ColourNumber == 3)  // Colour: Red (Gravity Change) active
+		if (ColourNumber == 2)  // Colour: Red (Gravity Change) active
 		{
 			o.GetComponent<GravityGameObject>().gravityModifier = -1;
 		}
 
-		if (ColourNumber == 4) // Colour: Purple (Connect Objects) active
+		if (ColourNumber == 5) // Colour: Purple (Connect Objects) active
 		{
 			o.AddComponent<ConnectObjects>();
 		}
 
-		if (ColourNumber == 5) // Colour: White
+		if (ColourNumber == 0) // Colour: White
 		{
 			//placeholder
 		}
 	}
-
+	/*
 	int GetPressedNumber()
 	{
 		for (int number = 0; number <= 9; number++)
@@ -128,5 +143,35 @@ public class ChangeColor : MonoBehaviour
 		}
 
 		return -1;
+	}
+	*/
+	int GetPressedNumber()
+	{
+		if (Input.GetKeyDown(KeyCode.Alpha1) && colAct.white)
+		{
+			ColourNumber = 0;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha2) && colAct.blue)
+		{
+			ColourNumber = 1;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha3) && colAct.red)
+		{
+			ColourNumber = 2;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha4) && colAct.yellow)
+		{
+			ColourNumber = 3;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha5) && colAct.green)
+		{
+			ColourNumber = 4;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha6) && colAct.magenta)
+		{
+			ColourNumber = 5;
+		}
+
+		return ColourNumber;
 	}
 }

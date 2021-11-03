@@ -51,14 +51,14 @@ public class ShowColor : MonoBehaviour
 
         if (doesAction.action == false && !mouse.gameIsPaused)
         {
-            if (ColourNumber != -1 && ColourNumber < 6 && !isReloading.IsName("Arms Reload"))
+            if (ColourNumber >= 0 && ColourNumber < 6 && !isReloading.IsName("Arms Reload"))
             {
                 GetComponent<Image>().color = colourList[ColourNumber];
             }
         }
     }
 
-    public int GetPressedNumber()
+    int GetPressedNumber()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && colAct.white)
         {
