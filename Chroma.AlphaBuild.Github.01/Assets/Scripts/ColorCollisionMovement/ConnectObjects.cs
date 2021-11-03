@@ -156,7 +156,7 @@ public class ConnectObjects : MonoBehaviour
         Destroy(clonedHitbox);
         Destroy(GetComponent<ConnectObjects>());
 
-        thisGameObject.layer = LayerMask.NameToLayer("Ground");
+        thisGameObject.layer = LayerMask.NameToLayer("Object");
     }
 
     public void DestroyAllClones()

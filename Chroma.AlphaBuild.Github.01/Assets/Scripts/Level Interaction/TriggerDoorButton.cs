@@ -5,61 +5,92 @@ using UnityEngine;
 public class TriggerDoorButton : MonoBehaviour
 {
     [HideInInspector] public bool triggered;
-    [HideInInspector] public bool exitTriggered;
     [HideInInspector] public bool stays;
+
+    private AudioSource buttonSource;
+    [SerializeField] AudioClip[] buttonSFXs;
+    private AudioClip buttonClip;
+
+    private void Start()
+    {
+        buttonSource = this.GetComponent<AudioSource>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<GravityGameObject>())
+        if (!collision.gameObject.CompareTag("ignoreCollision") && collision.gameObject.CompareTag("Cube"))
         {
+            if (collision.gameObject.GetComponent<GravityGameObject>())
+            {
+                triggered = true;
+            }
+
+            /*
+            else if (collision.gameObject.GetComponent<PlayerMovement>())
+            {
+                MoveDoor();
+                Debug.Log("Player");
+            }
+            */
+
             triggered = true;
         }
 
-        /*
-        else if (collision.gameObject.GetComponent<PlayerMovement>())
+        else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
-            MoveDoor();
-            Debug.Log("Player");
+            triggered = false;
         }
-        */
-
-        if (LayerMask.NameToLayer("Object") == collision.gameObject.layer)
-        {
-            return;
-        }
-
-        triggered = true;
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.GetComponent<GravityGameObject>())
+        if (!collision.gameObject.CompareTag("ignoreCollision") && collision.gameObject.CompareTag("Cube"))
         {
+            if (!stays)
+            {
+                PlayButtonSound();
+            }
+
+            if (collision.gameObject.GetComponent<GravityGameObject>())
+            {
+                stays = true;
+            }
+
             stays = true;
         }
 
-        if (LayerMask.NameToLayer("Object") == collision.gameObject.layer)
+        else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
-            return;
+            stays = false;
         }
-
-        stays = true;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.GetComponent<GravityGameObject>())
+        if (!collision.gameObject.CompareTag("ignoreCollision") && collision.gameObject.CompareTag("Cube"))
         {
-            exitTriggered = true;
+            if (collision.gameObject.GetComponent<GravityGameObject>())
+            {
+                triggered = false;
+                stays = false;
+            }
+
+            triggered = false;
             stays = false;
         }
 
-        if (LayerMask.NameToLayer("Object") == collision.gameObject.layer)
+        else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
-            return;
+            triggered = false;
+            stays = false;
         }
+    }
 
-        exitTriggered = true;
-        stays = false;
+    void PlayButtonSound()
+    {
+        int index = Random.Range(0, buttonSFXs.Length);
+        buttonClip = buttonSFXs[index];
+        buttonSource.clip = buttonClip;
+        buttonSource.Play();
     }
 }

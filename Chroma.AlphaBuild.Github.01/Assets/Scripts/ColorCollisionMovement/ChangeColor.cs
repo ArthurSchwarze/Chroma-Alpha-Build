@@ -78,7 +78,7 @@ public class ChangeColor : MonoBehaviour
 		o.GetComponent<GravityGameObject>().ColorChangeGravity();
 
 		o.GetComponent<GravityGameObject>().gravityModifier = 1;
-		o.tag = "Untagged";
+		o.tag = "Cube";
 		Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>(), false);
 
 		if (o.GetComponent<ConnectObjects>() != null)
@@ -119,7 +119,7 @@ public class ChangeColor : MonoBehaviour
 		}
 	}
 
-	public int GetPressedNumber()
+	int GetPressedNumber()
 	{
 		for (int number = 0; number <= 9; number++)
 		{

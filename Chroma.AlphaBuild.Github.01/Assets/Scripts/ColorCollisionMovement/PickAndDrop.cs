@@ -6,7 +6,7 @@ public class PickAndDrop : MonoBehaviour
 	GameObject mainCamera;
 	public GameObject carriedObject;
 
-	[SerializeField] bool carrying;
+	public bool carrying;
 
 	public float distance;
 	public float smooth;

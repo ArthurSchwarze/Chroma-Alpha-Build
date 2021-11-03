@@ -95,9 +95,7 @@ public class EquipWeapon : MonoBehaviour
                 Destroy(hit.collider.GetComponent<Interactable>());
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Object");
 
-                emSound.Stop();
-                electroMagnet.Stop();
-                drop.dropObject();
+                DropObject();
 
                 anim.CrossFadeInFixedTime("PaintGun Unequip", .01f);
 
@@ -120,6 +118,16 @@ public class EquipWeapon : MonoBehaviour
         else
         {
             Invoke("Action", 1f);
+        }
+    }
+
+    void DropObject()
+    {
+        if (drop.carrying)
+        {
+            emSound.Stop();
+            electroMagnet.Stop();
+            drop.dropObject();
         }
     }
 

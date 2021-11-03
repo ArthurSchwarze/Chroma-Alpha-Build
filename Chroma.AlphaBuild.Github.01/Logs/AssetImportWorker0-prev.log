@@ -15,11 +15,11 @@ C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51802
+64442
 Successfully changed project path to: C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
 C:/Users/Mavin (Privat)/Documents/Matura-Arbeit/Chroma/Chroma.AlphaBuild.Github.01
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 66.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 68.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,52 +35,60 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001995 seconds.
+Registered in 0.001841 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 64.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 69.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
+- Completed reload, in  1.242 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001739 seconds.
+Registered in 0.002196 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 69.98 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 86.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.205 seconds
+- Completed reload, in  1.489 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3802 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3803 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 190.7 MB.
 System memory in use after: 190.8 MB.
 
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4240.
-Total: 3.584400 ms (FindLiveObjects: 0.500800 ms CreateObjectMapping: 0.412900 ms MarkObjects: 2.456100 ms  DeleteObjects: 0.213500 ms)
+Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4241.
+Total: 4.099700 ms (FindLiveObjects: 0.531900 ms CreateObjectMapping: 0.325200 ms MarkObjects: 3.034800 ms  DeleteObjects: 0.206900 ms)
 
 ========================================================================
 Received Import Request.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c53cf794776a773ac2b475d5449b1c') in 0.030234 seconds
-  Import took 0.035979 seconds .
+  path: Assets/Scripts/Level Interaction/WallForCube.cs
+  artifactKey: Guid(712d2b2cd69fdf040992089c0bca0021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Level Interaction/WallForCube.cs using Guid(712d2b2cd69fdf040992089c0bca0021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec029d1528682a58f82994525191a81') in 0.043765 seconds
+  Import took 0.052531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000924 seconds.
+  path: Assets/Scripts/Level Interaction/WallForCube.cs
+  artifactKey: Guid(712d2b2cd69fdf040992089c0bca0021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Level Interaction/WallForCube.cs using Guid(712d2b2cd69fdf040992089c0bca0021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec029d1528682a58f82994525191a81') in 0.003406 seconds
+  Import took 0.012142 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001289 seconds.
+Registered in 0.001661 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -92,37 +100,77 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.999 seconds
+- Completed reload, in  0.957 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 172.2 MB.
 System memory in use after: 172.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4243.
-Total: 2.835100 ms (FindLiveObjects: 0.363500 ms CreateObjectMapping: 0.240100 ms MarkObjects: 2.135100 ms  DeleteObjects: 0.095500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 398.240501 seconds.
-  path: Assets/Scripts/Level Interaction/BlockDisplacement.cs
-  artifactKey: Guid(7076917cedbd3444a9205c1bc9a69e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/BlockDisplacement.cs using Guid(7076917cedbd3444a9205c1bc9a69e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac17f479bb3a0ca4af91193039d8165') in 0.015111 seconds
-  Import took 0.020402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010571 seconds.
-  path: Assets/Scripts/Level Interaction/BlockDisplacement.cs
-  artifactKey: Guid(7076917cedbd3444a9205c1bc9a69e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Level Interaction/BlockDisplacement.cs using Guid(7076917cedbd3444a9205c1bc9a69e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac17f479bb3a0ca4af91193039d8165') in 0.003753 seconds
-  Import took 0.009939 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4244.
+Total: 2.985800 ms (FindLiveObjects: 0.412300 ms CreateObjectMapping: 0.239200 ms MarkObjects: 2.221800 ms  DeleteObjects: 0.111500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002054 seconds.
+Registered in 0.002040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 172.3 MB.
+System memory in use after: 172.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4247.
+Total: 2.963600 ms (FindLiveObjects: 0.547700 ms CreateObjectMapping: 0.228900 ms MarkObjects: 2.072200 ms  DeleteObjects: 0.114000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2963.964627 seconds.
+  path: Assets/WFC_Mat.mat
+  artifactKey: Guid(3f35731c688df0f4098cc43f7719da89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WFC_Mat.mat using Guid(3f35731c688df0f4098cc43f7719da89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+ -> (artifact id: 'ca54fd0ad2d207639fc3431e28fe0678') in 1.022802 seconds
+  Import took 1.030466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1328.652973 seconds.
+  path: Assets/Materials/DoorSignMat.mat
+  artifactKey: Guid(ddbcd7c64011aa347bd5df73df82533c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DoorSignMat.mat using Guid(ddbcd7c64011aa347bd5df73df82533c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775a59bfa07fdd04c2fe6877687d575b') in 0.030774 seconds
+  Import took 0.037746 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001404 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
@@ -137,24 +185,32 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.230 seconds
+- Completed reload, in  1.106 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.4 MB.
+Unloading 3488 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.6 MB.
+System memory in use after: 180.8 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4246.
-Total: 3.215100 ms (FindLiveObjects: 0.436600 ms CreateObjectMapping: 0.303500 ms MarkObjects: 2.408800 ms  DeleteObjects: 0.063200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4419.
+Total: 3.434900 ms (FindLiveObjects: 0.440500 ms CreateObjectMapping: 0.195800 ms MarkObjects: 2.666600 ms  DeleteObjects: 0.131100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.585446 seconds.
+  path: Assets/Materials/WFC_Mat.mat
+  artifactKey: Guid(3f35731c688df0f4098cc43f7719da89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WFC_Mat.mat using Guid(3f35731c688df0f4098cc43f7719da89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea51a5f63799c246cd05d4e071b0db5c') in 0.659669 seconds
+  Import took 0.665489 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001560 seconds.
+Registered in 0.001456 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -166,16 +222,45 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.937 seconds
+- Completed reload, in  1.052 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.4 MB.
+System memory in use after: 180.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4249.
-Total: 3.220200 ms (FindLiveObjects: 0.355600 ms CreateObjectMapping: 0.177900 ms MarkObjects: 2.604500 ms  DeleteObjects: 0.081300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4522.
+Total: 3.175500 ms (FindLiveObjects: 0.451100 ms CreateObjectMapping: 0.211600 ms MarkObjects: 2.395600 ms  DeleteObjects: 0.116400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001598 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.394 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.4 MB.
+System memory in use after: 180.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4525.
+Total: 3.677600 ms (FindLiveObjects: 0.392700 ms CreateObjectMapping: 0.230100 ms MarkObjects: 2.977100 ms  DeleteObjects: 0.076500 ms)
 
 ========================================================================
 Received Prepare
@@ -183,7 +268,7 @@ Registering precompiled user dll's ...
 Registered in 0.001736 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -195,83 +280,813 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.993 seconds
+- Completed reload, in  1.030 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.4 MB.
+System memory in use after: 180.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4528.
+Total: 3.316900 ms (FindLiveObjects: 0.471200 ms CreateObjectMapping: 0.218500 ms MarkObjects: 2.488200 ms  DeleteObjects: 0.124100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001404 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.020 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.5 MB.
+System memory in use after: 180.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4531.
+Total: 3.051500 ms (FindLiveObjects: 0.463200 ms CreateObjectMapping: 0.171500 ms MarkObjects: 2.297000 ms  DeleteObjects: 0.118900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001492 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.5 MB.
+System memory in use after: 180.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4534.
+Total: 3.399700 ms (FindLiveObjects: 0.689100 ms CreateObjectMapping: 0.292300 ms MarkObjects: 2.340800 ms  DeleteObjects: 0.076200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2256.145886 seconds.
+  path: Assets/Materials/WallForCubeMat.mat
+  artifactKey: Guid(9618cb310727ffb4e928417f97c512f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallForCubeMat.mat using Guid(9618cb310727ffb4e928417f97c512f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238e7947fe6525e161d8db2fc048a7c2') in 0.544874 seconds
+  Import took 0.551223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 482.357036 seconds.
+  path: Assets/Materials/WallFCubeMat.mat
+  artifactKey: Guid(4aaaef49be7549d4182364aac0250879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallFCubeMat.mat using Guid(4aaaef49be7549d4182364aac0250879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a1efe5ee5fce69d7a3d0139c9c764b') in 0.078804 seconds
+  Import took 0.085290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Materials/WallForCubeMat.mat
+  artifactKey: Guid(9618cb310727ffb4e928417f97c512f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallForCubeMat.mat using Guid(9618cb310727ffb4e928417f97c512f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b9dd90f54ce2e3e6d91c79013120b3') in 0.067914 seconds
+  Import took 0.073346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.683723 seconds.
+  path: Assets/Materials/ddd.mat
+  artifactKey: Guid(327bb62a465982348a776ed91dfb73d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ddd.mat using Guid(327bb62a465982348a776ed91dfb73d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb08124d1a119db51b6c5089e40dc90') in 0.033828 seconds
+  Import took 0.040143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Materials/WallFCubeMat.mat
+  artifactKey: Guid(4aaaef49be7549d4182364aac0250879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallFCubeMat.mat using Guid(4aaaef49be7549d4182364aac0250879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ce98a8c13af7c7824fcbe6e607627d') in 0.090779 seconds
+  Import took 0.096475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.565354 seconds.
+  path: Assets/Materials/dddd.mat
+  artifactKey: Guid(86d1763aa5970c54f888425c6d386222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/dddd.mat using Guid(86d1763aa5970c54f888425c6d386222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9d4cc0abb6abee451d35314b5b3bf4') in 0.034401 seconds
+  Import took 0.040635 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001570 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.086 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.8 MB.
+System memory in use after: 181.0 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4252.
-Total: 3.159500 ms (FindLiveObjects: 0.348600 ms CreateObjectMapping: 0.247900 ms MarkObjects: 2.497000 ms  DeleteObjects: 0.064500 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4637.
+Total: 5.664800 ms (FindLiveObjects: 0.571500 ms CreateObjectMapping: 0.311300 ms MarkObjects: 4.683600 ms  DeleteObjects: 0.096900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 751.260632 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab
+  artifactKey: Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab using Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e8041c39594d338a4c7228a62123da') in 0.034124 seconds
+  Import took 0.040690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.246991 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.asset
+  artifactKey: Guid(d855d29aa2e9d074ca4a987efd2c4f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.asset using Guid(d855d29aa2e9d074ca4a987efd2c4f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef819feae6674684d4ab43f389642a88') in 0.056485 seconds
+  Import took 0.062715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.813215 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab
+  artifactKey: Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab using Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e5497d00f2249d017ce7cb65efef6e') in 0.485211 seconds
+  Import took 0.491362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.349713 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab
+  artifactKey: Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab using Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34cfa66e62bedeb5c7e805b8a26ccd7') in 0.005764 seconds
+  Import took 0.012159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.221689 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.asset
+  artifactKey: Guid(42d80c76c1a91ba41a28cfe5b1b0c6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.asset using Guid(42d80c76c1a91ba41a28cfe5b1b0c6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038e27f713746882b40105f7b15397dd') in 0.019942 seconds
+  Import took 0.026476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.203868 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab
+  artifactKey: Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab using Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251f6f8e40602351c32a97f48da42412') in 0.038617 seconds
+  Import took 0.045212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.799721 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab
+  artifactKey: Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab using Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2536c5398447ba1c77561bf839c62d96') in 0.045155 seconds
+  Import took 0.051658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.088325 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab
+  artifactKey: Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab using Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43fd70cba9dbc4f5b2a23e3b9b3995b6') in 0.050603 seconds
+  Import took 0.057501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.374695 seconds.
+  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab
+  artifactKey: Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab using Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856586c12447db49ab6f9fdf2c755441') in 0.030955 seconds
+  Import took 0.037328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.104496 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab
+  artifactKey: Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_Corner_snaps002.prefab using Guid(aaf093ac43d348047a78bd60ceab5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd192ec3fcb6359afde84f4b5eb2c6c6d') in 0.164868 seconds
+  Import took 0.170486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.780880 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab
+  artifactKey: Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab using Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa52eff640a46a65d429ed566d944f88') in 0.031658 seconds
+  Import took 0.037767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001122 seconds.
+  path: Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab
+  artifactKey: Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Pipe_S_snaps002.prefab using Guid(3f996c9930120ca4799d914f43780ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa52eff640a46a65d429ed566d944f88') in 0.043157 seconds
+  Import took 0.049174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.923764 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def3ec9c793807fe229a63293370742d') in 0.008382 seconds
+  Import took 0.014097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.906911 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.asset
+  artifactKey: Guid(084f06a6d349d5142b2d3e15f0c3c202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.asset using Guid(084f06a6d349d5142b2d3e15f0c3c202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497fd6c96e443216de8b60af508f701e') in 0.016490 seconds
+  Import took 0.022683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.483967 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7293a1ac7bb783e4a85bf2bc9ad45e58') in 0.003934 seconds
+  Import took 0.010948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010317 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7293a1ac7bb783e4a85bf2bc9ad45e58') in 0.003341 seconds
+  Import took 0.009170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.085416 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c969f219c2b784d39998301c6dfb1c') in 0.024547 seconds
+  Import took 0.029941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.900446 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8613561b00c580e8320ec0029901ad6') in 0.033964 seconds
+  Import took 0.039443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.836956 seconds.
+  path: Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab
+  artifactKey: Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab using Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca65d529c6d068fb53ebdd7b49a674f1') in 0.009393 seconds
+  Import took 0.016273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.473491 seconds.
+  path: Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.asset
+  artifactKey: Guid(6b557dc58e269744aa3bc629348278a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.asset using Guid(6b557dc58e269744aa3bc629348278a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e5ea48a5fc0ca9fdc045ad5283dd12') in 0.009370 seconds
+  Import took 0.015194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.269033 seconds.
+  path: Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab
+  artifactKey: Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab using Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad9f05d98bbe37d23ee87127648323d6') in 0.027343 seconds
+  Import took 0.033794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.070646 seconds.
+  path: Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab
+  artifactKey: Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab using Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b22309eee91d1b45168248816db989d') in 0.023506 seconds
+  Import took 0.029554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.691216 seconds.
+  path: Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab
+  artifactKey: Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab using Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7261d851428c79fe121be5e661cf3afb') in 0.034348 seconds
+  Import took 0.040441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 230.858743 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7179298a777ab62ea97d32e15f46addf') in 0.008883 seconds
+  Import took 0.014768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.090654 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab
+  artifactKey: Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab using Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2b12cce7fe155e31703cfa747eb6cd') in 0.008276 seconds
+  Import took 0.013986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.255231 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.asset
+  artifactKey: Guid(153d04f31e388dd49830692df12f31c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.asset using Guid(153d04f31e388dd49830692df12f31c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5d849ac81824d7ec4fcf97d6086dc3') in 0.010001 seconds
+  Import took 0.015985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.632146 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d449641c4405bad56849a4b5bab733') in 0.003765 seconds
+  Import took 0.009377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010616 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d449641c4405bad56849a4b5bab733') in 0.004585 seconds
+  Import took 0.010785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.434577 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e0225189fc378748b3e16686127d19') in 0.026961 seconds
+  Import took 0.033508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.350259 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.asset
+  artifactKey: Guid(3f9c5048f43360f48b9394b1749bb933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.asset using Guid(3f9c5048f43360f48b9394b1749bb933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793473c2e27cb3da317cf56bce0b9b3e') in 0.014645 seconds
+  Import took 0.020912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.715735 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab
+  artifactKey: Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab using Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55e0c328b38bd323e0a363f0914efb7') in 0.029357 seconds
+  Import took 0.035736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.961044 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab
+  artifactKey: Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab using Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f01b736842e0eeb362ab60b52190db8') in 0.155924 seconds
+  Import took 0.161790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.127908 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23861a8914ec4558e0b9ecb23f41ffa8') in 0.028305 seconds
+  Import took 0.034479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 231.215762 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96b022498f87bf6c1491d92f7128ffc') in 0.004324 seconds
+  Import took 0.011020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003873 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96b022498f87bf6c1491d92f7128ffc') in 0.004154 seconds
+  Import took 0.012578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.296441 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.asset
+  artifactKey: Guid(24ff31b2c8e5e1c46bc96989c32412dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.asset using Guid(24ff31b2c8e5e1c46bc96989c32412dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65160267643449e14be3613fe28ca703') in 0.022188 seconds
+  Import took 0.028193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.488402 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e7978dbd79ebfa963a9841ba6be4cb') in 0.003461 seconds
+  Import took 0.009101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012812 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e7978dbd79ebfa963a9841ba6be4cb') in 0.004098 seconds
+  Import took 0.009700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.451604 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f4a5f2a1ec481aab910a9358ab3a392') in 0.022986 seconds
+  Import took 0.029504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.902204 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97494f0be78d8ae26c9fc64e541c223c') in 0.147434 seconds
+  Import took 0.153643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.628610 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa16dccacd3224f72608f90970819d3a') in 0.154153 seconds
+  Import took 0.160357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 139.070657 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fc7f2aeaf344e9021c4690659d9314') in 0.026622 seconds
+  Import took 0.033490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.684888 seconds.
+  path: Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab
+  artifactKey: Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab using Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56da7001cde89c7a8ae8f0f4a1e5afe6') in 0.003944 seconds
+  Import took 0.010633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.416555 seconds.
+  path: Assets/FBX/Prefabs/Structures/Crate_03_snaps002.asset
+  artifactKey: Guid(311b1f40bcd4bd848a5d3140102e224a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Crate_03_snaps002.asset using Guid(311b1f40bcd4bd848a5d3140102e224a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d5f7a3e0d12e2a3a4bb2c56899c421') in 0.018871 seconds
+  Import took 0.024398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.752364 seconds.
+  path: Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab
+  artifactKey: Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab using Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4bc8f37db9e1179231f02cd18d83077') in 0.034907 seconds
+  Import took 0.040686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.290079 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5874d41be93becde9330b006afb7a822') in 0.058555 seconds
+  Import took 0.065356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97258c719ec464eb820d434728cecf9') in 0.065780 seconds
+  Import took 0.072323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Thirdparty/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/Materials/prototype_512x512_grey1.mat
+  artifactKey: Guid(2160829324cf44345ad59a0402589df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thirdparty/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/Materials/prototype_512x512_grey1.mat using Guid(2160829324cf44345ad59a0402589df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04bb239c65ffa45ca58bcf80e04ae277') in 0.051244 seconds
+  Import took 0.057081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ea9f7d1ebf5b3dc0126eb3b965a1dd') in 0.055020 seconds
+  Import took 0.061539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5874d41be93becde9330b006afb7a822') in 0.024122 seconds
+  Import took 0.030607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd715b24a94dbf3badf17270d124c13b2') in 0.045619 seconds
+  Import took 0.051424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4b6043b422e440c1d479eb3b732851') in 0.057565 seconds
+  Import took 0.063577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Thirdparty/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/Materials/prototype_512x512_grey2.mat
+  artifactKey: Guid(a07eee3edae0ad14292d92523ce456d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thirdparty/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/Materials/prototype_512x512_grey2.mat using Guid(a07eee3edae0ad14292d92523ce456d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2807aaef9a8f5298d12d4141a5f470e2') in 0.028376 seconds
+  Import took 0.034574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4b6043b422e440c1d479eb3b732851') in 0.062351 seconds
+  Import took 0.068160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Thirdparty/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/Materials/prototype_512x512_grey2.mat
+  artifactKey: Guid(a07eee3edae0ad14292d92523ce456d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thirdparty/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/Materials/prototype_512x512_grey2.mat using Guid(a07eee3edae0ad14292d92523ce456d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2807aaef9a8f5298d12d4141a5f470e2') in 0.027536 seconds
+  Import took 0.033275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.142760 seconds.
+  path: Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab
+  artifactKey: Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab using Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8b49b205d24e6189df44fc03e530ad') in 0.028244 seconds
+  Import took 0.034423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.246123 seconds.
+  path: Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab
+  artifactKey: Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Crate_03_snaps002.prefab using Guid(2faeec1b74bb25646bc7f5cf913142b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54af189dec58f21214d77b6e78ac37e8') in 0.027800 seconds
+  Import took 0.034258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.476172 seconds.
+  path: Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab
+  artifactKey: Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Gale_Pillar_02_snaps002.prefab using Guid(d2a2e7e532b8bfb4e80e0bb273b58815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ba2b4bdb314ac0eeb829a8d445cfaf') in 0.030916 seconds
+  Import took 0.037195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.110575 seconds.
+  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab
+  artifactKey: Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab using Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb26a0f9183243ea3cd928b0e93602f') in 0.026867 seconds
+  Import took 0.032322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.684851 seconds.
+  path: Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab
+  artifactKey: Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Quart_Ramp_01_snaps002.prefab using Guid(3ececf8d87dbca942a6619f604b69425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ec1003cbccfcac0d7132679cb085cb') in 0.031916 seconds
+  Import took 0.038704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.107822 seconds.
+  path: Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab
+  artifactKey: Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/TurbineCover_03_snaps002.prefab using Guid(18f2f132ba04dd84cbb43d51d115c7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e4c6be0a71e52e779bd49660d13995') in 0.022767 seconds
+  Import took 0.029219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.068707 seconds.
+  path: Assets/FBX/Prefabs/Structures/Vent_02_snaps002.prefab
+  artifactKey: Guid(e1dad818f17a81d49a6dc77192ff8089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Vent_02_snaps002.prefab using Guid(e1dad818f17a81d49a6dc77192ff8089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f75a94f38998c07ef02d1f06ef9f66') in 0.026126 seconds
+  Import took 0.032202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.603564 seconds.
+  path: Assets/FBX/Prefabs/Structures/Vent_02_snaps002.prefab
+  artifactKey: Guid(e1dad818f17a81d49a6dc77192ff8089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Vent_02_snaps002.prefab using Guid(e1dad818f17a81d49a6dc77192ff8089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd34df74332d6e3a027fad3a80d2926') in 0.022819 seconds
+  Import took 0.029132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.131879 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e57c7d53a7892c84f6e5871dd2cb35') in 0.022553 seconds
+  Import took 0.028696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.393233 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8f5ccdc0b51bf28a503e0b7f35eea3') in 0.030567 seconds
+  Import took 0.037443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.877027 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc50129950d5a22df9c40e711831063d') in 0.022266 seconds
+  Import took 0.028997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.836913 seconds.
+  path: Assets/FBX/Prefabs/Structures/Wall_Support_Big_snaps002.prefab
+  artifactKey: Guid(322dcfc6d3aa0ef499ecf5aebe8c7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Wall_Support_Big_snaps002.prefab using Guid(322dcfc6d3aa0ef499ecf5aebe8c7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6050f8aefa31638970bbb2773a45b225') in 0.034044 seconds
+  Import took 0.040185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.848295 seconds.
+  path: Assets/FBX/Prefabs/Structures/Wall_Support_Big_snaps002.prefab
+  artifactKey: Guid(322dcfc6d3aa0ef499ecf5aebe8c7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Wall_Support_Big_snaps002.prefab using Guid(322dcfc6d3aa0ef499ecf5aebe8c7dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff9955aa1ed40589aec0a81062085a8') in 0.030380 seconds
+  Import took 0.036437 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001640 seconds.
+Registered in 0.001402 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.980 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4255.
-Total: 2.670800 ms (FindLiveObjects: 0.411600 ms CreateObjectMapping: 0.176000 ms MarkObjects: 2.009800 ms  DeleteObjects: 0.072400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001703 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
-UnityEditor.ProBuilder.HierarchyListener:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4258.
-Total: 3.027400 ms (FindLiveObjects: 0.437800 ms CreateObjectMapping: 0.215100 ms MarkObjects: 2.185800 ms  DeleteObjects: 0.187800 ms)
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001523 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.1 MB.
+System memory in use after: 182.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4748.
+Total: 3.794100 ms (FindLiveObjects: 0.555200 ms CreateObjectMapping: 0.324700 ms MarkObjects: 2.790700 ms  DeleteObjects: 0.122700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3121.075729 seconds.
+  path: Assets/Materials/Structures
+  artifactKey: Guid(d41051895f8447c4f8d0779108de1b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures using Guid(d41051895f8447c4f8d0779108de1b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff45edf16a5fbe1bcb91dfb90e37212f') in 0.009589 seconds
+  Import took 0.015272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.712475 seconds.
+  path: Assets/Materials/Structures/Black.mat
+  artifactKey: Guid(bb7f8be4c44b69041ba3d61c26ed2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/Black.mat using Guid(bb7f8be4c44b69041ba3d61c26ed2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a9d0b57aa1bde6d037016c4161bf1e') in 0.526277 seconds
+  Import took 0.532450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 195.898954 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae5d4d150ac2b6911b408fe7eb2f662') in 0.085688 seconds
+  Import took 0.093363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000723 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab
+  artifactKey: Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_03_snaps002.prefab using Guid(176dd45889eb0db4ab74afd80e12c7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae5d4d150ac2b6911b408fe7eb2f662') in 0.069408 seconds
+  Import took 0.075310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.886608 seconds.
+  path: Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab
+  artifactKey: Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Conduit_M_01_snaps002.prefab using Guid(d512a4b22335faf4fa94705622b1c0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0495105c91646134722ba8f67b37b0') in 0.129587 seconds
+  Import took 0.135541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.445367 seconds.
+  path: Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab
+  artifactKey: Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/WClamp_03_snaps002.prefab using Guid(b32248f5a35398e499d6e4eae053d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44ad391e0260bf20d869a8f4bad1c35') in 0.023199 seconds
+  Import took 0.028929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.162511 seconds.
+  path: Assets/Materials/Structures/Black.mat
+  artifactKey: Guid(bb7f8be4c44b69041ba3d61c26ed2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/Black.mat using Guid(bb7f8be4c44b69041ba3d61c26ed2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e14346cb8bfb3d02529d2a04759e76f') in 0.071843 seconds
+  Import took 0.077955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Materials/Structures/Object.mat
+  artifactKey: Guid(907aa4a347a29024fbd1066f534f7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/Object.mat using Guid(907aa4a347a29024fbd1066f534f7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3467c4537546cc6de4d7cd2309897b') in 0.053426 seconds
+  Import took 0.058554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Materials/Structures/OpClos.mat
+  artifactKey: Guid(9771e71cf44a5674480a2293ac30fb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/OpClos.mat using Guid(9771e71cf44a5674480a2293ac30fb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb89ba3e1ae13a145d764b256286be59') in 0.056541 seconds
+  Import took 0.061885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.273534 seconds.
+  path: Assets/Materials/Structures/OnlyOp.mat
+  artifactKey: Guid(89efa2fb718a41b418b0e72949cabb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/OnlyOp.mat using Guid(89efa2fb718a41b418b0e72949cabb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdfe32aff02ced52389c298eefbc58f') in 0.057541 seconds
+  Import took 0.063754 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001565 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
@@ -282,15 +1097,68 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.982 seconds
+- Completed reload, in  1.222 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3474 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.4 MB.
+System memory in use after: 182.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4261.
-Total: 5.834900 ms (FindLiveObjects: 0.972600 ms CreateObjectMapping: 0.771000 ms MarkObjects: 4.014100 ms  DeleteObjects: 0.076100 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4851.
+Total: 4.186500 ms (FindLiveObjects: 0.743800 ms CreateObjectMapping: 0.228700 ms MarkObjects: 3.126400 ms  DeleteObjects: 0.086400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 557.028260 seconds.
+  path: Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab
+  artifactKey: Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Prefabs/Structures/Console_01_snaps002.prefab using Guid(c099778d81029b04cbef1ca849cb184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe681e6d5fd7b7142114e544d41c720f') in 0.572266 seconds
+  Import took 0.580467 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001704 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.174 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.7 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4954.
+Total: 4.224800 ms (FindLiveObjects: 0.418900 ms CreateObjectMapping: 0.201100 ms MarkObjects: 3.470400 ms  DeleteObjects: 0.133200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.113430 seconds.
+  path: Assets/Materials/Structures/OpClos.mat
+  artifactKey: Guid(9771e71cf44a5674480a2293ac30fb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/OpClos.mat using Guid(9771e71cf44a5674480a2293ac30fb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfcf37e508bea48b7d613db1a369016') in 0.551236 seconds
+  Import took 0.557071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Materials/Structures/OnlyOp.mat
+  artifactKey: Guid(89efa2fb718a41b418b0e72949cabb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Structures/OnlyOp.mat using Guid(89efa2fb718a41b418b0e72949cabb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ccfdcaf69370f4a8fa283da08a1f5b') in 0.038065 seconds
+  Import took 0.043267 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

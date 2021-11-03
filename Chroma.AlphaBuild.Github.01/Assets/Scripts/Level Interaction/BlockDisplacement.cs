@@ -119,12 +119,12 @@ public class BlockDisplacement : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log("collision.gameObject.layer");
+        //Debug.Log("collision.gameObject.layer");
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerBody") || other.CompareTag("Cube"))
+        if (other.CompareTag("PlayerBody") || other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
         {
             other.transform.parent = this.transform;
         }
@@ -132,9 +132,13 @@ public class BlockDisplacement : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("PlayerBody") || other.CompareTag("Cube"))
+        if (other.CompareTag("PlayerBody"))
         {
             other.transform.parent = null;
+        }
+        if (other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
+        {
+            other.transform.parent = GameObject.Find("MoveableObjects").transform;
         }
     }
 }

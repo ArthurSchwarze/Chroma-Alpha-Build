@@ -10,9 +10,14 @@ public class TriggerDoorOpener : MonoBehaviour
     public TriggerDoorButton cylinder3;
     public TriggerDoorButton cylinder4;
 
+    [Space]
+
     public bool cylinder1_2NotConnected; // if the 2 Buttons are independent or not (like in LVL 1 the first door)
     public bool keepDoorOpen; // after opening the door it will not close anymore
 
+    [Space]
+
+    [SerializeField] AudioSource confirmationSFX;
     [SerializeField] Animator myDoor = null;
 
     bool oneTime;
@@ -34,19 +39,14 @@ public class TriggerDoorOpener : MonoBehaviour
         // 1 Button
         if (cylinder1 && !cylinder2 && !cylinder3 && !cylinder4)
         {
-            if (cylinder1.triggered && !oneTime)
+            if ((cylinder1.triggered && !oneTime) || (cylinder1.stays && !oneTime))
             {
                 OpenDoor();
                 ResetTriggers1();
                 oneTime = true;
             }
 
-            if (!cylinder1.stays)
-            {
-                ResetTriggers1();
-            }
-
-            else if (cylinder1.exitTriggered && oneTime && !keepDoorOpen)
+            else if (!cylinder1.stays && oneTime && !keepDoorOpen)
             {
                 CloseDoor();
                 ResetTriggers1();
@@ -62,19 +62,14 @@ public class TriggerDoorOpener : MonoBehaviour
             // dependent Buttons
             if (!cylinder1_2NotConnected)
             {
-                if ((cylinder1.triggered && cylinder2.triggered && !oneTime) || (cylinder1.triggered && cylinder2.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && !oneTime && !keepDoorOpen))
+                if ((cylinder1.triggered && cylinder2.triggered && !oneTime) || (cylinder1.stays && cylinder2.stays && !oneTime) || (cylinder1.triggered && cylinder2.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && !oneTime && !keepDoorOpen))
                 {
                     OpenDoor();
                     ResetTriggers2();
                     oneTime = true;
                 }
 
-                if (!cylinder1.stays && !cylinder2.stays)
-                {
-                    ResetTriggers2();
-                }
-
-                else if ((cylinder1.exitTriggered && cylinder2.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && oneTime && !keepDoorOpen))
+                else if ((!cylinder1.stays && cylinder2.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && oneTime && !keepDoorOpen))
                 {
                     CloseDoor();
                     ResetTriggers2();
@@ -85,7 +80,7 @@ public class TriggerDoorOpener : MonoBehaviour
             // independent Buttons (implementing keepDoorOpen variabel here doesn't make sense)
             else if (cylinder1_2NotConnected)
             {
-                if ((cylinder1.triggered && !cylinder2.stays && !oneTime) || (!cylinder1.stays && cylinder2.triggered && !oneTime))
+                if ((cylinder1.triggered && !cylinder2.stays && !oneTime) || (!cylinder1.stays && cylinder2.triggered && !oneTime) || (cylinder1.stays && !cylinder2.stays && !oneTime) || (!cylinder1.stays && cylinder2.stays && !oneTime) || (cylinder1.stays && cylinder2.stays && !oneTime))
                 {
                     OpenDoor();
                     ResetTriggers2();
@@ -106,19 +101,14 @@ public class TriggerDoorOpener : MonoBehaviour
         // 3 Buttons
         else if (cylinder1 && cylinder2 && cylinder3 && !cylinder4)
         {
-            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && !oneTime && !keepDoorOpen))
+            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && !oneTime) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && !oneTime && !keepDoorOpen))
             {
                 OpenDoor();
                 ResetTriggers3();
                 oneTime = true;
             }
 
-            if (!cylinder1.stays && !cylinder2.stays && !cylinder3.stays)
-            {
-                ResetTriggers3();
-            }
-
-            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && oneTime && !keepDoorOpen))
+            else if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && oneTime && !keepDoorOpen))
             {
                 CloseDoor();
                 ResetTriggers3();
@@ -131,19 +121,14 @@ public class TriggerDoorOpener : MonoBehaviour
         // 4 Buttons
         else if (cylinder1 && cylinder2 && cylinder3 && cylinder4)
         {
-            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && cylinder4.triggered && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.triggered && !oneTime && !keepDoorOpen))
+            if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && cylinder4.triggered && !oneTime) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.triggered && !oneTime && !keepDoorOpen))
             {
                 OpenDoor();
                 ResetTriggers4();
                 oneTime = true;
             }
 
-            if (!cylinder1.stays && !cylinder2.stays && !cylinder3.stays && !cylinder4.stays)
-            {
-                ResetTriggers4();
-            }
-
-            else if ((cylinder1.exitTriggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.exitTriggered && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.exitTriggered && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.exitTriggered && oneTime && !keepDoorOpen))
+            else if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen))
             {
                 CloseDoor();
                 ResetTriggers4();
@@ -157,49 +142,39 @@ public class TriggerDoorOpener : MonoBehaviour
     void ResetTriggers1()
     {
         cylinder1.triggered = false;
-        cylinder1.exitTriggered = false;
         cylinder1.stays = false;
     }
     void ResetTriggers2()
     {
         cylinder1.triggered = false;
-        cylinder1.exitTriggered = false;
         cylinder1.stays = false;
 
         cylinder2.triggered = false;
-        cylinder2.exitTriggered = false;
         cylinder2.stays = false;
     }
     void ResetTriggers3()
     {
         cylinder1.triggered = false;
-        cylinder1.exitTriggered = false;
         cylinder1.stays = false;
 
         cylinder2.triggered = false;
-        cylinder2.exitTriggered = false;
         cylinder2.stays = false;
 
         cylinder3.triggered = false;
-        cylinder3.exitTriggered = false;
         cylinder3.stays = false;
     }
     void ResetTriggers4()
     {
         cylinder1.triggered = false;
-        cylinder1.exitTriggered = false;
         cylinder1.stays = false;
 
         cylinder2.triggered = false;
-        cylinder2.exitTriggered = false;
         cylinder2.stays = false;
 
         cylinder3.triggered = false;
-        cylinder3.exitTriggered = false;
         cylinder3.stays = false;
 
         cylinder4.triggered = false;
-        cylinder4.exitTriggered = false;
         cylinder4.stays = false;
     }
     #endregion
@@ -222,6 +197,8 @@ public class TriggerDoorOpener : MonoBehaviour
     {
         float time = myDoor.GetCurrentAnimatorStateInfo(0).normalizedTime;
 
+        Invoke("PlaySound", .2f);
+
         if (time < 1.0f)
         {
             myDoor.Play("DoorOpen", 0, 1.0f - time);
@@ -229,6 +206,11 @@ public class TriggerDoorOpener : MonoBehaviour
         }
 
         myDoor.Play("DoorOpen", 0, 0.0f);
+    }
+
+    void PlaySound()
+    {
+        confirmationSFX.Play();
     }
     #endregion
 }
