@@ -6,10 +6,13 @@ public class TriggerDoorButton : MonoBehaviour
 {
     [HideInInspector] public bool triggered;
     [HideInInspector] public bool stays;
+    bool exit = true;
 
     private AudioSource buttonSource;
     [SerializeField] AudioClip[] buttonSFXs;
     private AudioClip buttonClip;
+
+    [SerializeField] TriggerDoorOpener opener;
 
     private void Start()
     {
@@ -18,7 +21,7 @@ public class TriggerDoorButton : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("ignoreCollision") && collision.gameObject.CompareTag("Cube"))
+        if (collision.gameObject.CompareTag("Cube"))
         {
             if (collision.gameObject.GetComponent<GravityGameObject>())
             {
@@ -39,16 +42,19 @@ public class TriggerDoorButton : MonoBehaviour
         else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
             triggered = false;
+            exit = true;
         }
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("ignoreCollision") && collision.gameObject.CompareTag("Cube"))
+        if (collision.gameObject.CompareTag("Cube"))
         {
-            if (!stays)
+            if (opener.makeSound && exit)
             {
                 PlayButtonSound();
+                opener.makeSound = false;
+                exit = false;
             }
 
             if (collision.gameObject.GetComponent<GravityGameObject>())
@@ -62,27 +68,31 @@ public class TriggerDoorButton : MonoBehaviour
         else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
             stays = false;
+            exit = true;
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("ignoreCollision") && collision.gameObject.CompareTag("Cube"))
+        if (collision.gameObject.CompareTag("Cube"))
         {
             if (collision.gameObject.GetComponent<GravityGameObject>())
             {
                 triggered = false;
                 stays = false;
+                exit = true;
             }
 
             triggered = false;
             stays = false;
+            exit = true;
         }
 
         else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
             triggered = false;
             stays = false;
+            exit = true;
         }
     }
 

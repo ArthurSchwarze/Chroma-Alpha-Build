@@ -20,7 +20,9 @@ public class TriggerDoorOpener : MonoBehaviour
     [SerializeField] AudioSource confirmationSFX;
     [SerializeField] Animator myDoor = null;
 
+    [HideInInspector] public bool makeSound;
     bool oneTime;
+    bool notClosed;
 
     const float fixedFramerate = .001f;
 
@@ -44,6 +46,7 @@ public class TriggerDoorOpener : MonoBehaviour
                 OpenDoor();
                 ResetTriggers1();
                 oneTime = true;
+                makeSound = true;
             }
 
             else if (!cylinder1.stays && oneTime && !keepDoorOpen)
@@ -67,9 +70,21 @@ public class TriggerDoorOpener : MonoBehaviour
                     OpenDoor();
                     ResetTriggers2();
                     oneTime = true;
+                    if (keepDoorOpen)
+                    {
+                        notClosed = true;
+                    }
                 }
-
-                else if ((!cylinder1.stays && cylinder2.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && oneTime && !keepDoorOpen))
+                
+                if ((!cylinder1.stays && cylinder2.stays) || (cylinder1.stays && !cylinder2.stays))
+                {
+                    if (!notClosed)
+                    {
+                        makeSound = true;
+                    }
+                }
+                
+                if ((!cylinder1.stays && cylinder2.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && oneTime && !keepDoorOpen))
                 {
                     CloseDoor();
                     ResetTriggers2();
@@ -93,6 +108,11 @@ public class TriggerDoorOpener : MonoBehaviour
                     ResetTriggers2();
                     oneTime = false;
                 }
+
+                if ((cylinder1.triggered && !cylinder2.stays) || (!cylinder1.stays && cylinder2.triggered) || (cylinder1.stays && !cylinder2.stays) || (!cylinder1.stays && cylinder2.stays) || (cylinder1.stays && cylinder2.stays))
+                {
+                    makeSound = true;
+                }
             }
         }
         #endregion
@@ -106,9 +126,21 @@ public class TriggerDoorOpener : MonoBehaviour
                 OpenDoor();
                 ResetTriggers3();
                 oneTime = true;
+                if (keepDoorOpen)
+                {
+                    notClosed = true;
+                }
             }
 
-            else if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && oneTime && !keepDoorOpen))
+            if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays))
+            {
+                if (!notClosed)
+                {
+                    makeSound = true;
+                }
+            }
+
+            if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && oneTime && !keepDoorOpen))
             {
                 CloseDoor();
                 ResetTriggers3();
@@ -126,9 +158,21 @@ public class TriggerDoorOpener : MonoBehaviour
                 OpenDoor();
                 ResetTriggers4();
                 oneTime = true;
+                if (keepDoorOpen)
+                {
+                    notClosed = true;
+                }
             }
 
-            else if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen))
+            if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && cylinder4.stays) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && cylinder4.stays) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !cylinder4.stays))
+            {
+                if (!notClosed)
+                {
+                    makeSound = true;
+                }
+            }
+
+            if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen))
             {
                 CloseDoor();
                 ResetTriggers4();
