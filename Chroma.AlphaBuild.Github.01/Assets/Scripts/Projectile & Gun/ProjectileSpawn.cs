@@ -29,6 +29,8 @@ public class ProjectileSpawn : MonoBehaviour
 
     private ColorActivation colAct;
 
+    PickAndDrop pickAndDrop;
+
     private void Start()
     {
         pauseCanvas = GameObject.Find("Pause Menu Canvas");
@@ -45,6 +47,7 @@ public class ProjectileSpawn : MonoBehaviour
         GameObject FP = GameObject.Find("FirstPersonPlayer");
         doesAction = FP.GetComponent<EquipWeapon>();
         colAct = FP.GetComponent<ColorActivation>();
+        pickAndDrop = FP.GetComponent<PickAndDrop>();
     }
 
     // Update is called once per frame
@@ -123,7 +126,7 @@ public class ProjectileSpawn : MonoBehaviour
                 number = 4;
             }
 
-            if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && obstacleCheck.tooNear == false && !isReloading.IsName("Arms Reload"))
+            if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && obstacleCheck.tooNear == false && !isReloading.IsName("Arms Reload") && !pickAndDrop.isHolding)
             {
                 nextTimeToFire = Time.time + 1f / fireRate;
                 Instantiate(blobProjectiles[number], transform.position, transform.rotation);

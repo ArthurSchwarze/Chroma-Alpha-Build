@@ -29,6 +29,10 @@ public class ChangeColor : MonoBehaviour
 	private EquipWeapon doesAction;
 	private Animator anim;
 
+	[SerializeField] PhysicMaterial bounceMaterial;
+	[SerializeField] PhysicMaterial speedBoostMaterial;
+	[HideInInspector] public bool yellowOneTime;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -84,6 +88,10 @@ public class ChangeColor : MonoBehaviour
 
 	public void MoveColour(GameObject o)
 	{
+		Collider c = o.GetComponent<Collider>();
+		Rigidbody r = o.GetComponent<Rigidbody>();
+		CubeCollDetect d = o.GetComponent<CubeCollDetect>();
+
 		if (o.GetComponent<MeshRenderer>().material.name == MaterialColour[ColourNumber].name + " (Instance)")
 		{
 			return;
@@ -102,35 +110,40 @@ public class ChangeColor : MonoBehaviour
         }
 
 
-		if (ColourNumber == 4) // Colour: Green (Bounce) not active 
+		if (ColourNumber == 4) // Colour: Green (Bounce) active 
 		{
-			//placeholder
+			c.material = bounceMaterial;
+			r.AddForce(d.normal * 10f, ForceMode.Impulse);
 		}
 
 		if (ColourNumber == 1) // Colour: Blue (No Collision) active
 		{
 			o.tag = "ignoreCollision";
 			Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>());
+			c.material = null;
 		}
 
-		if (ColourNumber == 3) // Colour: Yellow (Speedboost) not active
+		if (ColourNumber == 3) // Colour: Yellow (Speedboost) active
 		{
-			//placeholder
+			c.material = speedBoostMaterial;
+			yellowOneTime = true;
 		}
 
 		if (ColourNumber == 2)  // Colour: Red (Gravity Change) active
 		{
 			o.GetComponent<GravityGameObject>().gravityModifier = -1;
+			c.material = null;
 		}
 
 		if (ColourNumber == 5) // Colour: Purple (Connect Objects) active
 		{
 			o.AddComponent<ConnectObjects>();
+			c.material = null;
 		}
 
-		if (ColourNumber == 0) // Colour: White
+		if (ColourNumber == 0) // Colour: White (Default) always active
 		{
-			//placeholder
+			c.material = null;
 		}
 	}
 	/*

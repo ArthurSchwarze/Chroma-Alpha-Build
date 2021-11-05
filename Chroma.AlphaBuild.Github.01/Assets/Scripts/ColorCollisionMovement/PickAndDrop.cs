@@ -29,7 +29,10 @@ public class PickAndDrop : MonoBehaviour
 
 	Collider c;
 	PhysicMaterial phyMat;
+	PhysicMaterial previousPhyMat;
 	[HideInInspector] public float cubeSpeed = 12f;
+
+	[HideInInspector] public bool isHolding;
 
 	// Use this for initialization
 	void Start()
@@ -130,6 +133,8 @@ public class PickAndDrop : MonoBehaviour
 				Pickupable p = hit.collider.GetComponent<Pickupable>();
 				if (p != null)
 				{
+					isHolding = true;
+
 					cubeSpeed = 12;
 
 					emSound.Play();
@@ -145,6 +150,7 @@ public class PickAndDrop : MonoBehaviour
 					r.angularVelocity = Vector3.zero;
 
 					c = carriedObject.GetComponent<Collider>();
+					previousPhyMat = c.material;
 					phyMat = new PhysicMaterial();
 					phyMat.staticFriction = 0f;
 					phyMat.dynamicFriction = 0f;
@@ -164,13 +170,15 @@ public class PickAndDrop : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.E) && !mouse.gameIsPaused)
 		{
-			c.material = null;
+			c.material = previousPhyMat;
 			cubeSpeed = 12f;
 
 			emSound.Stop();
 			electroMagnet.Stop();
 
 			dropObject();
+
+			isHolding = false;
 		}
 	}
 

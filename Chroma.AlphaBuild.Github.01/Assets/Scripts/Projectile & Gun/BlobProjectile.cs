@@ -17,6 +17,8 @@ public class BlobProjectile : MonoBehaviour
     public int predictionStepsPerFrame = 6;
     public Vector3 bulletVelocity;
 
+    ChangeColor changeColor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class BlobProjectile : MonoBehaviour
         bulletVelocity = this.transform.forward * speed;
 
         character = GameObject.Find("FirstPersonPlayer");
+        changeColor = character.GetComponent<ChangeColor>();
     }
 
     // Update is called once per frame
@@ -57,17 +60,22 @@ public class BlobProjectile : MonoBehaviour
                 }
                 else
                 {
+                    if (hit.collider.GetComponent<Colorable>())
+                    {
+                        character.GetComponent<ChangeColor>().MoveColour(hit.transform.gameObject);
+                        if (changeColor.yellowOneTime)
+                        {
+                            hit.collider.GetComponent<Rigidbody>().AddForce(-hit.normal * 10f, ForceMode.Impulse);
+                            changeColor.yellowOneTime = false;
+                        }
+                    }
+
                     GameObject impactGO = Instantiate(collisionSplashVFX, hit.point, Quaternion.LookRotation(hit.normal));
                     Destroy(impactGO, 0.5f);
                     GameObject impact2GO = Instantiate(sprinkleVFX, hit.point, Quaternion.LookRotation(hit.normal));
                     Destroy(impact2GO, 0.5f);
 
                     Destroy(gameObject);
-
-                    if (hit.collider.GetComponent<Colorable>())
-                    {
-                        character.GetComponent<ChangeColor>().MoveColour(hit.transform.gameObject);
-                    }
                 }
             }
 

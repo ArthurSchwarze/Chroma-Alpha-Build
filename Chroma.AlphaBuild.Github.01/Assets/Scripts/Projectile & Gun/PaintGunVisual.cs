@@ -21,6 +21,8 @@ public class PaintGunVisual : MonoBehaviour
 
     private ColorActivation colAct;
 
+    PickAndDrop pickAndDrop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class PaintGunVisual : MonoBehaviour
         GameObject FP = GameObject.Find("FirstPersonPlayer");
         doesAction = FP.GetComponent<EquipWeapon>();
         colAct = FP.GetComponent<ColorActivation>();
+        pickAndDrop = FP.GetComponent<PickAndDrop>();
     }
 
     // Update is called once per frame
@@ -73,7 +76,7 @@ public class PaintGunVisual : MonoBehaviour
                 Invoke("changeC6", .62f);
             }
 
-            if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && !isReloading.IsName("Arms Reload"))
+            if (Input.GetMouseButton(0) && Time.time >= nextTimeToFire && !isReloading.IsName("Arms Reload") && !pickAndDrop.isHolding)
             {
                 nextTimeToFire = Time.time + 1f / fireRate;
                 gunSplatterVFX.Play();

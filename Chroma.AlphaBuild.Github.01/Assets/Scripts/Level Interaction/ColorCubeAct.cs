@@ -25,6 +25,13 @@ public class ColorCubeAct : MonoBehaviour
 	[Tooltip("Cube will get this Color at start, white is default!")]
 	public bool magenta;
 
+	[Space]
+
+	[Header("Physic Materials")]
+	[Tooltip("Behavior for Green and Yellow Cube")]
+	[SerializeField] PhysicMaterial bounceMaterial;
+	[SerializeField] PhysicMaterial speedBoostMaterial;
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -34,6 +41,8 @@ public class ColorCubeAct : MonoBehaviour
 
 	public void MoveColour(GameObject o)
 	{
+		Collider c = o.GetComponent<Collider>();
+
 		o.GetComponent<GravityGameObject>().ColorChangeGravity();
 
 		o.GetComponent<GravityGameObject>().gravityModifier = 1;
@@ -46,9 +55,9 @@ public class ColorCubeAct : MonoBehaviour
 		}
 
 
-		if (green) // Colour: Green (Bounce) not active 
+		if (green) // Colour: Green (Bounce) active 
 		{
-			//placeholder
+			c.material = bounceMaterial;
 			ColourNumber = 4;
 		}
 
@@ -56,24 +65,27 @@ public class ColorCubeAct : MonoBehaviour
 		{
 			o.tag = "ignoreCollision";
 			Physics.IgnoreCollision(character.GetComponent<Collider>(), o.GetComponent<Collider>());
+			c.material = null;
 			ColourNumber = 1;
 		}
 
-		if (yelllow) // Colour: Yellow (Speedboost) not active
+		if (yelllow) // Colour: Yellow (Speedboost) active
 		{
-			//placeholder
+			c.material = speedBoostMaterial;
 			ColourNumber = 3;
 		}
 
 		if (red)  // Colour: Red (Gravity Change) active
 		{
 			o.GetComponent<GravityGameObject>().gravityModifier = -1;
+			c.material = null;
 			ColourNumber = 2;
 		}
 
 		if (magenta) // Colour: Purple (Connect Objects) active
 		{
 			o.AddComponent<ConnectObjects>();
+			c.material = null;
 			ColourNumber = 5;
 		}
 
