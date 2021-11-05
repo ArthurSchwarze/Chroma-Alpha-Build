@@ -42,11 +42,14 @@ public class NewPlayerMovement : MonoBehaviour
 
     private Animator anim;
 
+    PickAndDrop pickAndDrop;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
+        pickAndDrop = GetComponent<PickAndDrop>();
     }
 
     // Update is called once per frame
@@ -144,5 +147,22 @@ public class NewPlayerMovement : MonoBehaviour
             runs = true;
             anim.SetFloat("WalkSpeed", 1f, .2f, Time.deltaTime);
         }
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Cube"))
+        {
+            pickAndDrop.cubeSpeed = .01f;
+        }
+        else
+        {
+            Invoke("ResetSpeed", .1f);
+        }
+    }
+
+    void ResetSpeed()
+    {
+        pickAndDrop.cubeSpeed = 12f;
     }
 }

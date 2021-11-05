@@ -27,6 +27,10 @@ public class PickAndDrop : MonoBehaviour
 	private GameObject pauseCanvas;
 	private PauseMenu mouse;
 
+	Collider c;
+	PhysicMaterial phyMat;
+	[HideInInspector] public float cubeSpeed = 12f;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -81,7 +85,7 @@ public class PickAndDrop : MonoBehaviour
 		//mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime
 		//}
 		//o.GetComponent<Rigidbody>().velocity = Vector3.zero;
-		o.GetComponent<Rigidbody>().velocity = newMove * 6;
+		o.GetComponent<Rigidbody>().velocity = newMove * cubeSpeed;
 
 		if (o.GetComponent<ConnectObjects>() != null)
         {
@@ -91,7 +95,7 @@ public class PickAndDrop : MonoBehaviour
 				var connectedObject = connect.object2;
 				if (connectedObject != null)
 				{
-					connectedObject.GetComponent<Rigidbody>().velocity = newMove * 6;
+					connectedObject.GetComponent<Rigidbody>().velocity = newMove * cubeSpeed;
 					connectedObject.GetComponent<GravityGameObject>().temporaryBreak = true;
 				}
 			}
@@ -100,7 +104,7 @@ public class PickAndDrop : MonoBehaviour
 				ConnectObjects connectedObject = connect.object1;
 				if (connectedObject != null)
 				{
-					connectedObject.GetComponent<Rigidbody>().velocity = newMove * 6;
+					connectedObject.GetComponent<Rigidbody>().velocity = newMove * cubeSpeed;
 					connectedObject.GetComponent<GravityGameObject>().temporaryBreak = true;
 				}
 			}
@@ -126,6 +130,8 @@ public class PickAndDrop : MonoBehaviour
 				Pickupable p = hit.collider.GetComponent<Pickupable>();
 				if (p != null)
 				{
+					cubeSpeed = 12;
+
 					emSound.Play();
 					electroMagnet.Play();
 
@@ -138,6 +144,15 @@ public class PickAndDrop : MonoBehaviour
 					r.velocity = Vector3.zero;
 					r.angularVelocity = Vector3.zero;
 
+					c = carriedObject.GetComponent<Collider>();
+					phyMat = new PhysicMaterial();
+					phyMat.staticFriction = 0f;
+					phyMat.dynamicFriction = 0f;
+					phyMat.frictionCombine = PhysicMaterialCombine.Minimum;
+					phyMat.bounciness = 0f;
+					phyMat.bounceCombine = PhysicMaterialCombine.Minimum;
+					c.material = phyMat;
+
 					//p.GetComponent<Rigidbody>().isKinematic = true;
 					//p.gameObject.GetComponent<Rigidbody>().useGravity = false;
 				}
@@ -149,6 +164,9 @@ public class PickAndDrop : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.E) && !mouse.gameIsPaused)
 		{
+			c.material = null;
+			cubeSpeed = 12f;
+
 			emSound.Stop();
 			electroMagnet.Stop();
 
