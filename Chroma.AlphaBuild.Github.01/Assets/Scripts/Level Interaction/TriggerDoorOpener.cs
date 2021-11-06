@@ -46,10 +46,21 @@ public class TriggerDoorOpener : MonoBehaviour
                 OpenDoor();
                 ResetTriggers1();
                 oneTime = true;
-                makeSound = true;
+                if (keepDoorOpen)
+                {
+                    notClosed = true;
+                }
             }
 
-            else if (!cylinder1.stays && oneTime && !keepDoorOpen)
+            if (cylinder1.triggered || cylinder1.stays)
+            {
+                if (!notClosed)
+                {
+                    makeSound = true;
+                }
+            }
+
+            if (!cylinder1.stays && oneTime && !keepDoorOpen)
             {
                 CloseDoor();
                 ResetTriggers1();
