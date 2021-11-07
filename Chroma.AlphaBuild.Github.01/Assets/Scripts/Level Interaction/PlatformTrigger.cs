@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlatformTrigger : MonoBehaviour
 {
+    Vector3 lastPosition, lastMove;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerBody"))// || other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
+        if (other.CompareTag("PlayerBody"))
         {
             other.transform.SetParent(this.transform);
         }
@@ -18,9 +20,19 @@ public class PlatformTrigger : MonoBehaviour
         {
             other.transform.SetParent(null);
         }
-        //if (other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
-        //{
-        //    other.transform.SetParent(GameObject.Find("MoveableObjects").transform);
-        //}
+    }
+
+    void FixedUpdate()
+    {
+        lastMove = transform.position - lastPosition;
+        lastPosition = transform.position;
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
+        {
+            other.attachedRigidbody.MovePosition(other.attachedRigidbody.position + lastMove);
+        }
     }
 }
