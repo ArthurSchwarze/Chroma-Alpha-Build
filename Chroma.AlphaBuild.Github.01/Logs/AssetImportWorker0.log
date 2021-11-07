@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'de' Physical Memory: 8051 MB
+OS: 'Windows 10 Home; OS build 19043.1320; Version 2009; 64bit' Language: 'de' Physical Memory: 32599 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,211 +11,240 @@ C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/aschw/OneDrive/Bilder/Dokumente/GitHub/Chroma-Alpha-Build/Chroma.AlphaBuild.Github.01
+C:/Users/Mavin (Privat)/Documents/Matura-Projekt/Chroma/Chroma.AlphaBuild.Github.01
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59652
-Successfully changed project path to: C:/Users/aschw/OneDrive/Bilder/Dokumente/GitHub/Chroma-Alpha-Build/Chroma.AlphaBuild.Github.01
-C:/Users/aschw/OneDrive/Bilder/Dokumente/GitHub/Chroma-Alpha-Build/Chroma.AlphaBuild.Github.01
+62735
+Successfully changed project path to: C:/Users/Mavin (Privat)/Documents/Matura-Projekt/Chroma/Chroma.AlphaBuild.Github.01
+C:/Users/Mavin (Privat)/Documents/Matura-Projekt/Chroma/Chroma.AlphaBuild.Github.01
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 371.17 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 68.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/aschw/OneDrive/Bilder/Dokumente/GitHub/Chroma-Alpha-Build/Chroma.AlphaBuild.Github.01/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Mavin (Privat)/Documents/Matura-Projekt/Chroma/Chroma.AlphaBuild.Github.01/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   
-    VRAM:     4025 MB
-    Driver:   27.20.100.9749
+    VRAM:     5980 MB
+    Driver:   27.21.14.5167
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002767 seconds.
+Registered in 0.001626 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 83.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 64.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.142 seconds
+- Completed reload, in  0.908 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001913 seconds.
+Registered in 0.001573 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 92.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 66.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.686 seconds
+- Completed reload, in  1.198 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3806 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 190.8 MB.
-System memory in use after: 190.9 MB.
+System memory in use before: 190.7 MB.
+System memory in use after: 190.8 MB.
 
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4246.
-Total: 3.611800 ms (FindLiveObjects: 0.417900 ms CreateObjectMapping: 0.232800 ms MarkObjects: 2.617200 ms  DeleteObjects: 0.342200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/ColorCollisionMovement
-  artifactKey: Guid(e71b28cc43d1f574bbd59ce60299712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement using Guid(e71b28cc43d1f574bbd59ce60299712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4531b9854e5eacf18fcef65f256f4277') in 0.036084 seconds
-  Import took 0.043314 seconds .
+Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4244.
+Total: 3.231500 ms (FindLiveObjects: 0.423700 ms CreateObjectMapping: 0.164800 ms MarkObjects: 2.234600 ms  DeleteObjects: 0.407400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000955 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(303d3fa2f3b1fbe48b9809ad2f480356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(303d3fa2f3b1fbe48b9809ad2f480356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14adbeefc54df0f2694730908a00a0dc') in 0.031954 seconds
-  Import took 0.039279 seconds .
+  path: Assets/HDRPDefaultResources/Skin Diffusion Profile.asset
+  artifactKey: Guid(3ef7168cbced5ca46a7735d64f9a0592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/Skin Diffusion Profile.asset using Guid(3ef7168cbced5ca46a7735d64f9a0592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd342b1baca7a889368cf23bf1126fbb5') in 0.032458 seconds
+  Import took 0.037730 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.376546 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs
-  artifactKey: Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs using Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed035a3c31cdc9f67523000d23185477') in 0.124803 seconds
-  Import took 0.133994 seconds .
+  Time since last request: 0.000320 seconds.
+  path: Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset
+  artifactKey: Guid(efb50331f6a4acc4db50f85af6ed2532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset using Guid(efb50331f6a4acc4db50f85af6ed2532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40f052e2081a1d24b20a2ad99afe8dc') in 0.008249 seconds
+  Import took 0.014315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  artifactKey: Guid(ccb61c4e53520664181400baf34cf87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset using Guid(ccb61c4e53520664181400baf34cf87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392cb19a51dff99c0d71242ece262cdb') in 0.006751 seconds
+  Import took 0.012135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/HDRPDefaultResources/Foliage Diffusion Profile.asset
+  artifactKey: Guid(29f3a1fef6b9a7744bca74133fc66373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/Foliage Diffusion Profile.asset using Guid(29f3a1fef6b9a7744bca74133fc66373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723c931311c7a824a618c3d0b1761c70') in 0.005750 seconds
+  Import took 0.010124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.015258 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ChildCollision.cs
+  artifactKey: Guid(b97a579ff4b95884eb1b982f8e95a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ChildCollision.cs using Guid(b97a579ff4b95884eb1b982f8e95a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba812bd1d2f7fd6cbd40607f1ed55dc') in 0.012283 seconds
+  Import took 0.017169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016937 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ChildCollision.cs
+  artifactKey: Guid(b97a579ff4b95884eb1b982f8e95a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ChildCollision.cs using Guid(b97a579ff4b95884eb1b982f8e95a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba812bd1d2f7fd6cbd40607f1ed55dc') in 0.002685 seconds
+  Import took 0.008527 seconds .
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.86 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 102.2 MB.
 System memory in use after: 102.4 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 4246.
-Total: 4.152300 ms (FindLiveObjects: 0.537700 ms CreateObjectMapping: 0.301500 ms MarkObjects: 3.212900 ms  DeleteObjects: 0.098500 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4244.
+Total: 3.818800 ms (FindLiveObjects: 0.610800 ms CreateObjectMapping: 0.323500 ms MarkObjects: 2.423400 ms  DeleteObjects: 0.459600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 264.410983 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs
-  artifactKey: Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/PickAndDrop.cs using Guid(e42636a1d4dd101449e8bf9227f0d591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1250ca4d13d21a36cac1da260447171a') in 0.030066 seconds
-  Import took 0.038515 seconds .
+  Time since last request: 88.669285 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ChangeColor.cs
+  artifactKey: Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ChangeColor.cs using Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebdf9c031a25758b3c0b4933f947d2b') in 0.007186 seconds
+  Import took 0.014920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005001 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ChangeColor.cs
+  artifactKey: Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ChangeColor.cs using Guid(a89d859576ec9c1479f717e0be6d0644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebdf9c031a25758b3c0b4933f947d2b') in 0.003162 seconds
+  Import took 0.008592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.798147 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ConnectObjects.cs
+  artifactKey: Guid(e2a1522a3cc40d641bdb94fd903e7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ConnectObjects.cs using Guid(e2a1522a3cc40d641bdb94fd903e7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6327c80bbab48fc08146d57dedf306e2') in 0.006714 seconds
+  Import took 0.012870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015151 seconds.
+  path: Assets/Scripts/ColorCollisionMovement/ConnectObjects.cs
+  artifactKey: Guid(e2a1522a3cc40d641bdb94fd903e7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ColorCollisionMovement/ConnectObjects.cs using Guid(e2a1522a3cc40d641bdb94fd903e7402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6327c80bbab48fc08146d57dedf306e2') in 0.003088 seconds
+  Import took 0.008873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 392.000227 seconds.
+  path: Assets/Scripts/Projectile & Gun/Bounce.cs
+  artifactKey: Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/Bounce.cs using Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da281ac981da222dc6bced0b9464168') in 0.008721 seconds
+  Import took 0.015207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004382 seconds.
+  path: Assets/Scripts/Projectile & Gun/Bounce.cs
+  artifactKey: Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/Bounce.cs using Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da281ac981da222dc6bced0b9464168') in 0.003056 seconds
+  Import took 0.008946 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002020 seconds.
+Registered in 0.001462 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
 System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.674 seconds
+- Completed reload, in  0.986 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3478 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
+System memory in use before: 172.1 MB.
+System memory in use after: 172.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4249.
-Total: 4.314300 ms (FindLiveObjects: 0.618200 ms CreateObjectMapping: 0.418400 ms MarkObjects: 3.199400 ms  DeleteObjects: 0.076700 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4247.
+Total: 2.697200 ms (FindLiveObjects: 0.385300 ms CreateObjectMapping: 0.209500 ms MarkObjects: 1.991800 ms  DeleteObjects: 0.109800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 344.091380 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/GravityGameObject.cs
-  artifactKey: Guid(8102c59dd9f0ff64fabe3bcffae78340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/GravityGameObject.cs using Guid(8102c59dd9f0ff64fabe3bcffae78340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04454b8197c6431f0d811b6e484b9239') in 0.074722 seconds
-  Import took 0.086622 seconds .
+  Time since last request: 63.945679 seconds.
+  path: Assets/Scripts/Projectile & Gun/Bounce.cs
+  artifactKey: Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/Bounce.cs using Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1836e08a76b160e74a039b1638c145') in 0.007307 seconds
+  Import took 0.013515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007772 seconds.
+  path: Assets/Scripts/Projectile & Gun/Bounce.cs
+  artifactKey: Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile & Gun/Bounce.cs using Guid(53bf59e0520490943bfb01acdde2f6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1836e08a76b160e74a039b1638c145') in 0.002893 seconds
+  Import took 0.008663 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002363 seconds.
+Registered in 0.001680 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool)
+UnityEditor.ProBuilder.HierarchyListener:.cctor ()
 System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+[C:\buildslave\unity\build\Editor/Src/AnnotationManager.cpp line 229]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.278 seconds
+- Completed reload, in  0.941 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3478 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.5 MB.
+System memory in use before: 172.2 MB.
+System memory in use after: 172.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4252.
-Total: 4.082300 ms (FindLiveObjects: 0.823100 ms CreateObjectMapping: 0.297200 ms MarkObjects: 2.865700 ms  DeleteObjects: 0.094200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.477851 seconds.
-  path: Assets/Scripts/ColorCollisionMovement/GravityGameObject.cs
-  artifactKey: Guid(8102c59dd9f0ff64fabe3bcffae78340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ColorCollisionMovement/GravityGameObject.cs using Guid(8102c59dd9f0ff64fabe3bcffae78340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b26923161051bd29d2249d690a5ce4') in 0.032975 seconds
-  Import took 0.040812 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007076 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.927 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3478 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.4 MB.
-System memory in use after: 172.6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4255.
-Total: 3.828700 ms (FindLiveObjects: 0.548300 ms CreateObjectMapping: 0.256700 ms MarkObjects: 2.907400 ms  DeleteObjects: 0.114100 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4250.
+Total: 2.633900 ms (FindLiveObjects: 0.405100 ms CreateObjectMapping: 0.208600 ms MarkObjects: 1.910000 ms  DeleteObjects: 0.109400 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
