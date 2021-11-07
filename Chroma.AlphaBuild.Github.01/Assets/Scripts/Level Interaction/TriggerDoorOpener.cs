@@ -24,18 +24,18 @@ public class TriggerDoorOpener : MonoBehaviour
     bool oneTime;
     bool notClosed;
 
-    const float fixedFramerate = .001f;
+    //const float fixedFramerate = .001f;
 
-    IEnumerator Start()
-    {
-        while (Application.isPlaying)
-        {
-            CustomFixedUpdate();
-            yield return new WaitForSeconds(fixedFramerate);
-        }
-    }
+    //IEnumerator Start()
+    //{
+    //    while (Application.isPlaying)
+    //    {
+    //        CustomFixedUpdate();
+    //        yield return new WaitForSeconds(fixedFramerate);
+    //    }
+    //}
 
-    private void CustomFixedUpdate()
+    private void FixedUpdate()
     {
         #region OneButton
         // 1 Button
