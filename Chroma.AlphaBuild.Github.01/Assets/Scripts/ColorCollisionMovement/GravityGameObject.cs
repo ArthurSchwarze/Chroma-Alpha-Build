@@ -38,8 +38,7 @@ public class GravityGameObject : MonoBehaviour
         mainCamera = GameObject.FindWithTag("MainCamera");
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (MinimalVector(worldPosition - transform.position)) 
         {

@@ -50,7 +50,7 @@ public class PickAndDrop : MonoBehaviour
 	{
 		if (carrying)
 		{
-			carry(carriedObject);
+			//carry(carriedObject);
 			checkDrop();
 			//rotateObject();
 		}
@@ -60,7 +60,17 @@ public class PickAndDrop : MonoBehaviour
 		}
 	}
 
-	void rotateObject()
+    private void FixedUpdate()
+    {
+		if (carrying)
+		{
+			carry(carriedObject);
+			//checkDrop();
+			//rotateObject();
+		}
+	}
+
+    void rotateObject()
 	{
 		carriedObject.transform.Rotate(5, 10, 15);
 	}
