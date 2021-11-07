@@ -50,17 +50,22 @@ public class ConnectObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (GetComponent<GravityGameObject>().temporaryBreak && inConnection)
-        //{
-            //if (Placement == 1)
-            //{
-                //object2.GetComponent<Rigidbody>.
-            //}
-            //else if (Placement == 2)
-            //{
-                //object1
-            //}
-        //}
+        foreach (GameObject nearObject in collisionObjects)
+        {
+            GameObject clone = GameObject.Find(Placement + "clone" + nearObject.name);
+            if (clone != null)
+            {
+                clone.transform.position = nearObject.transform.position + difference12;
+                clone.transform.rotation = nearObject.transform.rotation;
+
+                if (clone.GetComponent<Rigidbody>() != null)
+                {
+                    clone.GetComponent<Rigidbody>().velocity = nearObject.GetComponent<Rigidbody>().velocity;
+                }
+            }
+        }
+
+        // -----------------------------------------------------------------------------------------------------
         
         allObjects = Object.FindObjectsOfType<ConnectObjects>();
 

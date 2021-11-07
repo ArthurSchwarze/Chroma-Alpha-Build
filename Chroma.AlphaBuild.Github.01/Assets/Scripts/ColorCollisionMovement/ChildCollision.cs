@@ -19,6 +19,8 @@ public class ChildCollision : MonoBehaviour
         }
     }
 
+    /*
+     
     private void OnTriggerStay(Collider other)
     {
         if (blockParent != other.gameObject && CheckObject(other, ignoreLayer))
@@ -26,6 +28,8 @@ public class ChildCollision : MonoBehaviour
             blockParent.GetComponent<ConnectObjects>().OnChildCollisionStay(other);
         }
     }
+
+    */
 
     private void OnTriggerExit(Collider other)
     {
