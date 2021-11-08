@@ -6,7 +6,7 @@ public class CubeCollDetect : MonoBehaviour
 {
     [HideInInspector] public Vector3 normal;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         normal = collision.contacts[0].normal;
     }

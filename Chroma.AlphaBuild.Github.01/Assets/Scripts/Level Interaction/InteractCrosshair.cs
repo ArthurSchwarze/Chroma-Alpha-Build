@@ -5,17 +5,18 @@ using UnityEngine.UI;
 
 public class InteractCrosshair : MonoBehaviour
 {
-    Camera mainCamera;
-    Image crosshair;
-    Image crosshairNormal;
+    GameObject mainCamera;
+    GameObject crosshair;
+    GameObject crosshairNormal;
 
     public LayerMask ignoreLayer;
 
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        mainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
-        crosshair = GameObject.Find("Crosshair").GetComponent<Image>();
-        crosshairNormal = GameObject.Find("CrosshairNormal").GetComponent<Image>();
+        mainCamera = GameObject.FindWithTag("MainCamera");
+        crosshair = GameObject.Find("Crosshair");
+        crosshairNormal = GameObject.Find("CrosshairNormal");
     }
 
     // Update is called once per frame
@@ -24,28 +25,28 @@ public class InteractCrosshair : MonoBehaviour
         int x = Screen.width / 2;
         int y = Screen.height / 2;
 
-        Ray ray = mainCamera.ScreenPointToRay(new Vector3(x, y));
+        Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 20f, ~ignoreLayer))
         {
             Interactable i = hit.collider.GetComponent<Interactable>();
             if(i != null)
             {
-                crosshair.color = Color.green;
-                crosshairNormal.color = Color.green;
+                crosshair.GetComponent<Image>().color = Color.green;
+                crosshairNormal.GetComponent<Image>().color = Color.green;
             }
 
             else
             {
-                crosshair.color = Color.white;
-                crosshairNormal.color = Color.white;
+                crosshair.GetComponent<Image>().color = Color.white;
+                crosshairNormal.GetComponent<Image>().color = Color.white;
             }
         }
 
         else
         {
-            crosshair.color = Color.white;
-            crosshairNormal.color = Color.white;
+            crosshair.GetComponent<Image>().color = Color.white;
+            crosshairNormal.GetComponent<Image>().color = Color.white;
         }
     }
 }
