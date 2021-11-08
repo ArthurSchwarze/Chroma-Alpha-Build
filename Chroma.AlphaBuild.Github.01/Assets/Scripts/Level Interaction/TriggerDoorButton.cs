@@ -42,6 +42,7 @@ public class TriggerDoorButton : MonoBehaviour
         else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
             triggered = false;
+            stays = false;
             exit = true;
         }
     }
@@ -67,6 +68,7 @@ public class TriggerDoorButton : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("ignoreCollision"))
         {
+            triggered = false;
             stays = false;
             exit = true;
         }
