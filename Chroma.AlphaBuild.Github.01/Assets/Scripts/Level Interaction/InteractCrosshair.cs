@@ -27,7 +27,7 @@ public class InteractCrosshair : MonoBehaviour
 
         Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 20f, ~ignoreLayer))
+        if (Physics.Raycast(ray, out hit, 12f, ~ignoreLayer))
         {
             Interactable i = hit.collider.GetComponent<Interactable>();
             if(i != null)
