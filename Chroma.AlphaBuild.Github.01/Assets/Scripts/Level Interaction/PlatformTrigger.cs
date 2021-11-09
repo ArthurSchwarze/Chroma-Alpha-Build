@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformTrigger : MonoBehaviour
 {
-    Vector3 lastPosition, lastMove;
+    //Vector3 lastPosition, lastMove;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,17 +22,17 @@ public class PlatformTrigger : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        lastMove = transform.position - lastPosition;
-        lastPosition = transform.position;
-    }
+    //void FixedUpdate()
+    //{
+    //    lastMove = transform.position - lastPosition;
+    //    lastPosition = transform.position;
+    //}
 
-    void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
-        {
-            other.attachedRigidbody.MovePosition(other.attachedRigidbody.position + lastMove);
-        }
-    }
+    //void OnTriggerStay(Collider other)
+    //{
+    //    if (other.CompareTag("Cube") || other.CompareTag("ignoreCollision"))
+    //    {
+    //        other.attachedRigidbody.MovePosition(other.attachedRigidbody.position + lastMove);
+    //    }
+    //}
 }

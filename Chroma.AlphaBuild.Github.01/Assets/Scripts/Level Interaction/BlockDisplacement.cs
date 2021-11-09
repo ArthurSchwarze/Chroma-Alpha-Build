@@ -19,6 +19,15 @@ public class BlockDisplacement : MonoBehaviour
 
     private Vector3 movementVector;
 
+    Vector3 lastPosition, lastMove;
+    bool entered;
+    Rigidbody rPlatform, rCube;
+
+    private void Awake()
+    {
+        rPlatform = GetComponent<Rigidbody>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -120,5 +129,30 @@ public class BlockDisplacement : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         //Debug.Log("collision.gameObject.layer");
+        if (collision.collider.CompareTag("Cube") || collision.collider.CompareTag("ignoreCollision"))
+        {
+            rCube = collision.collider.GetComponent<Rigidbody>();
+            entered = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.CompareTag("Cube") || collision.collider.CompareTag("ignoreCollision"))
+        {
+            rCube = null;
+            entered = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        lastMove = transform.position - lastPosition;
+        lastPosition = transform.position;
+        
+        if (entered)
+        {
+            rCube.position += lastMove;
+        }
     }
 }
