@@ -9,7 +9,7 @@ public class ElevatorEnter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if ((other.gameObject.tag == "Head") || (other.gameObject.tag == "Bottom") || (other.gameObject.tag == "Body"))
+        if (other.CompareTag("Head") || other.CompareTag("Bottom") || other.CompareTag("Body"))
         {
             isEntered = true;
         }

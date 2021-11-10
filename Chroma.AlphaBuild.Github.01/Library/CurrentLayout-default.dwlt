@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 171
+  controlID: 152
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 68
+  controlID: 153
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 69
+  controlID: 154
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,8 +276,8 @@ MonoBehaviour:
     y: 0
     width: 348
     height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -319,9 +319,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -190.34418, y: 11.557288, z: 14.207901}
+    m_Target: {x: -268.5695, y: 7.9624243, z: 67.4259}
     speed: 2
-    m_Value: {x: -190.34418, y: 11.557288, z: 14.207901}
+    m_Value: {x: -268.5695, y: 7.9624243, z: 67.4259}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -368,13 +368,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.037481174, y: 0.95405805, z: -0.097628824, w: 0.2863973}
+    m_Target: {x: -0.038884226, y: 0.7279282, z: -0.053181898, w: -0.6851609}
     speed: 2
-    m_Value: {x: 0.03784798, y: 0.9523943, z: -0.098903105, w: 0.285886}
+    m_Value: {x: -0.038813163, y: 0.72659785, z: -0.053084705, w: -0.6839087}
   m_Size:
-    m_Target: 26.98755
+    m_Target: 28.031008
     speed: 2
-    m_Value: 26.98755
+    m_Value: 28.031008
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -429,7 +429,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 40fbffff3c51000052640000da650000
+      m_ExpandedIDs: c02efeff8c36feff4049feff3a51feff0659feffa893feffaab5feff50fbffff32510000aa5200002e590000f85c0000605d0000106100005c630000b6670000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -475,8 +475,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 302
-    height: 664
+    width: 245
+    height: 634
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -1667,22 +1667,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/FBX/Prefabs/Structures
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/FBX/Prefabs/Structures
+  - Assets
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\Mavin (Privat)\Documents\Matura-Projekt\Chroma\Chroma.AlphaBuild.Github.01
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 9a6d0000
-    m_LastClickedID: 28058
-    m_ExpandedIDs: 000000001a6d00001c6d00001e6d0000226d0000246d0000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 486f0000
+    m_LastClickedID: 28488
+    m_ExpandedIDs: 00000000426f0000446f0000466f0000486f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1710,7 +1710,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a6d00001c6d00001e6d0000206d0000226d0000246d0000266d0000
+    m_ExpandedIDs: 00000000426f0000446f0000466f0000486f00004a6f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
