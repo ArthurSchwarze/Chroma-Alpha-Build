@@ -6,7 +6,7 @@ public class ElevatorDoor : MonoBehaviour
 {
     public float speed, speed2;
     public Vector3 targetPos, targetPos2;
-    private bool finished1, start = true, now;
+    private bool start = true, finished;
 
     // Update is called once per frame
     void Update()
@@ -14,15 +14,13 @@ public class ElevatorDoor : MonoBehaviour
         if (start)
         {
             transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, targetPos, speed * Time.deltaTime);
+            if (this.transform.localPosition == targetPos)
+            {
+                finished = true;
+            }
         }
 
-        if (this.transform.localPosition == targetPos || now)
-        {
-            finished1 = true;
-            now = true;
-        }
-
-        if (finished1)
+        if (finished)
         {
             start = false;
             Invoke("SecondDoorMove", 3f);
@@ -31,6 +29,6 @@ public class ElevatorDoor : MonoBehaviour
 
     void SecondDoorMove()
     {
-        transform.localPosition = Vector3.MoveTowards(targetPos, targetPos2, speed2 * Time.deltaTime);
+        transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, targetPos2, speed2 * Time.deltaTime);
     }
 }

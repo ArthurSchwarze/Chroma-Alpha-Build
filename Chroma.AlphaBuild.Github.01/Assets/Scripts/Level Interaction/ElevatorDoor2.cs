@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ElevatorDoor2 : MonoBehaviour
 {
-    public float speed;
+    public float speed, speed2;
     public Vector3 targetPosDoor1;
     public Vector3 targetPos;
     public GameObject unequipGun;
@@ -36,21 +36,26 @@ public class ElevatorDoor2 : MonoBehaviour
     {
         if (unequipGun.activeInHierarchy && entered.isEntered == false) // opens door
         {
-            door1.localPosition = Vector3.MoveTowards(door1.localPosition, targetPosDoor1, speed * Time.deltaTime);
+            door1.localPosition = Vector3.MoveTowards(door1.localPosition, targetPosDoor1, speed2 * Time.deltaTime);
         }
         
         if(entered.isEntered == true) // closes door
         {
             hiddenWall.SetActive(true);
-            door1.localPosition = Vector3.MoveTowards(door1.localPosition, initPos, speed * Time.deltaTime);
+            door1.localPosition = Vector3.MoveTowards(door1.localPosition, initPos, speed2 * Time.deltaTime);
             closing = true;
         }
 
         if(closing == true && door1.localPosition == initPos) // starts elevator
         {
-            transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, targetPos, speed * Time.deltaTime);
-            Invoke("SceneLoad", 4f);
+            Invoke("ElevatorDoorMove", 3f);
         }
+    }
+
+    private void ElevatorDoorMove()
+    {
+        transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, targetPos, speed * Time.deltaTime);
+        Invoke("SceneLoad", 6f);
     }
 
     private void SceneLoad()
