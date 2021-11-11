@@ -8,6 +8,14 @@ public class ElevatorDoor : MonoBehaviour
     public Vector3 targetPos, targetPos2;
     private bool start = true, finished;
 
+    [Space]
+
+    [Header("SFX")]
+
+    [SerializeField] AudioSource mainSound;
+    [SerializeField] AudioSource stopSound;
+    [SerializeField] AudioSource openSound;
+
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +30,15 @@ public class ElevatorDoor : MonoBehaviour
 
         if (finished)
         {
+            if (!stopSound.isPlaying && start)
+            {
+                stopSound.Play();
+            }
+            mainSound.Stop();
+            if (!openSound.isPlaying && start)
+            {
+                openSound.PlayDelayed(2.5f);
+            }
             start = false;
             Invoke("SecondDoorMove", 3f);
         }
