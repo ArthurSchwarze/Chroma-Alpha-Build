@@ -12,30 +12,41 @@ public class TriggerDoorOpener : MonoBehaviour
 
     [Space]
 
-    public bool cylinder1_2NotConnected; // if the 2 Buttons are independent or not (like in LVL 1 the first door)
-    public bool keepDoorOpen; // after opening the door it will not close anymore
+    public bool cylinder1_2NotConnected; // if the 2 Buttons are independent or not
+    [Tooltip("after opening the door it will not close anymore or platform keeps running")] public bool keepDoorOpen;
 
     [Space]
 
     [SerializeField] AudioSource confirmationSFX;
     [SerializeField] Animator myDoor = null;
+    [SerializeField] BlockDisplacement myPlatform = null;
 
     [HideInInspector] public bool makeSound;
     bool oneTime;
     bool notClosed;
 
-    const float fixedFramerate = .001f;
+    private delegate void Delegate();
 
-    IEnumerator Start()
+    private Delegate Function1;
+    private Delegate Function2;
+
+    private void Start()
     {
-        while (Application.isPlaying)
+        if (myDoor && !myPlatform) // if buttons are for a door
         {
-            CustomFixedUpdate();
-            yield return new WaitForSeconds(fixedFramerate);
+            Function1 = OpenDoor;
+            Function2 = CloseDoor;
+        }
+
+        else if (myPlatform && ! myDoor) // if buttons are for a platform
+        {
+            myPlatform.enabled = false;
+            Function1 = StartPlatform;
+            Function2 = StopPlatform;
         }
     }
 
-    private void CustomFixedUpdate()
+    private void FixedUpdate()
     {
         #region OneButton
         // 1 Button
@@ -43,7 +54,7 @@ public class TriggerDoorOpener : MonoBehaviour
         {
             if ((cylinder1.triggered && !oneTime) || (cylinder1.stays && !oneTime))
             {
-                OpenDoor();
+                Function1();
                 //ResetTriggers1();
                 oneTime = true;
                 if (keepDoorOpen)
@@ -62,7 +73,7 @@ public class TriggerDoorOpener : MonoBehaviour
 
             if (!cylinder1.stays && oneTime && !keepDoorOpen)
             {
-                CloseDoor();
+                Function2();
                 ResetTriggers1();
                 oneTime = false;
             }
@@ -78,7 +89,7 @@ public class TriggerDoorOpener : MonoBehaviour
             {
                 if ((cylinder1.triggered && cylinder2.triggered && !oneTime) || (cylinder1.stays && cylinder2.stays && !oneTime) || (cylinder1.triggered && cylinder2.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && !oneTime && !keepDoorOpen))
                 {
-                    OpenDoor();
+                    Function1();
                     //ResetTriggers2();
                     oneTime = true;
                     if (keepDoorOpen)
@@ -97,7 +108,7 @@ public class TriggerDoorOpener : MonoBehaviour
                 
                 if ((!cylinder1.stays && cylinder2.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && oneTime && !keepDoorOpen) || (!cylinder1.stays && !cylinder2.stays && oneTime && !keepDoorOpen))
                 {
-                    CloseDoor();
+                    Function2();
                     ResetTriggers2();
                     oneTime = false;
                 }
@@ -108,14 +119,14 @@ public class TriggerDoorOpener : MonoBehaviour
             {
                 if ((cylinder1.triggered && !cylinder2.stays && !oneTime) || (!cylinder1.stays && cylinder2.triggered && !oneTime) || (cylinder1.stays && !cylinder2.stays && !oneTime) || (!cylinder1.stays && cylinder2.stays && !oneTime) || (cylinder1.stays && cylinder2.stays && !oneTime))
                 {
-                    OpenDoor();
+                    Function1();
                     //ResetTriggers2();
                     oneTime = true;
                 }
 
                 else if (!cylinder1.stays && !cylinder2.stays && oneTime)
                 {
-                    CloseDoor();
+                    Function2();
                     ResetTriggers2();
                     oneTime = false;
                 }
@@ -134,7 +145,7 @@ public class TriggerDoorOpener : MonoBehaviour
         {
             if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && !oneTime) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && !oneTime && !keepDoorOpen))
             {
-                OpenDoor();
+                Function1();
                 //ResetTriggers3();
                 oneTime = true;
                 if (keepDoorOpen)
@@ -153,7 +164,7 @@ public class TriggerDoorOpener : MonoBehaviour
 
             if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && !cylinder3.stays && oneTime && !keepDoorOpen) || (!cylinder1.stays && cylinder2.stays && !cylinder3.stays && oneTime && !keepDoorOpen) || (!cylinder1.stays && !cylinder2.stays && cylinder3.stays && oneTime && !keepDoorOpen))
             {
-                CloseDoor();
+                Function2();
                 ResetTriggers3();
                 oneTime = false;
             }
@@ -166,7 +177,7 @@ public class TriggerDoorOpener : MonoBehaviour
         {
             if ((cylinder1.triggered && cylinder2.triggered && cylinder3.triggered && cylinder4.triggered && !oneTime) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays && !oneTime) || (cylinder1.triggered && cylinder2.stays && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.triggered && cylinder3.stays && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.triggered && cylinder4.stays && !oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.triggered && !oneTime && !keepDoorOpen))
             {
-                OpenDoor();
+                Function1();
                 //ResetTriggers4();
                 oneTime = true;
                 if (keepDoorOpen)
@@ -185,7 +196,7 @@ public class TriggerDoorOpener : MonoBehaviour
 
             if ((!cylinder1.stays && cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && cylinder2.stays && !cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen) || (!cylinder1.stays && cylinder2.stays && cylinder3.stays && !cylinder4.stays && oneTime && !keepDoorOpen) || (cylinder1.stays && !cylinder2.stays && !cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (!cylinder1.stays && cylinder2.stays && !cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen) || (!cylinder1.stays && !cylinder2.stays && cylinder3.stays && cylinder4.stays && oneTime && !keepDoorOpen))
             {
-                CloseDoor();
+                Function2();
                 ResetTriggers4();
                 oneTime = false;
             }
@@ -262,10 +273,23 @@ public class TriggerDoorOpener : MonoBehaviour
 
         myDoor.Play("DoorOpen", 0, 0.0f);
     }
+    #endregion
+
+    #region PlatformAction
+    void StartPlatform()
+    {
+        Invoke("PlaySound", .2f);
+        myPlatform.enabled = true;
+    }
+
+    void StopPlatform()
+    {
+        myPlatform.enabled = false;
+    }
+    #endregion
 
     void PlaySound()
     {
         confirmationSFX.Play();
     }
-    #endregion
 }
