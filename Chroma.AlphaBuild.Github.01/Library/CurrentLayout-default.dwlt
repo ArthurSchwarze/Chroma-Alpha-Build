@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 141
+  controlID: 146
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 64
+  controlID: 68
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 65
+  controlID: 69
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 308
     height: 655
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -319,9 +319,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -216.99504, y: -22.859842, z: 113.183205}
+    m_Target: {x: -230.50714, y: 11.263619, z: 72.10266}
     speed: 2
-    m_Value: {x: -216.99504, y: -22.859842, z: 113.183205}
+    m_Value: {x: -230.50714, y: 11.263619, z: 72.10266}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -368,13 +368,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.061336566, y: 0.9295366, z: -0.18070121, w: 0.31558812}
+    m_Target: {x: -0.11391671, y: 0.368225, z: -0.04558289, w: -0.92167395}
     speed: 2
-    m_Value: {x: 0.06133506, y: 0.92951375, z: -0.18069677, w: 0.31558037}
+    m_Value: {x: -0.11390946, y: 0.36820158, z: -0.04557999, w: -0.9216153}
   m_Size:
-    m_Target: 22.441692
+    m_Target: 1.7320508
     speed: 2
-    m_Value: 22.441692
+    m_Value: 1.7320508
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -392,7 +392,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.010889011, y: -0.9853031, z: 0.14859454, w: 0.0973925}
+  m_LastSceneViewRotation: {x: -0.010923448, y: 0.90228564, z: -0.023040937, w: -0.4305247}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -426,10 +426,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2739}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4e92ffff5092ffff46afffffe6b5ffff50fbffff5acd0000d8db0000
+      m_ExpandedIDs: 8885ffffc0a8ffff74f4ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1667,22 +1667,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/UI Menu
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Scripts/UI Menu
+  - Assets/Scenes
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\Mavin (Privat)\Documents\Matura-Projekt\Chroma\Chroma.AlphaBuild.Github.01
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c710000
-    m_LastClickedID: 29052
-    m_ExpandedIDs: 00000000e2700000e4700000e6700000e8700000ea7000005c710000
+    m_SelectedIDs: 0e720000
+    m_LastClickedID: 29198
+    m_ExpandedIDs: 0000000096710000987100009a7100009c7100009e710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1710,7 +1710,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e2700000e4700000e6700000e8700000ea700000
+    m_ExpandedIDs: 0000000096710000987100009a7100009c7100009e710000a0710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
