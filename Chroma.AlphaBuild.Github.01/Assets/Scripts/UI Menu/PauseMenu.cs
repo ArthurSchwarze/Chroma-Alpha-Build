@@ -59,6 +59,8 @@ public class PauseMenu : MonoBehaviour
         look.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
 
+        AudioListener.pause = false;
+
         gameIsPaused = false;
     }
 
@@ -70,6 +72,8 @@ public class PauseMenu : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         look.enabled = false;
+
+        AudioListener.pause = true;
 
         gameIsPaused = true;
     }
