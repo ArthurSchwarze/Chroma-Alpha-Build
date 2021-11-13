@@ -40,7 +40,7 @@ public class ElevatorDoor : MonoBehaviour
                 openSound.PlayDelayed(2.5f);
             }
             start = false;
-            Invoke("SecondDoorMove", 3f);
+            Invoke("SecondDoorMove", 2.5f);
         }
     }
 
