@@ -31,6 +31,8 @@ public class BlockDisplacement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lastPosition = rPlatform.position;
+
         /*if (pathNodes != null)
         {
             transform.position = pathNodes[0].transform.position;
@@ -128,7 +130,6 @@ public class BlockDisplacement : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        //Debug.Log("collision.gameObject.layer");
         if (collision.collider.CompareTag("Cube") || collision.collider.CompareTag("ignoreCollision"))
         {
             rCube = collision.collider.GetComponent<Rigidbody>();
@@ -147,12 +148,12 @@ public class BlockDisplacement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        lastMove = transform.position - lastPosition;
-        lastPosition = transform.position;
-        
+        lastMove = rPlatform.position - lastPosition;
+        lastPosition = rPlatform.position;
+
         if (entered)
         {
-            rCube.position += lastMove;
+            rCube.MovePosition(rCube.position + lastMove);
         }
     }
 }
