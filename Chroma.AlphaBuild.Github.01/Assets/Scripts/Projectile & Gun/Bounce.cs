@@ -91,7 +91,7 @@ public class Bounce : MonoBehaviour
     {
         bounceTrigger.canBounce = false;
 
-        if (other.CompareTag("PlayerBody"))
+        if (other.CompareTag("PlayerBody") || other.CompareTag("Head") || other.CompareTag("Bottom") || other.CompareTag("Body"))
         {
             playBounceSound();
         }

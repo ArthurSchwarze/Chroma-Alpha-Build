@@ -81,6 +81,13 @@ public class NewPlayerMovement : MonoBehaviour
             CharacterVelocity = new Vector3(controller.velocity.x, CharacterVelocity.y, controller.velocity.z);
         }
 
+        // the same as above but for head
+        if ((flags == CollisionFlags.Above) && (canBounce == false))
+        {
+            CharacterVelocity = new Vector3(CharacterVelocity.x, controller.velocity.y, CharacterVelocity.z);
+        }
+
+        // for Speedboost reset
         if ((groundSpeed > 14) || (MaxSpeedInAir > 14))
         {
             groundSpeed -= 10f * Time.deltaTime;
