@@ -8,7 +8,7 @@ public class InfoHelp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Invoke("ActivateHelp", 7f);
+        Invoke("ActivateHelp", 3f);
     }
 
     void ActivateHelp()
