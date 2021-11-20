@@ -82,22 +82,6 @@ public class PickAndDrop : MonoBehaviour
 		Vector3 newMove = destination - o.transform.position;
 		actualMovement = newMove;
 
-		//if (stopXMovement) 
-		//{
-		//newMove = new Vector3(GetComponent<PlayerMovement>().StopX * Time.deltaTime, newMove.y, newMove.z);
-		//}
-
-		//if (stopZMovement)
-		//{
-		//newMove = new Vector3(newMove.x, newMove.y, GetComponent<PlayerMovement>().StopZ * Time.deltaTime);
-		//}
-
-		//if (stopYMovement == 0) 
-		//{ 
-		//newMove = new Vector3(newMove.x, mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime, newMove.z);
-		//mainCamera.GetComponent<MouseLook>().LimitRotationY * 0.5f * Time.deltaTime
-		//}
-		//o.GetComponent<Rigidbody>().velocity = Vector3.zero;
 		o.GetComponent<Rigidbody>().velocity = newMove * cubeSpeed;
 
 		if (o.GetComponent<ConnectObjects>() != null)
@@ -127,6 +111,19 @@ public class PickAndDrop : MonoBehaviour
 		//o.transform.position = MoveBlock;
 
 		o.transform.rotation = Quaternion.identity;
+
+		if (((o.transform.position - (mainCamera.transform.position + mainCamera.transform.forward * distance)).magnitude) > 15f && !mouse.gameIsPaused)
+        {
+			c.material = previousPhyMat;
+			cubeSpeed = 12f;
+
+			emSound.Stop();
+			electroMagnet.Stop();
+
+			dropObject();
+
+			isHolding = false;
+		}
 	}
 
 	void pickup()
