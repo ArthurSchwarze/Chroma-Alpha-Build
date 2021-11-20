@@ -8,7 +8,7 @@ public class ChildCollision : MonoBehaviour
     private void Awake()
     {
         blockParent = transform.parent.gameObject;
-        ignoreLayer = LayerMask.GetMask("1Connect", "2Connect", "ConnectCollision1", "ConnectCollision2",  "Ignore Raycast"); //"PhyBox",
+        ignoreLayer = LayerMask.GetMask("1Connect", "2Connect", "ConnectCollision1", "ConnectCollision2",  "Ignore Raycast", "PhyBox");
     }
 
     private void OnTriggerEnter(Collider other)
