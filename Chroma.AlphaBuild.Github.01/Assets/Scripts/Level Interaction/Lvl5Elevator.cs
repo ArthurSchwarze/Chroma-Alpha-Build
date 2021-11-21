@@ -9,6 +9,7 @@ public class Lvl5Elevator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        object1.SetActive(activate);
+        if (other.CompareTag("PlayerBody"))
+            object1.SetActive(activate);
     }
 }

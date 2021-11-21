@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 89
+  controlID: 18
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 59
+  controlID: 27
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 60
+  controlID: 28
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,7 +190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 308
+    width: 301
     height: 686
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -200,7 +200,7 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,9 +216,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 308
+    x: 301
     y: 0
-    width: 1290
+    width: 1297
     height: 686
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -392,15 +392,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 307
+    width: 300
     height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 128}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d217fdffe832fdff8670fdff00acfdff34c2ffff04e0ffff2ae9ffffc0f7ffff8e5d000058ad00009eaf0000c4b00000e2b100005ab7000048be0000a4f90000
+      m_ExpandedIDs: 8cbbfeff08c8fefffe11ffff002dffff363fffffd04dffffce5cffffc079ffff3cb1ffff86c4ffff3ccdffff74d6ffff26e2ffffcef0ffff50fbffff34740200ac7d0200b87d0200c68002007659030000710300fa7303003276030068760300327a0300ae7b0300be7d0300ea8003003882030032830300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -472,7 +472,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 307
-    height: 653
+    height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_GridVisualFoldout: 1
   m_IncrementSnapFoldout: 1
@@ -498,9 +498,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 308
+    x: 301
     y: 73
-    width: 1288
+    width: 1295
     height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -514,9 +514,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -318.07895, y: 10.60267, z: 11.191208}
+    m_Target: {x: -260.8925, y: 18.93974, z: -43.066635}
     speed: 2
-    m_Value: {x: -318.07895, y: 10.60267, z: 11.191208}
+    m_Value: {x: -260.8925, y: 18.93974, z: -43.066635}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -563,13 +563,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.010916133, y: -0.989352, z: 0.095276654, w: 0.11427384}
+    m_Target: {x: -0.012158497, y: -0.6015064, z: 0.008793016, w: -0.79898727}
     speed: 2
-    m_Value: {x: 0.010910283, y: -0.9888218, z: 0.095225595, w: 0.114212595}
+    m_Value: {x: -0.01094624, y: -0.6025915, z: 0.007905056, w: -0.7979356}
   m_Size:
-    m_Target: 9.750343
+    m_Target: 39.878716
     speed: 2
-    m_Value: 9.750343
+    m_Value: 39.878716
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -632,22 +632,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Level Interaction
+    - Assets/Materials/PrototypeMaterial
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Scripts/Level Interaction
+  - Assets/Materials/PrototypeMaterial
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\Mavin (Privat)\Documents\Matura-Projekt\Chroma\Chroma.AlphaBuild.Github.01
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 6a750000
-    m_LastClickedID: 30058
-    m_ExpandedIDs: 000000004e750000507500005275000054750000567500005a75000064750000
+    m_SelectedIDs: ac150100
+    m_LastClickedID: 71084
+    m_ExpandedIDs: 0000000090720000927200009472000096720000987200009a7200000a730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -675,7 +675,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e75000050750000527500005475000056750000
+    m_ExpandedIDs: 0000000090720000927200009472000096720000987200009a720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -753,7 +753,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 759
-    width: 1562
+    width: 1597
     height: 250
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &19
