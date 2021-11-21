@@ -158,7 +158,7 @@ public class NewPlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.CompareTag("Cube"))
+        if (hit.gameObject == pickAndDrop.carriedObject)//hit.gameObject.CompareTag("Cube"))
         {
             pickAndDrop.cubeSpeed = .01f;
         }
