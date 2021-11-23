@@ -37,7 +37,7 @@ public class ElevatorDoor : MonoBehaviour
             mainSound.Stop();
             if (!openSound.isPlaying && start)
             {
-                openSound.PlayDelayed(2.5f);
+                openSound.PlayDelayed(1.4f);
             }
             start = false;
             Invoke("SecondDoorMove", 2f);
