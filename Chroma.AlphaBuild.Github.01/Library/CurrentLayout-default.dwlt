@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 77
+  controlID: 38
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 78
+  controlID: 39
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,7 +400,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 78a5ffffecadfffffab6ffffa4c2ffff44d1ffff38ddfffffae5ffff8ceeffff50fbffffda770000a8820000e4820000308e0000cca8000078b30000b2b300007ebf0000fad90000b8e70000fae7000024f70000d2180100bc240100fa240100663101007c4e0100205b01006a5b0100ac690100da880100b4930100f0930100d49f01000cbb010030c601007ac60100b0d20100ceee010018fb010052fb0100f8080200
+      m_ExpandedIDs: 78a5ffffecadfffffab6ffffa4c2ffff44d1ffff38ddfffffae5ffff8ceeffff50fbffff6a760000da770000a8820000e48200001483000058a70000cca8000078b30000b2b30000e2b300005cd80000fad90000b8e70000fae700002ee80000d6160100d2180100bc240100fa24010028250100f44c01007c4e0100205b01006a5b0100ba5b010040870100da880100b4930100f09301002094010022b901000cbb010030c601007ac60100a6c601003ced0100ceee010018fb010052fb01008cfb0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
